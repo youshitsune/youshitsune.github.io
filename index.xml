@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Youshitsune</title>
+    <link>http://youshitsune.github.io/</link>
+    <description>Recent content on Youshitsune</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://youshitsune.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://youshitsune.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://youshitsune.github.io/about/</guid>
+      <description>About Hi, my name is Luka, I live in Serbia and I&amp;rsquo;m 14 years old. I really love programming, linux, basically everything in the world.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://youshitsune.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://youshitsune.github.io/contact/</guid>
+      <description> Contact If you want to contact me:
+Discord: JovanovicLuka#1700 Instagram: @jluka1 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://youshitsune.github.io/log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://youshitsune.github.io/log/</guid>
+      <description>Log 27 Jul, 2022 Today, my Azure for Students subscription expired so I dont anymore have everything. So for now I&amp;rsquo;m gonna use GitHub Pages.</description>
+    </item>
+    
+  </channel>
+</rss>

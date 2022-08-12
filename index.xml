@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Youshitsune</title>
-    <link>https://youshitsune.github.io/</link>
+    <link>https://youshitsune.me/</link>
     <description>Recent content on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://youshitsune.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://youshitsune.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://youshitsune.github.io/about/</link>
+      <link>https://youshitsune.me/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://youshitsune.github.io/about/</guid>
+      <guid>https://youshitsune.me/about/</guid>
       <description>About Hi, my name is Luka, I live in Serbia and I&amp;rsquo;m 14 years old. I really love programming, linux, basically everything in the world.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://youshitsune.github.io/contact/</link>
+      <link>https://youshitsune.me/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://youshitsune.github.io/contact/</guid>
-      <description> Contact If you want to contact me:
-Discord: JovanovicLuka#1700 Instagram: @jluka1 </description>
+      <guid>https://youshitsune.me/contact/</guid>
+      <description>Contact If you want to contact me:
+Email: luka@youshitsune.me Discord: JovanovicLuka#1700 Instagram: @jluka1 I&amp;rsquo;m gonna answer you on Discord or Email before than on Instagram.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://youshitsune.github.io/log/</link>
+      <link>https://youshitsune.me/log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://youshitsune.github.io/log/</guid>
+      <guid>https://youshitsune.me/log/</guid>
       <description>Log 1 Aug, 2022 Today, It was really interesting meeting other devs on KAMACHO discord server. They found it incredible that I code, beacuse I&amp;rsquo;m only 14. I really recommend Open Source Hub discord server (i found it little ironic that server that talks about open-source is on closed-source software), there I met also one guy that&amp;rsquo;s only 13. But, he already has server for helping people with coding. He asked me if I want to join and I replied that I would love to join.</description>
     </item>
     

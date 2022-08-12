@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://youshitsune.github.io/about/</loc>
+    <loc>https://youshitsune.me/about/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>https://youshitsune.github.io/contact/</loc>
+    <loc>https://youshitsune.me/contact/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>https://youshitsune.github.io/log/</loc>
+    <loc>https://youshitsune.me/log/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>https://youshitsune.github.io/authors/</loc>
+    <loc>https://youshitsune.me/authors/</loc>
   </url><url>
-    <loc>https://youshitsune.github.io/categories/</loc>
+    <loc>https://youshitsune.me/categories/</loc>
   </url><url>
-    <loc>https://youshitsune.github.io/series/</loc>
+    <loc>https://youshitsune.me/series/</loc>
   </url><url>
-    <loc>https://youshitsune.github.io/tags/</loc>
+    <loc>https://youshitsune.me/tags/</loc>
   </url><url>
-    <loc>https://youshitsune.github.io/</loc>
+    <loc>https://youshitsune.me/</loc>
   </url>
 </urlset>

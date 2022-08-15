@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Youshitsune</title>
+    <link>https://youshitsune.me/blogs/</link>
+    <description>Recent content in Blogs on Youshitsune</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Aug 2022 10:22:32 +0200</lastBuildDate><atom:link href="https://youshitsune.me/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finding Open Source Note Taking</title>
+      <link>https://youshitsune.me/blogs/finding-open-source-note-taking/</link>
+      <pubDate>Mon, 15 Aug 2022 10:22:32 +0200</pubDate>
+      
+      <guid>https://youshitsune.me/blogs/finding-open-source-note-taking/</guid>
+      <description>Right now, I&amp;rsquo;m using Obsidian as my note taking app. But, there is only one problem with it and that problem is that it&amp;rsquo;s not open-source. This shouldn&amp;rsquo;t be very concerning, because if you don&amp;rsquo;t use Obsidian Sync feature and save your notes on HDD.
+Today, I searched for open-source note taking app like Obsidian. I only found LogSeq which is really great app, but it&amp;rsquo;s not for me really. I like simplicity of Obsidian and when I use LogSeq I really feel that it&amp;rsquo;s cluttered.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,17 @@
     <description>Recent content in note-taking on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Aug 2022 10:22:32 +0200</lastBuildDate><atom:link href="https://youshitsune.me/tags/note-taking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Aug 2022 17:31:58 +0200</lastBuildDate><atom:link href="https://youshitsune.me/tags/note-taking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finally settled on SimpleNote</title>
+      <link>https://youshitsune.me/blogs/finally-settled-on-simplenote/</link>
+      <pubDate>Mon, 29 Aug 2022 17:31:58 +0200</pubDate>
+      
+      <guid>https://youshitsune.me/blogs/finally-settled-on-simplenote/</guid>
+      <description>In the last post, I talked about that I want to switch to note-taking app like Obsidian and that it&amp;rsquo;s open-source.
+I finnaly settled on SimpleNote for it&amp;rsquo;s simplicity. I watched video from Tiego Forte which was really good, I recommend it to anyone who wants to find his note-taking app.</description>
+    </item>
+    
     <item>
       <title>Finding Open Source Note Taking</title>
       <link>https://youshitsune.me/blogs/finding-open-source-note-taking/</link>

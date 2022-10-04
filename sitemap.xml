@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+<<<<<<< HEAD
     <loc>https://youshitsune.me/posts/bye-simplenote-welcome-logseq/</loc>
     <lastmod>2022-09-08T14:53:03+02:00</lastmod>
   </url><url>
@@ -22,11 +23,34 @@
   </url><url>
     <loc>https://youshitsune.me/</loc>
     <lastmod>2022-09-08T14:53:03+02:00</lastmod>
+=======
+    <loc>https://youshitsune.me/blogs/</loc>
+    <lastmod>2022-08-29T17:31:58+02:00</lastmod>
+>>>>>>> parent of 6f55e7f (Create new blog post)
   </url><url>
     <loc>https://youshitsune.me/posts/finally-settled-on-simplenote/</loc>
     <lastmod>2022-08-29T17:31:58+02:00</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>https://youshitsune.me/posts/finding-open-source-note-taking/</loc>
+=======
+    <loc>https://youshitsune.me/tags/note-taking/</loc>
+    <lastmod>2022-08-29T17:31:58+02:00</lastmod>
+  </url><url>
+    <loc>https://youshitsune.me/tags/open-source/</loc>
+    <lastmod>2022-08-29T17:31:58+02:00</lastmod>
+  </url><url>
+    <loc>https://youshitsune.me/tags/productivity/</loc>
+    <lastmod>2022-08-29T17:31:58+02:00</lastmod>
+  </url><url>
+    <loc>https://youshitsune.me/tags/</loc>
+    <lastmod>2022-08-29T17:31:58+02:00</lastmod>
+  </url><url>
+    <loc>https://youshitsune.me/</loc>
+    <lastmod>2022-08-29T17:31:58+02:00</lastmod>
+  </url><url>
+    <loc>https://youshitsune.me/blogs/finding-open-source-note-taking/</loc>
+>>>>>>> parent of 6f55e7f (Create new blog post)
     <lastmod>2022-08-15T10:22:32+02:00</lastmod>
   </url><url>
     <loc>https://youshitsune.me/about/</loc>

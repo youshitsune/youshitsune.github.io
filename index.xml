@@ -6,6 +6,7 @@
     <description>Recent content on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+<<<<<<< HEAD
     <lastBuildDate>Thu, 08 Sep 2022 14:53:03 +0200</lastBuildDate><atom:link href="https://youshitsune.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bye, Simplenote! Welcome, Logseq!</title>
@@ -16,6 +17,9 @@
       <description>I hope this is my final settle, I switched from Simplenote to Logseq. I switched from it beacuse of it&amp;rsquo;s minimal features. It doesn&amp;rsquo;t have formating, for example. But, my main reason was that i cant really organise my notes with tags. I like to link them. So that&amp;rsquo;s where Logseq comes in play, I love Obsidian (but it&amp;rsquo;s not open-source, for those who doesn&amp;rsquo;t know). So I was happy when I found out about Logseq, it&amp;rsquo;s really nice note-taking app.</description>
     </item>
     
+=======
+    <lastBuildDate>Mon, 29 Aug 2022 17:31:58 +0200</lastBuildDate><atom:link href="https://youshitsune.me/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> parent of 6f55e7f (Create new blog post)
     <item>
       <title>Finally settled on SimpleNote</title>
       <link>https://youshitsune.me/posts/finally-settled-on-simplenote/</link>

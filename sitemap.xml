@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://youshitsune.me/blogs/a-new-protocol-gemini/</loc>
+    <lastmod>2022-10-15T09:20:31+02:00</lastmod>
+  </url><url>
+    <loc>https://youshitsune.me/posts/a-new-protocol-gemini/</loc>
+    <lastmod>2022-10-15T09:20:31+02:00</lastmod>
+  </url><url>
     <loc>https://youshitsune.me/blogs/</loc>
-    <lastmod>2022-09-08T00:00:00+00:00</lastmod>
+    <lastmod>2022-10-15T09:20:31+02:00</lastmod>
+  </url><url>
+    <loc>https://youshitsune.me/tags/interesting/</loc>
+    <lastmod>2022-10-15T09:20:31+02:00</lastmod>
+  </url><url>
+    <loc>https://youshitsune.me/tags/networking/</loc>
+    <lastmod>2022-10-15T09:20:31+02:00</lastmod>
+  </url><url>
+    <loc>https://youshitsune.me/posts/</loc>
+    <lastmod>2022-10-15T09:20:31+02:00</lastmod>
+  </url><url>
+    <loc>https://youshitsune.me/tags/</loc>
+    <lastmod>2022-10-15T09:20:31+02:00</lastmod>
+  </url><url>
+    <loc>https://youshitsune.me/</loc>
+    <lastmod>2022-10-15T09:20:31+02:00</lastmod>
   </url><url>
     <loc>https://youshitsune.me/blogs/bye-simplenote-welcome-logseq/</loc>
     <lastmod>2022-09-08T00:00:00+00:00</lastmod>
@@ -17,16 +38,7 @@
     <loc>https://youshitsune.me/tags/open-source/</loc>
     <lastmod>2022-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://youshitsune.me/posts/</loc>
-    <lastmod>2022-09-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://youshitsune.me/tags/productivity/</loc>
-    <lastmod>2022-09-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.me/tags/</loc>
-    <lastmod>2022-09-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.me/</loc>
     <lastmod>2022-09-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://youshitsune.me/blogs/finally-settled-on-simplenote/</loc>

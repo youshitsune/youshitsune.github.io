@@ -6,7 +6,19 @@
     <description>Recent content in Blogs on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://youshitsune.me/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 09:20:31 +0200</lastBuildDate><atom:link href="https://youshitsune.me/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A New Protocol Gemini</title>
+      <link>https://youshitsune.me/blogs/a-new-protocol-gemini/</link>
+      <pubDate>Sat, 15 Oct 2022 09:20:31 +0200</pubDate>
+      
+      <guid>https://youshitsune.me/blogs/a-new-protocol-gemini/</guid>
+      <description>First, we need to figure out What is protocol?
+What is protocol? Internet protocol is way that information gets to you. Now used protocol is HTTP/HTTPS. Which is acronym for Hypertext Transfer Protocol/Hypertext Transfer Protocol Secure.
+What is Gemini? Gemini is a new internet protocol which:
+Is heavier than gopher Is lighter than the web Will not replace either Strives for maximum power to weight ratio Takes user privacy very seriously How to access Gemini network?</description>
+    </item>
+    
     <item>
       <title>Bye, Simplenote! Welcome, Logseq!</title>
       <link>https://youshitsune.me/blogs/bye-simplenote-welcome-logseq/</link>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interesting on Youshitsune</title>
+    <link>https://youshitsune.me/tags/interesting/</link>
+    <description>Recent content in interesting on Youshitsune</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Oct 2022 09:20:31 +0200</lastBuildDate><atom:link href="https://youshitsune.me/tags/interesting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A New Protocol Gemini</title>
+      <link>https://youshitsune.me/blogs/a-new-protocol-gemini/</link>
+      <pubDate>Sat, 15 Oct 2022 09:20:31 +0200</pubDate>
+      
+      <guid>https://youshitsune.me/blogs/a-new-protocol-gemini/</guid>
+      <description>First, we need to figure out What is protocol?
+What is protocol? Internet protocol is way that information gets to you. Now used protocol is HTTP/HTTPS. Which is acronym for Hypertext Transfer Protocol/Hypertext Transfer Protocol Secure.
+What is Gemini? Gemini is a new internet protocol which:
+Is heavier than gopher Is lighter than the web Will not replace either Strives for maximum power to weight ratio Takes user privacy very seriously How to access Gemini network?</description>
+    </item>
+    
+    <item>
+      <title>A New Protocol Gemini</title>
+      <link>https://youshitsune.me/posts/a-new-protocol-gemini/</link>
+      <pubDate>Sat, 15 Oct 2022 09:20:31 +0200</pubDate>
+      
+      <guid>https://youshitsune.me/posts/a-new-protocol-gemini/</guid>
+      <description>First, we need to figure out What is protocol?
+What is protocol? Internet protocol is way that information gets to you. Now used protocol is HTTP/HTTPS. Which is acronym for Hypertext Transfer Protocol/Hypertext Transfer Protocol Secure.
+What is Gemini? Gemini is a new internet protocol which:
+Is heavier than gopher Is lighter than the web Will not replace either Strives for maximum power to weight ratio Takes user privacy very seriously How to access Gemini network?</description>
+    </item>
+    
+  </channel>
+</rss>

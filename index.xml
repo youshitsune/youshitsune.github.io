@@ -6,11 +6,11 @@
     <description>Recent content on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Oct 2022 09:20:31 +0200</lastBuildDate><atom:link href="https://youshitsune.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://youshitsune.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A New Protocol Gemini</title>
       <link>https://youshitsune.me/blogs/a-new-protocol-gemini/</link>
-      <pubDate>Sat, 15 Oct 2022 09:20:31 +0200</pubDate>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://youshitsune.me/blogs/a-new-protocol-gemini/</guid>
       <description>First, we need to figure out What is protocol?
@@ -22,7 +22,7 @@ Is heavier than gopher Is lighter than the web Will not replace either Strives f
     <item>
       <title>A New Protocol Gemini</title>
       <link>https://youshitsune.me/posts/a-new-protocol-gemini/</link>
-      <pubDate>Sat, 15 Oct 2022 09:20:31 +0200</pubDate>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://youshitsune.me/posts/a-new-protocol-gemini/</guid>
       <description>First, we need to figure out What is protocol?
@@ -32,7 +32,7 @@ Is heavier than gopher Is lighter than the web Will not replace either Strives f
     </item>
     
     <item>
-      <title>Bye, Simplenote! Welcome, Logseq!</title>
+      <title>Bye Simplenote Welcome Logseq</title>
       <link>https://youshitsune.me/blogs/bye-simplenote-welcome-logseq/</link>
       <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
       
@@ -41,7 +41,7 @@ Is heavier than gopher Is lighter than the web Will not replace either Strives f
     </item>
     
     <item>
-      <title>Bye, Simplenote! Welcome, Logseq!</title>
+      <title>Bye Simplenote Welcome Logseq</title>
       <link>https://youshitsune.me/posts/bye-simplenote-welcome-logseq/</link>
       <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
       
@@ -50,7 +50,7 @@ Is heavier than gopher Is lighter than the web Will not replace either Strives f
     </item>
     
     <item>
-      <title>Finally Settled on SimpleNote</title>
+      <title>Finally Settled on Simplenote</title>
       <link>https://youshitsune.me/blogs/finally-settled-on-simplenote/</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
       
@@ -60,7 +60,7 @@ I finnaly settled on SimpleNote for it’s simplicity. I watched video from Tieg
     </item>
     
     <item>
-      <title>Finally Settled on SimpleNote</title>
+      <title>Finally Settled on Simplenote</title>
       <link>https://youshitsune.me/posts/finally-settled-on-simplenote/</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
       
@@ -87,34 +87,6 @@ Today, I searched for open-source note taking app like Obsidian. I only found Lo
       <guid>https://youshitsune.me/posts/finding-open-source-note-taking/</guid>
       <description>Right now, I’m using Obsidian as my note taking app. But, there is only one problem with it and that problem is that it’s not open-source. This shouldn’t be very concerning, because if you don’t use Obsidian Sync feature and save your notes on HDD.
 Today, I searched for open-source note taking app like Obsidian. I only found LogSeq which is really great app, but it’s not for me really. I like simplicity of Obsidian and when I use LogSeq I really feel that it’s cluttered.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://youshitsune.me/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://youshitsune.me/about/</guid>
-      <description>About Hi, my name is Luka, I live in Serbia and I&amp;rsquo;m 14 years old. I really love programming, linux, basically everything in the world. </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://youshitsune.me/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://youshitsune.me/contact/</guid>
-      <description>Contact If you want to contact me:
-Email: luka@youshitsune.me Discord: JovanovicLuka#1700 Instagram: @jluka1 I&amp;rsquo;m gonna answer you on Discord or Email before than on Instagram.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://youshitsune.me/log/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://youshitsune.me/log/</guid>
-      <description>Log 1 Aug, 2022 Today, It was really interesting meeting other devs on KAMACHO discord server. They found it incredible that I code, beacuse I&amp;rsquo;m only 14. I really recommend Open Source Hub discord server (i found it little ironic that server that talks about open-source is on closed-source software), there I met also one guy that&amp;rsquo;s only 13. But, he already has server for helping people with coding. He asked me if I want to join and I replied that I would love to join.</description>
     </item>
     
   </channel>

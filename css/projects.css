@@ -1,0 +1,76 @@
+@font-face {
+        font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+              
+}
+@font-face {
+        font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+                font-weight: bold;
+                  
+}
+@font-face {
+        font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+                font-style: italic, oblique;
+                  
+}
+@font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
+body{
+    background-color: #0f0f0d;
+    font-family: "Computer Modern", sans-serif;
+    color: white;
+}
+
+.navbar{
+    margin-top: 2%;
+}
+
+.navbar-brand{
+    margin-left: 5%;
+}
+
+#links{
+    margin-left: 65%;
+}
+
+#main{
+    height: 20em;
+    background-image: url("../images/projects.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#project{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+#project img{
+    width: 200px;
+    height: 100px;
+}
+footer{
+    margin-top: 5%;
+    height: 5em;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}

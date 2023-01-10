@@ -41,10 +41,6 @@ body{
 }
 
 #main{
-    background-image: url("../images/main.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 20em;
     display: flex;
     align-items: center;

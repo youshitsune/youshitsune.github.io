@@ -59,6 +59,13 @@ body{
     align-items: center;
     justify-content:center;
     flex-direction: column;
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    min-width: 300px;
+    min-height: 260px;
+    border-radius: 18px;
+    border: 1px solid grey;
+    padding: 5px 5px 5px 5px;
 }
 
 #project img{
@@ -73,4 +80,10 @@ footer{
 .links{
     display: flex;
     justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 }

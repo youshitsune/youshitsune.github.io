@@ -46,7 +46,9 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    background-image: url("../images/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #about{

@@ -4,10 +4,13 @@
     
     <script type="application/ld+json">
 
-{  
-  "@context":"http://schema.org",
-  "@type":"Website",
-  "@id":"https:\/\/youshitsune.me\/",
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Posts",
+  
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "2023-02-18T11:18:19+01:00",
   "author": {
     "@type": "Person",
     "name": "Youshitsune",
@@ -15,10 +18,22 @@
     "image": "https://avatars.githubusercontent.com/u/79904009?v=4"
     
   },
-  "name":"YOUSHITSUNE",
-  "description":"Hugo tranquilpeak theme demo",
-  "url":"https:\/\/youshitsune.me\/404.html",
-  "keywords":"[]"
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/youshitsune.me\/posts\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "YOUSHITSUNE",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://avatars.githubusercontent.com/u/79904009?v=4"
+    }
+    
+  },
+  "description": "",
+  "keywords": []
 }
 
 </script>
@@ -33,10 +48,10 @@
 
 <meta property="og:description" content="Hugo tranquilpeak theme demo">
 <meta property="og:type" content="website">
-<meta property="og:title" content="404 Page not found">
-<meta name="twitter:title" content="404 Page not found">
-<meta property="og:url" content="https://youshitsune.me/404.html">
-<meta property="twitter:url" content="https://youshitsune.me/404.html">
+<meta property="og:title" content="Posts">
+<meta name="twitter:title" content="Posts">
+<meta property="og:url" content="https://youshitsune.me/posts/">
+<meta property="twitter:url" content="https://youshitsune.me/posts/">
 <meta property="og:site_name" content="YOUSHITSUNE">
 <meta property="og:description" content="Hugo tranquilpeak theme demo">
 <meta name="twitter:description" content="Hugo tranquilpeak theme demo">
@@ -63,14 +78,16 @@
 
 
 
-    <title>404 Page not found</title>
+    <title>Posts</title>
 
     <link rel="icon" href="https://youshitsune.me/favicon.png">
     
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://youshitsune.me/posts/index.xml">
+    
 
     
 
-    <link rel="canonical" href="https://youshitsune.me/404.html">
+    <link rel="canonical" href="https://youshitsune.me/posts/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -88,13 +105,171 @@
     
   </head>
 
-<main class="posts">
-  <article class="post">
-    <h1>404 Not Found</h1>
-    <p>Sorry, but we couldn't find the page you're looking for.</p>
-    <p>Please head back <a href="https://youshitsune.me/">home</a>.</p>
-  </article>
-</main>
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="1">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://youshitsune.me/" aria-label="Go to homepage">YOUSHITSUNE</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://youshitsune.me/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://avatars.githubusercontent.com/u/79904009?v=4" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="1">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://youshitsune.me/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://avatars.githubusercontent.com/u/79904009?v=4" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Youshitsune</h4>
+        
+          <h5 class="sidebar-profile-bio">My name is Luka. I&rsquo;m 14 years old, I&rsquo;m learning a lot of things. I&rsquo;m interested in all natural sciences.</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://youshitsune.me/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://youshitsune.me/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://youshitsune.me/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/youshitsune" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="1"
+        class="
+               hasCoverMetaIn
+               ">
+        <section class="postShorten-group main-content-wrap">
+          
+          
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title">
+      
+        <a class="link-unstyled" href="https://youshitsune.me/2023/02/dark-matter-as-a-possible-new-energy-source/" aria-label="Open the post: Dark Matter As A Possible New Energy Source">
+      
+          Dark Matter As A Possible New Energy Source
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2023-02-18T11:18:19&#43;01:00">
+        
+  February 18, 2023
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt">
+      
+        Basically, there is idea for engine: Dark Matter engine uses Dark Matter particles annihilation remnants as propulsion.
+Basically, you can have a engine in shape of cube, then you have a high pressure on it. Then just remove one side of cube, place where remnants can exit. Which in result propels the cube.
+More about this is written in this paper by Jia Liu. PDF
+      
+      <p>
+        
+          <a href="https://youshitsune.me/2023/02/dark-matter-as-a-possible-new-energy-source/" class="postShorten-excerpt_link link" aria-label="Open the post: Dark Matter As A Possible New Energy Source">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+          
+
+        </section>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2023 Youshitsune. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+    </div>
     
     <div id="about">
   <div id="about-card">

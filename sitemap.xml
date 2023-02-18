@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://youshitsune.me/categories/</loc>
+    <lastmod>2023-02-18T11:18:19+01:00</lastmod>
+  </url><url>
+    <loc>https://youshitsune.me/categories/dark-matter/</loc>
+    <lastmod>2023-02-18T11:18:19+01:00</lastmod>
+  </url><url>
     <loc>https://youshitsune.me/2023/02/dark-matter-as-a-possible-new-energy-source/</loc>
     <lastmod>2023-02-18T11:18:19+01:00</lastmod>
   </url><url>
@@ -10,7 +16,5 @@
   </url><url>
     <loc>https://youshitsune.me/</loc>
     <lastmod>2023-02-18T11:18:19+01:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.me/categories/</loc>
   </url>
 </urlset>

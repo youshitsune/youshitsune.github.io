@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="https://youshitsune.me/2023/dark-matter-possible-new-energy-source/" />
+  <link rel="next" href="https://youshitsune.me/2023/could-we-really-be-made-of-swiss-cheese/" />
+  <link rel="canonical" href="https://youshitsune.me/2023/attention-is-all-you-need/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Attention is all you need | Youshitsune
+       
+  </title>
+  <meta name="title" content="Attention is all you need | Youshitsune">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Attention is all you need"/>
+<meta name="twitter:description" content="&ldquo;Attention is all you need&rdquo; is a research paper that proposes a new way of making an AI.
+Attention is mapping a query and a set of key-value pairs to an output, all of which are vectors: the query, the keys, and the values. The results are calculated as a weighted sum of the values, ith each value&rsquo;s weight determined by the query&rsquo;s compatibility function with its corresponding key.
+There are to type of attentions:"/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Attention is all you need",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https:\/\/youshitsune.me\/2023\/attention-is-all-you-need\/"
+  },
+  
+  "genre": "posts",
+  
+  "wordcount":  149 ,
+  "url": "https:\/\/youshitsune.me\/2023\/attention-is-all-you-need\/",
+  "datePublished": "2023-02-19T05:55:30\u002b01:00",
+  "dateModified": "2023-02-19T05:55:30\u002b01:00",
+  
+  
+  
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="https://youshitsune.me">Youshitsune</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="https://github.com/youshitsune/" title="">Projects</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;<a href="https://youshitsune.me">Youshitsune</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="https://github.com/youshitsune/" title="">Projects</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Attention is all you need</h1>
+        <div class="post-meta">
+            Written by <a href="https://youshitsune.me" rel="author"></a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2023-02-19 >19 February 2023</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://youshitsune.me/categories/ai/"> ai </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                1 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <p>&ldquo;Attention is all you need&rdquo; is a research paper that proposes a new way of making an AI.</p>
+<p>Attention is mapping a query and a set of key-value pairs to an output, all of which are vectors: the query, the keys, and the values.
+The results are calculated as a weighted sum of the values, ith each value&rsquo;s weight determined by the query&rsquo;s compatibility function with its corresponding key.</p>
+<p>There are to type of attentions:</p>
+<ul>
+<li>Self-attention</li>
+<li>Cross-attention</li>
+</ul>
+<p>A word about cross-attention is gonna be some other time.</p>
+<p>Self-attention is mechanism that links various positions in a single sequence to create a representation of the sequence.
+Reading comprehension, abstractive summarization, textual entailment, and the acquisition of task-independent phrase representation are just a few of the activities in which self-attention has been successfully applied.</p>
+<p>More about this you can read in &ldquo;Attention is all you need&rdquo;. Here is <a href="https://youshitsune.me/pdf/Attention_is_all_you_need.pdf">PDF</a> of it.</p>
+
+    </div>
+
+    <div class="post-copyright">
+            
+           
+            <p class="copyright-item">
+                    <span>Words:</span>
+                   <span>149</span>
+            </p>
+
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=https%3a%2f%2fyoushitsune.me%2f2023%2fattention-is-all-you-need%2f&amp;text=Attention%20is%20all%20you%20need&amp;via=youshisune" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fyoushitsune.me%2f2023%2fattention-is-all-you-need%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fyoushitsune.me%2f2023%2fattention-is-all-you-need%2f&amp;title=Attention%20is%20all%20you%20need" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+
+</span>
+                
+            </p>
+
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="https://youshitsune.me">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://youshitsune.me/2023/dark-matter-possible-new-energy-source/" class="prev" rel="prev" title="Dark Matter As A Possible New Energy Source"><i class="iconfont icon-dajiantou"></i>&nbsp;Dark Matter As A Possible New Energy Source</a>
+         
+        
+        <a href="https://youshitsune.me/2023/could-we-really-be-made-of-swiss-cheese/" class="next" rel="next" title="Could We Really Be Made of Swiss Cheese?">Could We Really Be Made of Swiss Cheese?&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      (function() {
+          
+          
+          if (window.location.hostname == "localhost")
+              return;
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          var disqus_shortname = 'youshitsune';
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+ 
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+         
+
+		  <span>Crafted with ❤️ by <a href="https://github.com/Fastbyte01/KeepIt" target="_blank" rel="external nofollow noopener noreffer">KeepIt</a> & <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a></span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

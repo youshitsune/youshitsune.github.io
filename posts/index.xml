@@ -5,8 +5,54 @@
         <description>Recent content in Posts on Youshitsune</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 17 May 2023 20:42:25 +0200</lastBuildDate>
+        <lastBuildDate>Mon, 22 May 2023 12:45:14 +0200</lastBuildDate>
         <atom:link href="https://youshitsune.me/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Configuring Weechat Proxy to Use Tor</title>
+            <link>https://youshitsune.me/posts/configuring-weechat-proxy-to-use-tor/</link>
+            <pubDate>Mon, 22 May 2023 12:45:14 +0200</pubDate>
+            
+            <guid>https://youshitsune.me/posts/configuring-weechat-proxy-to-use-tor/</guid>
+            <description>If you are lover of privacy like I am, you&amp;rsquo;ll love this configuration.
+TOR Firstly, you need to start tor.
+sudo systemctl start tor Then add proxy with this command
+/proxy add tor socks5 127.0.0.1 9050 If you want to setup when you connect to any irc server to use proxy, execute this command
+/set irc.server_default.proxy &amp;#34;tor&amp;#34; But, if you want for specific server run this
+/set irc.server.server_name.proxy &amp;#34;tor&amp;#34; Of course you should change server_name with server name.</description>
+            <content type="html"><![CDATA[<p>If you are lover of privacy like I am, you&rsquo;ll love this configuration.</p>
+<h3 id="tor">TOR</h3>
+<p>Firstly, you need to start tor.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start tor
+</span></span></code></pre></div><p>Then add proxy with this command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/proxy add tor socks5 127.0.0.1 <span style="color:#ae81ff">9050</span>
+</span></span></code></pre></div><p>If you want to setup when you connect to any irc server to use proxy, execute this command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/set irc.server_default.proxy <span style="color:#e6db74">&#34;tor&#34;</span>
+</span></span></code></pre></div><p>But, if you want for specific server run this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/set irc.server.server_name.proxy <span style="color:#e6db74">&#34;tor&#34;</span>
+</span></span></code></pre></div><p>Of course you should change server_name with server name.</p>
+<p>Tor and ssl_verify don&rsquo;t like each other so you must turn ssl_verify off.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/set irc.server.server_name.ssl_verify off
+</span></span></code></pre></div><p>You can also set this for every irc server, but I don&rsquo;t recommend it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/set irc.server_default.ssl_verify off
+</span></span></code></pre></div><h3 id="enhance-your-privacy">Enhance your privacy</h3>
+<p>If you want to enhance your privacy run this commands.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/set irc.server_default.msg_part <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.server_default.msg_quit <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.clientinfo <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.finger <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.source <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.time <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.userinfo <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.version <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.ping <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/plugin unload xfer
+</span></span><span style="display:flex;"><span>/set weechat.plugin.autoload <span style="color:#e6db74">&#34;*,!xfer&#34;</span>
+</span></span></code></pre></div><p>After all this you just need to run one more command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/save
+</span></span></code></pre></div><p>And that&rsquo;s it, you have irc tor proxy.</p>
+]]></content>
+        </item>
         
         <item>
             <title>My New Look on How to Be Productive</title>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ai on Youshitsune</title>
-    <link>https://youshitsune.me/categories/ai/</link>
+    <link>https://youshitsune.fr.to/categories/ai/</link>
     <description>Recent content in ai on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Feb 2023 05:55:30 +0100</lastBuildDate><atom:link href="https://youshitsune.me/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Feb 2023 05:55:30 +0100</lastBuildDate><atom:link href="https://youshitsune.fr.to/categories/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Attention is all you need</title>
-      <link>https://youshitsune.me/posts/attention-is-all-you-need/</link>
+      <link>https://youshitsune.fr.to/posts/attention-is-all-you-need/</link>
       <pubDate>Sun, 19 Feb 2023 05:55:30 +0100</pubDate>
       
-      <guid>https://youshitsune.me/posts/attention-is-all-you-need/</guid>
+      <guid>https://youshitsune.fr.to/posts/attention-is-all-you-need/</guid>
       <description>&amp;ldquo;Attention is all you need&amp;rdquo; is a research paper that proposes a new way of making an AI.
 Attention is mapping a query and a set of key-value pairs to an output, all of which are vectors: the query, the keys, and the values. The results are calculated as a weighted sum of the values, ith each value&amp;rsquo;s weight determined by the query&amp;rsquo;s compatibility function with its corresponding key.
 There are to type of attentions:</description>

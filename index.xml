@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Youshitsune</title>
-    <link>https://youshitsune.me/</link>
+    <link>https://youshitsune.fr.to/</link>
     <description>Recent content on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 May 2023 12:45:14 +0200</lastBuildDate><atom:link href="https://youshitsune.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 12:45:14 +0200</lastBuildDate><atom:link href="https://youshitsune.fr.to/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuring Weechat Proxy to Use Tor</title>
-      <link>https://youshitsune.me/posts/configuring-weechat-proxy-to-use-tor/</link>
+      <link>https://youshitsune.fr.to/posts/configuring-weechat-proxy-to-use-tor/</link>
       <pubDate>Mon, 22 May 2023 12:45:14 +0200</pubDate>
       
-      <guid>https://youshitsune.me/posts/configuring-weechat-proxy-to-use-tor/</guid>
+      <guid>https://youshitsune.fr.to/posts/configuring-weechat-proxy-to-use-tor/</guid>
       <description>If you are lover of privacy like I am, you&amp;rsquo;ll love this configuration.
 TOR Firstly, you need to start tor.
 sudo systemctl start tor Then add proxy with this command
@@ -23,10 +23,10 @@ sudo systemctl start tor Then add proxy with this command
     
     <item>
       <title>My New Look on How to Be Productive</title>
-      <link>https://youshitsune.me/posts/my-new-look-on-how-to-be-productive/</link>
+      <link>https://youshitsune.fr.to/posts/my-new-look-on-how-to-be-productive/</link>
       <pubDate>Wed, 17 May 2023 20:42:25 +0200</pubDate>
       
-      <guid>https://youshitsune.me/posts/my-new-look-on-how-to-be-productive/</guid>
+      <guid>https://youshitsune.fr.to/posts/my-new-look-on-how-to-be-productive/</guid>
       <description>I&amp;rsquo;ve researched on some ways to be productive(i.e. wasting my damn time). And I completely overlooked the calendar.
 Now you should manage your time in blocks. That means for every task you block a time in calendar. One that works for me is Google Calendar, yes I know Google! But I can&amp;rsquo;t found reliable alternative if you&amp;rsquo;ve some alternative mail me.
 With this method I know at what time I supposed to do something.</description>
@@ -34,28 +34,28 @@ With this method I know at what time I supposed to do something.</description>
     
     <item>
       <title>Started My Journey on Envs.net</title>
-      <link>https://youshitsune.me/posts/started-my-journey-on-envs.net/</link>
+      <link>https://youshitsune.fr.to/posts/started-my-journey-on-envs.net/</link>
       <pubDate>Thu, 13 Apr 2023 07:46:40 +0200</pubDate>
       
-      <guid>https://youshitsune.me/posts/started-my-journey-on-envs.net/</guid>
+      <guid>https://youshitsune.fr.to/posts/started-my-journey-on-envs.net/</guid>
       <description>I&amp;rsquo;ve started my journey on envs.net. It&amp;rsquo;s minimalistic tilde server. All of my journey updates are going to be here.</description>
     </item>
     
     <item>
       <title>I&#39;ve Set Up My Gemini Capsule</title>
-      <link>https://youshitsune.me/posts/ive-set-up-my-gemini-capsule/</link>
+      <link>https://youshitsune.fr.to/posts/ive-set-up-my-gemini-capsule/</link>
       <pubDate>Sun, 09 Apr 2023 16:53:46 +0200</pubDate>
       
-      <guid>https://youshitsune.me/posts/ive-set-up-my-gemini-capsule/</guid>
+      <guid>https://youshitsune.fr.to/posts/ive-set-up-my-gemini-capsule/</guid>
       <description>I&amp;rsquo;ve finally set up my gemini capsule. You can access it at koyu.space/youshitsune.</description>
     </item>
     
     <item>
       <title>Could We Really Be Made of Swiss Cheese?</title>
-      <link>https://youshitsune.me/posts/could-we-really-be-made-of-swiss-cheese/</link>
+      <link>https://youshitsune.fr.to/posts/could-we-really-be-made-of-swiss-cheese/</link>
       <pubDate>Mon, 13 Mar 2023 16:26:42 +0100</pubDate>
       
-      <guid>https://youshitsune.me/posts/could-we-really-be-made-of-swiss-cheese/</guid>
+      <guid>https://youshitsune.fr.to/posts/could-we-really-be-made-of-swiss-cheese/</guid>
       <description>&amp;ldquo;Could we really be made of Swiss cheese?&amp;rdquo; is paper that explains xenobiology. It&amp;rsquo;s really great introduction to xenobiology. I recommend to read it. PDF
 Xenobiology studies life with alternate way to get energy.
 Information =&amp;gt; DNA -&amp;gt; Protein Form =&amp;gt; Life as series of innate patterns Metabolism &amp;lt;-&amp;gt; Information =&amp;gt; Life as process of chemical transformation of substances Information &amp;lt;-&amp;gt; Form =&amp;gt; Life as flow of information Energy&amp;lt;-&amp;gt; Form =&amp;gt; Life as energy flow Metabolism &amp;lt;-&amp;gt; Energy =&amp;gt; Life as thermodynamic and kinetic process Xenobiology can provide potential medical and biosafety applications, as well as challenge the foundations of biological engineering.</description>
@@ -63,10 +63,10 @@ Information =&amp;gt; DNA -&amp;gt; Protein Form =&amp;gt; Life as series of inn
     
     <item>
       <title>Attention is all you need</title>
-      <link>https://youshitsune.me/posts/attention-is-all-you-need/</link>
+      <link>https://youshitsune.fr.to/posts/attention-is-all-you-need/</link>
       <pubDate>Sun, 19 Feb 2023 05:55:30 +0100</pubDate>
       
-      <guid>https://youshitsune.me/posts/attention-is-all-you-need/</guid>
+      <guid>https://youshitsune.fr.to/posts/attention-is-all-you-need/</guid>
       <description>&amp;ldquo;Attention is all you need&amp;rdquo; is a research paper that proposes a new way of making an AI.
 Attention is mapping a query and a set of key-value pairs to an output, all of which are vectors: the query, the keys, and the values. The results are calculated as a weighted sum of the values, ith each value&amp;rsquo;s weight determined by the query&amp;rsquo;s compatibility function with its corresponding key.
 There are to type of attentions:</description>
@@ -74,10 +74,10 @@ There are to type of attentions:</description>
     
     <item>
       <title>Dark Matter As A Possible New Energy Source</title>
-      <link>https://youshitsune.me/posts/dark-matter-possible-new-energy-source/</link>
+      <link>https://youshitsune.fr.to/posts/dark-matter-possible-new-energy-source/</link>
       <pubDate>Sat, 18 Feb 2023 11:18:19 +0100</pubDate>
       
-      <guid>https://youshitsune.me/posts/dark-matter-possible-new-energy-source/</guid>
+      <guid>https://youshitsune.fr.to/posts/dark-matter-possible-new-energy-source/</guid>
       <description>Basically, there is idea for engine: Dark Matter engine uses Dark Matter particles annihilation remnants as propulsion.
 Basically, you can have a engine in shape of cube, then you have a high pressure on it. Then just remove one side of cube, place where remnants can exit. Which in result propels the cube.
 More about this is written in this paper by Jia Liu. PDF</description>

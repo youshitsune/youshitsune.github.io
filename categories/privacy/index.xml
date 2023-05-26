@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>privacy on Youshitsune</title>
-    <link>https://youshitsune.fr.to/categories/privacy/</link>
+    <link>https://youshitsune.tech/categories/privacy/</link>
     <description>Recent content in privacy on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 May 2023 12:45:14 +0200</lastBuildDate><atom:link href="https://youshitsune.fr.to/categories/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 12:45:14 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/categories/privacy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuring Weechat Proxy to Use Tor</title>
-      <link>https://youshitsune.fr.to/posts/configuring-weechat-proxy-to-use-tor/</link>
+      <link>https://youshitsune.tech/posts/configuring-weechat-proxy-to-use-tor/</link>
       <pubDate>Mon, 22 May 2023 12:45:14 +0200</pubDate>
       
-      <guid>https://youshitsune.fr.to/posts/configuring-weechat-proxy-to-use-tor/</guid>
+      <guid>https://youshitsune.tech/posts/configuring-weechat-proxy-to-use-tor/</guid>
       <description>If you are lover of privacy like I am, you&amp;rsquo;ll love this configuration.
 TOR Firstly, you need to start tor.
 sudo systemctl start tor Then add proxy with this command

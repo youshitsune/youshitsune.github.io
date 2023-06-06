@@ -6,7 +6,18 @@
     <description>Recent content on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 May 2023 12:45:14 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jun 2023 06:50:55 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Created New Service - RADIANA</title>
+      <link>https://youshitsune.tech/posts/created-new-service-radiana/</link>
+      <pubDate>Tue, 06 Jun 2023 06:50:55 +0200</pubDate>
+      
+      <guid>https://youshitsune.tech/posts/created-new-service-radiana/</guid>
+      <description>I&amp;rsquo;ve built my own currency system, which you can access at https://rad.youshitsune.tech.
+It&amp;rsquo;s open-source, everything is open-source except database.
+It&amp;rsquo;s open for registration, if you want some of it just send me mail with title &amp;ldquo;Want Radiana&amp;rdquo;.</description>
+    </item>
+    
     <item>
       <title>Configuring Weechat Proxy to Use Tor</title>
       <link>https://youshitsune.tech/posts/configuring-weechat-proxy-to-use-tor/</link>
@@ -89,7 +100,7 @@ More about this is written in this paper by Jia Liu. PDF</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://youshitsune.tech/services/</guid>
-      <description>Services SearXNG A privacy-respecting, open metasearch engine URL: https://searxng.youshitsune.tech Source code: https://github.com/searxng/searxng Snowflake Snowflake is a system that allows people from all over the world to access censored websites and applications.
+      <description>Services Radiana My currency system URL: https://rad.youshitsune.tech/ Source code: https://github.com/youshitsune/radiana SearXNG A privacy-respecting, open metasearch engine URL: https://searxng.youshitsune.tech Source code: https://github.com/searxng/searxng Snowflake Snowflake is a system that allows people from all over the world to access censored websites and applications.
 URL: https://youshitsune.tech/snowflake </description>
     </item>
     

@@ -6,7 +6,34 @@
     <description>Recent content in Categories on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Jun 2023 06:50:55 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jun 2023 15:50:37 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>open-source</title>
+      <link>https://youshitsune.tech/categories/open-source/</link>
+      <pubDate>Thu, 15 Jun 2023 15:50:37 +0200</pubDate>
+      
+      <guid>https://youshitsune.tech/categories/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>suckless</title>
+      <link>https://youshitsune.tech/categories/suckless/</link>
+      <pubDate>Thu, 15 Jun 2023 15:50:37 +0200</pubDate>
+      
+      <guid>https://youshitsune.tech/categories/suckless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>https://youshitsune.tech/categories/tech/</link>
+      <pubDate>Thu, 15 Jun 2023 15:50:37 +0200</pubDate>
+      
+      <guid>https://youshitsune.tech/categories/tech/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>currency</title>
       <link>https://youshitsune.tech/categories/currency/</link>
@@ -49,15 +76,6 @@
       <pubDate>Mon, 22 May 2023 12:45:14 +0200</pubDate>
       
       <guid>https://youshitsune.tech/categories/privacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tech</title>
-      <link>https://youshitsune.tech/categories/tech/</link>
-      <pubDate>Mon, 22 May 2023 12:45:14 +0200</pubDate>
-      
-      <guid>https://youshitsune.tech/categories/tech/</guid>
       <description></description>
     </item>
     

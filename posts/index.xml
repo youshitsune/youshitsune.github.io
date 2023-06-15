@@ -5,8 +5,23 @@
         <description>Recent content in Posts on Youshitsune</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 06 Jun 2023 06:50:55 +0200</lastBuildDate>
+        <lastBuildDate>Thu, 15 Jun 2023 15:50:37 +0200</lastBuildDate>
         <atom:link href="https://youshitsune.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Going Step Closer to Full Suckless</title>
+            <link>https://youshitsune.tech/posts/going-step-closer-to-full-suckless/</link>
+            <pubDate>Thu, 15 Jun 2023 15:50:37 +0200</pubDate>
+            
+            <guid>https://youshitsune.tech/posts/going-step-closer-to-full-suckless/</guid>
+            <description>Today, I was scrolling through suckless rocks page, as every other suckless user. And I saw section for shells, installed yash shell.
+I have to admit this is one of the best shells I used. It has functionality like fish shell, but script syntax like bash. Which I really love.
+So, that&amp;rsquo;s it. I&amp;rsquo;m one step closer to Full Suckless.</description>
+            <content type="html"><![CDATA[<p>Today, I was scrolling through suckless rocks page, as every other suckless user. And I saw section for shells, installed yash shell.</p>
+<p>I have to admit this is one of the best shells I used. It has functionality like fish shell, but script syntax like bash. Which I really love.</p>
+<p>So, that&rsquo;s it. I&rsquo;m one step closer to Full Suckless.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Created New Service - RADIANA</title>

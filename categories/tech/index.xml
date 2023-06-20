@@ -6,7 +6,18 @@
     <description>Recent content in tech on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jun 2023 15:50:37 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Jun 2023 06:50:28 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hosting LibreX</title>
+      <link>https://youshitsune.tech/posts/hosting-librex/</link>
+      <pubDate>Tue, 20 Jun 2023 06:50:28 +0200</pubDate>
+      
+      <guid>https://youshitsune.tech/posts/hosting-librex/</guid>
+      <description>What is LibreX? LibreX is meta-search engine which gives you results from Google, Qwant, Ahmia and popular torrent sites without spying on you. LibreX doesn&amp;rsquo;t save any type of data about the user, there are no logs, no caches.
+How to host LibreX in Docker container? To host librex in a Docker container, just use this command:
+docker run -d --name librex \ -e TZ=&amp;#34;America/New_York&amp;#34; \ -e CONFIG_GOOGLE_DOMAIN=&amp;#34;com&amp;#34; \ -e CONFIG_GOOGLE_LANGUAGE=&amp;#34;en&amp;#34; \ -p 8080:8080 \ librex/librex:latest How to host LibreX with Docker compose?</description>
+    </item>
+    
     <item>
       <title>Going Step Closer to Full Suckless</title>
       <link>https://youshitsune.tech/posts/going-step-closer-to-full-suckless/</link>

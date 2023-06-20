@@ -5,8 +5,52 @@
         <description>Recent content in Posts on Youshitsune</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 15 Jun 2023 15:50:37 +0200</lastBuildDate>
+        <lastBuildDate>Tue, 20 Jun 2023 06:50:28 +0200</lastBuildDate>
         <atom:link href="https://youshitsune.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Hosting LibreX</title>
+            <link>https://youshitsune.tech/posts/hosting-librex/</link>
+            <pubDate>Tue, 20 Jun 2023 06:50:28 +0200</pubDate>
+            
+            <guid>https://youshitsune.tech/posts/hosting-librex/</guid>
+            <description>What is LibreX? LibreX is meta-search engine which gives you results from Google, Qwant, Ahmia and popular torrent sites without spying on you. LibreX doesn&amp;rsquo;t save any type of data about the user, there are no logs, no caches.
+How to host LibreX in Docker container? To host librex in a Docker container, just use this command:
+docker run -d --name librex \ -e TZ=&amp;#34;America/New_York&amp;#34; \ -e CONFIG_GOOGLE_DOMAIN=&amp;#34;com&amp;#34; \ -e CONFIG_GOOGLE_LANGUAGE=&amp;#34;en&amp;#34; \ -p 8080:8080 \ librex/librex:latest How to host LibreX with Docker compose?</description>
+            <content type="html"><![CDATA[<h2 id="what-is-librex">What is LibreX?</h2>
+<p>LibreX is meta-search engine which gives you results from Google, Qwant, Ahmia and popular torrent sites without spying on you.
+LibreX doesn&rsquo;t save any type of data about the user, there are no logs, no caches.</p>
+<h2 id="how-to-host-librex-in-docker-container">How to host LibreX in Docker container?</h2>
+<p>To host librex in a Docker container, just use this command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d --name librex <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -e TZ<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;America/New_York&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -e CONFIG_GOOGLE_DOMAIN<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;com&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -e CONFIG_GOOGLE_LANGUAGE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -p 8080:8080 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    librex/librex:latest
+</span></span></code></pre></div><h2 id="how-to-host-librex-with-docker-compose">How to host LibreX with Docker compose?</h2>
+<p>This is your <strong>docker-compose.yml</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#34;2.1&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">librex</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">librex/librex:latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">librex</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">network_mode</span>: <span style="color:#ae81ff">bridge</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">8080</span>:<span style="color:#ae81ff">8080</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">PUID=1000</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">PGID=1000</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">VERSION=docker</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">TZ=&#34;America/New_York&#34;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">CONFIG_GOOGLE_DOMAIN=&#34;com&#34;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">CONFIG_GOOGLE_LANGUAGE=&#34;en&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./nginx_logs:/var/log/nginx</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./php_logs:/var/log/php7</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span></code></pre></div>]]></content>
+        </item>
         
         <item>
             <title>Going Step Closer to Full Suckless</title>

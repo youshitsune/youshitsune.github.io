@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>qiskit on Youshitsune</title>
+    <link>https://youshitsune.tech/categories/qiskit/</link>
+    <description>Recent content in qiskit on Youshitsune</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Jun 2023 12:53:34 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/categories/qiskit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bernstein-Vazirani Algorithm Implementation in Qiskit</title>
+      <link>https://youshitsune.tech/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/</link>
+      <pubDate>Tue, 20 Jun 2023 12:53:34 +0200</pubDate>
+      
+      <guid>https://youshitsune.tech/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/</guid>
+      <description>It is a restricted version of the Deutsch-Jozsa algorithm where instead of distinguishing between two different classes of functions, it tries to learn a string encoded in a function.
+Here is implementation for Bernstein-Vaziarini algorithm:
+from qiskit import * %matplotlib inline from qiskit.tools.visualization import plot_histogram num = &amp;#39;101001&amp;#39; circuit = QuantumCircuit(len(num)+1, len(num)) circuit.h(range(len(num))) circuit.x(len(num)) circuit.h(len(num)) circuit.barrier() &amp;lt;qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e80&amp;gt; for i, val in enumerate(reversed(num)): if val == &amp;#34;1&amp;#34;: circuit.cx(i,6) circuit.barrier() circuit.</description>
+    </item>
+    
+  </channel>
+</rss>

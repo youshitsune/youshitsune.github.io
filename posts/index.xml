@@ -5,8 +5,51 @@
         <description>Recent content in Posts on Youshitsune</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 20 Jun 2023 06:50:28 +0200</lastBuildDate>
+        <lastBuildDate>Tue, 20 Jun 2023 12:53:34 +0200</lastBuildDate>
         <atom:link href="https://youshitsune.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Bernstein-Vazirani Algorithm Implementation in Qiskit</title>
+            <link>https://youshitsune.tech/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/</link>
+            <pubDate>Tue, 20 Jun 2023 12:53:34 +0200</pubDate>
+            
+            <guid>https://youshitsune.tech/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/</guid>
+            <description>It is a restricted version of the Deutsch-Jozsa algorithm where instead of distinguishing between two different classes of functions, it tries to learn a string encoded in a function.
+Here is implementation for Bernstein-Vaziarini algorithm:
+from qiskit import * %matplotlib inline from qiskit.tools.visualization import plot_histogram num = &amp;#39;101001&amp;#39; circuit = QuantumCircuit(len(num)+1, len(num)) circuit.h(range(len(num))) circuit.x(len(num)) circuit.h(len(num)) circuit.barrier() &amp;lt;qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e80&amp;gt; for i, val in enumerate(reversed(num)): if val == &amp;#34;1&amp;#34;: circuit.cx(i,6) circuit.barrier() circuit.</description>
+            <content type="html"><![CDATA[<p>It is a restricted version of the Deutsch-Jozsa algorithm where instead of distinguishing between two different classes of functions, it tries to learn a string encoded in a function.</p>
+<p>Here is implementation for Bernstein-Vaziarini algorithm:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> qiskit <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">%</span>matplotlib inline
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> qiskit.tools.visualization <span style="color:#f92672">import</span> plot_histogram
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>num <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;101001&#39;</span>
+</span></span><span style="display:flex;"><span>circuit <span style="color:#f92672">=</span> QuantumCircuit(len(num)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, len(num))
+</span></span><span style="display:flex;"><span>circuit<span style="color:#f92672">.</span>h(range(len(num)))
+</span></span><span style="display:flex;"><span>circuit<span style="color:#f92672">.</span>x(len(num))
+</span></span><span style="display:flex;"><span>circuit<span style="color:#f92672">.</span>h(len(num))
+</span></span><span style="display:flex;"><span>circuit<span style="color:#f92672">.</span>barrier()
+</span></span></code></pre></div><pre><code>&lt;qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e80&gt;
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i, val <span style="color:#f92672">in</span> enumerate(reversed(num)):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> val <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;1&#34;</span>:
+</span></span><span style="display:flex;"><span>        circuit<span style="color:#f92672">.</span>cx(i,<span style="color:#ae81ff">6</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>circuit<span style="color:#f92672">.</span>barrier()
+</span></span><span style="display:flex;"><span>circuit<span style="color:#f92672">.</span>h(range(len(num)))
+</span></span></code></pre></div><pre><code>&lt;qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e20&gt;
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>circuit<span style="color:#f92672">.</span>measure(range(len(num)), range(len(num)))
+</span></span></code></pre></div><pre><code>&lt;qiskit.circuit.instructionset.InstructionSet at 0x6370e006d5a0&gt;
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>circuit<span style="color:#f92672">.</span>draw(output<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;mpl&#39;</span>)
+</span></span></code></pre></div><p><img src="/images/output_5_0.png" alt="png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sim <span style="color:#f92672">=</span> Aer<span style="color:#f92672">.</span>get_backend(<span style="color:#e6db74">&#39;qasm_simulator&#39;</span>)
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> execute(circuit, sim, shots <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">.</span>result()
+</span></span><span style="display:flex;"><span>counts <span style="color:#f92672">=</span> result<span style="color:#f92672">.</span>get_counts()
+</span></span><span style="display:flex;"><span>print(counts)
+</span></span></code></pre></div><pre><code>{'101001': 1}
+</code></pre>
+]]></content>
+        </item>
         
         <item>
             <title>Hosting LibreX</title>

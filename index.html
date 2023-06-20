@@ -201,6 +201,42 @@
                 <div class="posts">
                 
                 <div class="post on-list">
+                    <h1 class="post-title"><a href="https://youshitsune.tech/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/">Bernstein-Vazirani Algorithm Implementation in Qiskit</a></h1>
+                    <div class="post-meta">
+                    
+                        <span class="post-date">
+                        2023-06-20
+                        </span>
+                        
+                    
+                        <br>
+                    
+                        <i class="fa-solid fa-clock"></i>
+                        One minute
+                    
+                    </div>
+                    
+                    <div class="post-content">
+                        
+                            
+                                It is a restricted version of the Deutsch-Jozsa algorithm where instead of distinguishing between two different classes of functions, it tries to learn a string encoded in a function.
+Here is implementation for Bernstein-Vaziarini algorithm:
+from qiskit import * %matplotlib inline from qiskit.tools.visualization import plot_histogram num = &#39;101001&#39; circuit = QuantumCircuit(len(num)+1, len(num)) circuit.h(range(len(num))) circuit.x(len(num)) circuit.h(len(num)) circuit.barrier() &lt;qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e80&gt; for i, val in enumerate(reversed(num)): if val == &#34;1&#34;: circuit.cx(i,6) circuit.barrier() circuit.
+                            
+                        
+                    </div>
+                    
+                        
+                        <div> 
+                            <a class="read-more" href="/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/">
+                                Read more ...
+                            </a>
+                        </div>
+                        
+                    
+                </div> 
+            
+                <div class="post on-list">
                     <h1 class="post-title"><a href="https://youshitsune.tech/posts/hosting-librex/">Hosting LibreX</a></h1>
                     <div class="post-meta">
                     
@@ -229,38 +265,6 @@ docker run -d --name librex \ -e TZ=&#34;America/New_York&#34; \ -e CONFIG_GOOGL
                         
                         <div> 
                             <a class="read-more" href="/posts/hosting-librex/">
-                                Read more ...
-                            </a>
-                        </div>
-                        
-                    
-                </div> 
-            
-                <div class="post on-list">
-                    <h1 class="post-title"><a href="https://youshitsune.tech/posts/going-step-closer-to-full-suckless/">Going Step Closer to Full Suckless</a></h1>
-                    <div class="post-meta">
-                    
-                        <span class="post-date">
-                        2023-06-15
-                        </span>
-                        
-                    
-                        <br>
-                    
-                        <i class="fa-solid fa-clock"></i>
-                        One minute
-                    
-                    </div>
-                    
-                    <div class="post-content">
-                        
-                            
-                        
-                    </div>
-                    
-                        
-                        <div> 
-                            <a class="read-more" href="/posts/going-step-closer-to-full-suckless/">
                                 Read more ...
                             </a>
                         </div>

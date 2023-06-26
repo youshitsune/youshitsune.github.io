@@ -6,7 +6,16 @@
     <description>Recent content on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Jun 2023 12:53:34 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Jun 2023 09:23:15 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Local Reality and the CHSH Inequality</title>
+      <link>https://youshitsune.tech/posts/local-reality-and-the-chsh-inequality/</link>
+      <pubDate>Mon, 26 Jun 2023 09:23:15 +0200</pubDate>
+      
+      <guid>https://youshitsune.tech/posts/local-reality-and-the-chsh-inequality/</guid>
+      <description>The CHSH game is a thought experiment involving two parties separated at a great distance (far enough to preclude classical communication at the speed of light), each of whom has access to one half of an entangled two-qubit pair. Analysis of this game shows that no classical local hidden-variable theory can explain the correlations that can result from entanglement. Since this game is indeed physically realizable, this gives strong evidence that classical physics is fundamentally incapable of explaining certain quantum phenomena, at least in a &amp;ldquo;local&amp;rdquo; fashion.</description>
+    </item>
+    
     <item>
       <title>Bernstein-Vazirani Algorithm Implementation in Qiskit</title>
       <link>https://youshitsune.tech/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/</link>

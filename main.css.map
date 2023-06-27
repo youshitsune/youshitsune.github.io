@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/home/luka/Projects/youshitsune.github.io",
+	"sourceRoot": "/home/youshitsune/Projects/youshitsune.github.io",
 	"sources": [
 		"themes/hello-youshitsune/assets/scss/main.scss",
 		"themes/hello-youshitsune/assets/scss/_normalize.scss",

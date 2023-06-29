@@ -1,2 +1,1 @@
-#!/bin/sh
-/root/.cargo/bin/agate --content /root/content --addr [::]:1965 --addr 0.0.0.0:1965 --hostname $DOMAIN --lang en-US
+/root/.cargo/bin/agate --content /root/content --addr [::]:1965 --addr 0.0.0.0:1965 --hostname $DOMAIN --lang en-US &

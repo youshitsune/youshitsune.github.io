@@ -1,6 +1,3 @@
 #!/bin/sh
 
-read -p "What is the path of your content(absolute path): " content
-read -p "What domain you use: " hostname
-
-/root/.cargo/bin/agate --content $content --addr [::]:1965 --addr 0.0.0.0:1965 --hostname $hostname --lang en-US &
+/root/.cargo/bin/agate --content /root/ --addr [::]:1965 --addr 0.0.0.0:1965 --hostname $DOMAIN --lang en-US &

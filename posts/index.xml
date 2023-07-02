@@ -5,8 +5,47 @@
         <description>Recent content in Posts on Youshitsune</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 26 Jun 2023 09:23:15 +0200</lastBuildDate>
+        <lastBuildDate>Sun, 02 Jul 2023 08:54:00 +0200</lastBuildDate>
         <atom:link href="https://youshitsune.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Setup SSH Over TOR</title>
+            <link>https://youshitsune.tech/posts/setup-ssh-over-tor/</link>
+            <pubDate>Sun, 02 Jul 2023 08:54:00 +0200</pubDate>
+            
+            <guid>https://youshitsune.tech/posts/setup-ssh-over-tor/</guid>
+            <description>This is tutorial for Debian systems.
+Setting up Tor - Server First install tor.
+sudo apt install tor Then edit torrc file.
+sudo vim /etc/tor/torrc Add this to it
+HiddenServiceDir /var/lib/tor/hidden-service-example/ HiddenServicePort 22 127.0.0.1:22 HiddenServiceAuthorizeClient stealth hidden-service-example Restart tor
+sudo systemctl restart tor That&amp;rsquo;s it for the server
+Setting up Tor - Client First install tor.
+sudo apt install tor sudo systemctl start tor Then ssh into your machine
+torify user@hostname_of_your_service To get hostname run this.</description>
+            <content type="html"><![CDATA[<p>This is tutorial for Debian systems.</p>
+<h2 id="setting-up-tor---server">Setting up Tor - Server</h2>
+<p>First install tor.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install tor
+</span></span></code></pre></div><p>Then edit torrc file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo vim /etc/tor/torrc
+</span></span></code></pre></div><p>Add this to it</p>
+<pre tabindex="0"><code>HiddenServiceDir /var/lib/tor/hidden-service-example/
+HiddenServicePort 22 127.0.0.1:22
+HiddenServiceAuthorizeClient stealth hidden-service-example
+</code></pre><p>Restart tor</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart tor
+</span></span></code></pre></div><p>That&rsquo;s it for the server</p>
+<h2 id="setting-up-tor---client">Setting up Tor - Client</h2>
+<p>First install tor.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install tor
+</span></span><span style="display:flex;"><span>sudo systemctl start tor
+</span></span></code></pre></div><p>Then ssh into your machine</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>torify user@hostname_of_your_service
+</span></span></code></pre></div><p>To get hostname run this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo cat /var/lib/tor/hidden-service-example/hostname
+</span></span></code></pre></div>]]></content>
+        </item>
         
         <item>
             <title>Local Reality and the CHSH Inequality</title>

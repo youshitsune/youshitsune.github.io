@@ -197,6 +197,48 @@
                 <div class="posts">
                 
                 <div class="post on-list">
+                    <h1 class="post-title"><a href="https://youshitsune.tech/posts/setup-ssh-over-tor/">Setup SSH Over TOR</a></h1>
+                    <div class="post-meta">
+                    
+                        <span class="post-date">
+                        2023-07-02
+                        </span>
+                        
+                    
+                        <br>
+                    
+                        <i class="fa-solid fa-clock"></i>
+                        One minute
+                    
+                    </div>
+                    
+                    <div class="post-content">
+                        
+                            
+                                This is tutorial for Debian systems.
+Setting up Tor - Server First install tor.
+sudo apt install tor Then edit torrc file.
+sudo vim /etc/tor/torrc Add this to it
+HiddenServiceDir /var/lib/tor/hidden-service-example/ HiddenServicePort 22 127.0.0.1:22 HiddenServiceAuthorizeClient stealth hidden-service-example Restart tor
+sudo systemctl restart tor That&rsquo;s it for the server
+Setting up Tor - Client First install tor.
+sudo apt install tor sudo systemctl start tor Then ssh into your machine
+torify user@hostname_of_your_service To get hostname run this.
+                            
+                        
+                    </div>
+                    
+                        
+                        <div> 
+                            <a class="read-more" href="/posts/setup-ssh-over-tor/">
+                                Read more ...
+                            </a>
+                        </div>
+                        
+                    
+                </div> 
+            
+                <div class="post on-list">
                     <h1 class="post-title"><a href="https://youshitsune.tech/posts/local-reality-and-the-chsh-inequality/">Local Reality and the CHSH Inequality</a></h1>
                     <div class="post-meta">
                     
@@ -223,42 +265,6 @@
                         
                         <div> 
                             <a class="read-more" href="/posts/local-reality-and-the-chsh-inequality/">
-                                Read more ...
-                            </a>
-                        </div>
-                        
-                    
-                </div> 
-            
-                <div class="post on-list">
-                    <h1 class="post-title"><a href="https://youshitsune.tech/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/">Bernstein-Vazirani Algorithm Implementation in Qiskit</a></h1>
-                    <div class="post-meta">
-                    
-                        <span class="post-date">
-                        2023-06-20
-                        </span>
-                        
-                    
-                        <br>
-                    
-                        <i class="fa-solid fa-clock"></i>
-                        One minute
-                    
-                    </div>
-                    
-                    <div class="post-content">
-                        
-                            
-                                It is a restricted version of the Deutsch-Jozsa algorithm where instead of distinguishing between two different classes of functions, it tries to learn a string encoded in a function.
-Here is implementation for Bernstein-Vaziarini algorithm:
-from qiskit import * %matplotlib inline from qiskit.tools.visualization import plot_histogram num = &#39;101001&#39; circuit = QuantumCircuit(len(num)+1, len(num)) circuit.h(range(len(num))) circuit.x(len(num)) circuit.h(len(num)) circuit.barrier() &lt;qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e80&gt; for i, val in enumerate(reversed(num)): if val == &#34;1&#34;: circuit.cx(i,6) circuit.barrier() circuit.
-                            
-                        
-                    </div>
-                    
-                        
-                        <div> 
-                            <a class="read-more" href="/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/">
                                 Read more ...
                             </a>
                         </div>

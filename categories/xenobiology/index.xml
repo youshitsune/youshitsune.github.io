@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>xenobiology on Youshitsune</title>
+    <title>xenobiology on ~youshitsune</title>
     <link>https://youshitsune.tech/categories/xenobiology/</link>
-    <description>Recent content in xenobiology on Youshitsune</description>
+    <description>Recent content in xenobiology on ~youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
+    <copyright>© 2021–2022 [Joe Roe](https://joeroe.io) &amp; [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors).</copyright>
     <lastBuildDate>Mon, 13 Mar 2023 16:26:42 +0100</lastBuildDate><atom:link href="https://youshitsune.tech/categories/xenobiology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Could We Really Be Made of Swiss Cheese?</title>

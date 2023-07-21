@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>quantum on Youshitsune</title>
+    <title>quantum on ~youshitsune</title>
     <link>https://youshitsune.tech/categories/quantum/</link>
-    <description>Recent content in quantum on Youshitsune</description>
+    <description>Recent content in quantum on ~youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
+    <copyright>© 2021–2022 [Joe Roe](https://joeroe.io) &amp; [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors).</copyright>
     <lastBuildDate>Mon, 26 Jun 2023 09:23:15 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/categories/quantum/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Local Reality and the CHSH Inequality</title>

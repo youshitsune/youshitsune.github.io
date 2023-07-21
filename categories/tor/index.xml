@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tor on Youshitsune</title>
+    <title>tor on ~youshitsune</title>
     <link>https://youshitsune.tech/categories/tor/</link>
-    <description>Recent content in tor on Youshitsune</description>
+    <description>Recent content in tor on ~youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
+    <copyright>© 2021–2022 [Joe Roe](https://joeroe.io) &amp; [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors).</copyright>
     <lastBuildDate>Sun, 02 Jul 2023 08:54:00 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/categories/tor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setup SSH Over TOR</title>

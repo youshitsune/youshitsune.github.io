@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dark Matter on Youshitsune</title>
+    <title>Dark Matter on ~youshitsune</title>
     <link>https://youshitsune.tech/categories/dark-matter/</link>
-    <description>Recent content in Dark Matter on Youshitsune</description>
+    <description>Recent content in Dark Matter on ~youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
+    <copyright>© 2021–2022 [Joe Roe](https://joeroe.io) &amp; [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors).</copyright>
     <lastBuildDate>Sat, 18 Feb 2023 11:18:19 +0100</lastBuildDate><atom:link href="https://youshitsune.tech/categories/dark-matter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dark Matter As A Possible New Energy Source</title>

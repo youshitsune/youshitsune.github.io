@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on ~youshitsune</title>
+    <link>https://youshitsune.tech/tags/android/</link>
+    <description>Recent content in android on ~youshitsune</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2021–2022 [Joe Roe](https://joeroe.io) &amp; [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors).</copyright>
+    <lastBuildDate>Fri, 21 Jul 2023 08:18:47 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flashing Lineage OS 20 on my Samsung Galaxy A50</title>
+      <link>https://youshitsune.tech/posts/flashing-custom-rom/</link>
+      <pubDate>Fri, 21 Jul 2023 08:18:47 +0200</pubDate>
+      
+      <guid>https://youshitsune.tech/posts/flashing-custom-rom/</guid>
+      <description>Flashing Lineage OS 20 on my Samsung Galaxy A50 I always wanted to flash custom rom on my phone, but there isn&amp;rsquo;t any offical software for it.
+So, I started to search for best unoffical options.
+I&amp;rsquo;ve found Lineage OS 20 and TWRP.
+First try When, I first tried I used heimdall. And soft-bricked my phone.
+Second try Then, I found leaked version of odin for linux. I&amp;rsquo;ve flashed everything, and then lineage os was stuck at boot.</description>
+    </item>
+    
+  </channel>
+</rss>

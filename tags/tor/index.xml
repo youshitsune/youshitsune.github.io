@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tor on ~youshitsune</title>
+    <link>https://youshitsune.tech/tags/tor/</link>
+    <description>Recent content in tor on ~youshitsune</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2021–2022 [Joe Roe](https://joeroe.io) &amp; [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors).</copyright>
+    <lastBuildDate>Sun, 02 Jul 2023 08:54:00 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/tags/tor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup SSH Over TOR</title>
+      <link>https://youshitsune.tech/posts/setup-ssh-over-tor/</link>
+      <pubDate>Sun, 02 Jul 2023 08:54:00 +0200</pubDate>
+      
+      <guid>https://youshitsune.tech/posts/setup-ssh-over-tor/</guid>
+      <description>This is tutorial for Debian systems.
+Setting up Tor - Server First install tor.
+sudo apt install tor Then edit torrc file.
+sudo vim /etc/tor/torrc Add this to it
+HiddenServiceDir /var/lib/tor/hidden-service-example/ HiddenServicePort 22 127.0.0.1:22 HiddenServiceAuthorizeClient stealth hidden-service-example Restart tor
+sudo systemctl restart tor That&amp;rsquo;s it for the server
+Setting up Tor - Client First install tor.
+sudo apt install tor sudo systemctl start tor Then ssh into your machine
+torify user@hostname_of_your_service To get hostname run this.</description>
+    </item>
+    
+  </channel>
+</rss>

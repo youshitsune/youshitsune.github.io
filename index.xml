@@ -183,7 +183,7 @@ More about this is written in this paper by Jia Liu. PDF</description>
       
       <guid>https://youshitsune.tech/services/</guid>
       <description>Services LibreX Framework and javascript free privacy respecting meta search engine URL: https://search.youshitsune.tech Source code: https://github.com/hnhx/librex Private Bin A minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted in the browser using 256 bits AES. URL: https://bin.youshitsune.tech Source code: https://github.com/PrivateBin/PrivateBin Snowflake Snowflake is a system that allows people from all over the world to access censored websites and applications.
-URL: https://youshitsune.tech/snowflake </description>
+URL: https://youshitsune.tech/snowflake.html </description>
     </item>
     
   </channel>

@@ -14,15 +14,14 @@
       <pubDate>Sun, 02 Jul 2023 08:54:00 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/setup-ssh-over-tor/</guid>
-      <description>This is tutorial for Debian systems.
+      <description>Setup SSH Over TOR This is tutorial for Debian systems.
 Setting up Tor - Server First install tor.
 sudo apt install tor Then edit torrc file.
 sudo vim /etc/tor/torrc Add this to it
 HiddenServiceDir /var/lib/tor/hidden-service-example/ HiddenServicePort 22 127.0.0.1:22 HiddenServiceAuthorizeClient stealth hidden-service-example Restart tor
 sudo systemctl restart tor That&amp;rsquo;s it for the server
 Setting up Tor - Client First install tor.
-sudo apt install tor sudo systemctl start tor Then ssh into your machine
-torify user@hostname_of_your_service To get hostname run this.</description>
+sudo apt install tor sudo systemctl start tor Then ssh into your machine</description>
     </item>
     
   </channel>

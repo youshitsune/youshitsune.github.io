@@ -39,15 +39,14 @@ Second try Then, I found leaked version of odin for linux. I&amp;rsquo;ve flashe
       <pubDate>Sun, 02 Jul 2023 08:54:00 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/setup-ssh-over-tor/</guid>
-      <description>This is tutorial for Debian systems.
+      <description>Setup SSH Over TOR This is tutorial for Debian systems.
 Setting up Tor - Server First install tor.
 sudo apt install tor Then edit torrc file.
 sudo vim /etc/tor/torrc Add this to it
 HiddenServiceDir /var/lib/tor/hidden-service-example/ HiddenServicePort 22 127.0.0.1:22 HiddenServiceAuthorizeClient stealth hidden-service-example Restart tor
 sudo systemctl restart tor That&amp;rsquo;s it for the server
 Setting up Tor - Client First install tor.
-sudo apt install tor sudo systemctl start tor Then ssh into your machine
-torify user@hostname_of_your_service To get hostname run this.</description>
+sudo apt install tor sudo systemctl start tor Then ssh into your machine</description>
     </item>
     
     <item>
@@ -56,7 +55,7 @@ torify user@hostname_of_your_service To get hostname run this.</description>
       <pubDate>Mon, 26 Jun 2023 09:23:15 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/local-reality-and-the-chsh-inequality/</guid>
-      <description>The CHSH game is a thought experiment involving two parties separated at a great distance (far enough to preclude classical communication at the speed of light), each of whom has access to one half of an entangled two-qubit pair. Analysis of this game shows that no classical local hidden-variable theory can explain the correlations that can result from entanglement. Since this game is indeed physically realizable, this gives strong evidence that classical physics is fundamentally incapable of explaining certain quantum phenomena, at least in a &amp;ldquo;local&amp;rdquo; fashion.</description>
+      <description>Local Reality and the CHSH Inequality The CHSH game is a thought experiment involving two parties separated at a great distance (far enough to preclude classical communication at the speed of light), each of whom has access to one half of an entangled two-qubit pair. Analysis of this game shows that no classical local hidden-variable theory can explain the correlations that can result from entanglement. Since this game is indeed physically realizable, this gives strong evidence that classical physics is fundamentally incapable of explaining certain quantum phenomena, at least in a &amp;ldquo;local&amp;rdquo; fashion.</description>
     </item>
     
     <item>
@@ -65,9 +64,9 @@ torify user@hostname_of_your_service To get hostname run this.</description>
       <pubDate>Tue, 20 Jun 2023 12:53:34 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/</guid>
-      <description>It is a restricted version of the Deutsch-Jozsa algorithm where instead of distinguishing between two different classes of functions, it tries to learn a string encoded in a function.
+      <description>Bernstein-Vazirani Algorithm Implementation in Qiskit It is a restricted version of the Deutsch-Jozsa algorithm where instead of distinguishing between two different classes of functions, it tries to learn a string encoded in a function.
 Here is implementation for Bernstein-Vaziarini algorithm:
-from qiskit import * %matplotlib inline from qiskit.tools.visualization import plot_histogram num = &amp;#39;101001&amp;#39; circuit = QuantumCircuit(len(num)+1, len(num)) circuit.h(range(len(num))) circuit.x(len(num)) circuit.h(len(num)) circuit.barrier() &amp;lt;qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e80&amp;gt; for i, val in enumerate(reversed(num)): if val == &amp;#34;1&amp;#34;: circuit.cx(i,6) circuit.barrier() circuit.</description>
+from qiskit import * %matplotlib inline from qiskit.tools.visualization import plot_histogram num = &amp;#39;101001&amp;#39; circuit = QuantumCircuit(len(num)+1, len(num)) circuit.h(range(len(num))) circuit.x(len(num)) circuit.h(len(num)) circuit.barrier() &amp;lt;qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e80&amp;gt; for i, val in enumerate(reversed(num)): if val == &amp;#34;1&amp;#34;: circuit.</description>
     </item>
     
     <item>
@@ -76,7 +75,7 @@ from qiskit import * %matplotlib inline from qiskit.tools.visualization import p
       <pubDate>Tue, 20 Jun 2023 06:50:28 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/hosting-librex/</guid>
-      <description>What is LibreX? LibreX is meta-search engine which gives you results from Google, Qwant, Ahmia and popular torrent sites without spying on you. LibreX doesn&amp;rsquo;t save any type of data about the user, there are no logs, no caches.
+      <description>Hosting LibreX What is LibreX? LibreX is meta-search engine which gives you results from Google, Qwant, Ahmia and popular torrent sites without spying on you. LibreX doesn&amp;rsquo;t save any type of data about the user, there are no logs, no caches.
 How to host LibreX in Docker container? To host librex in a Docker container, just use this command:
 docker run -d --name librex \ -e TZ=&amp;#34;America/New_York&amp;#34; \ -e CONFIG_GOOGLE_DOMAIN=&amp;#34;com&amp;#34; \ -e CONFIG_GOOGLE_LANGUAGE=&amp;#34;en&amp;#34; \ -p 8080:8080 \ librex/librex:latest How to host LibreX with Docker compose?</description>
     </item>
@@ -87,7 +86,7 @@ docker run -d --name librex \ -e TZ=&amp;#34;America/New_York&amp;#34; \ -e CONF
       <pubDate>Thu, 15 Jun 2023 15:50:37 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/going-step-closer-to-full-suckless/</guid>
-      <description>Today, I was scrolling through suckless rocks page, as every other suckless user. And I saw section for shells, installed yash shell.
+      <description>Going Step Closer to Full Suckless Today, I was scrolling through suckless rocks page, as every other suckless user. And I saw section for shells, installed yash shell.
 I have to admit this is one of the best shells I used. It has functionality like fish shell, but script syntax like bash. Which I really love.
 So, that&amp;rsquo;s it. I&amp;rsquo;m one step closer to Full Suckless.</description>
     </item>
@@ -98,7 +97,7 @@ So, that&amp;rsquo;s it. I&amp;rsquo;m one step closer to Full Suckless.</descri
       <pubDate>Tue, 06 Jun 2023 06:50:55 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/created-new-service-radiana/</guid>
-      <description>I&amp;rsquo;ve built my own currency system, which you can access at https://rad.youshitsune.tech.
+      <description>Created New Service - RADIANA I&amp;rsquo;ve built my own currency system, which you can access at https://rad.youshitsune.tech.
 It&amp;rsquo;s open-source, everything is open-source except database.
 It&amp;rsquo;s open for registration, if you want some of it just send me mail with title &amp;ldquo;Want Radiana&amp;rdquo;.</description>
     </item>
@@ -109,12 +108,11 @@ It&amp;rsquo;s open for registration, if you want some of it just send me mail w
       <pubDate>Mon, 22 May 2023 12:45:14 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/configuring-weechat-proxy-to-use-tor/</guid>
-      <description>If you are lover of privacy like I am, you&amp;rsquo;ll love this configuration.
+      <description>Configuring Weechat Proxy to Use Tor If you are lover of privacy like I am, you&amp;rsquo;ll love this configuration.
 TOR Firstly, you need to start tor.
 sudo systemctl start tor Then add proxy with this command
 /proxy add tor socks5 127.0.0.1 9050 If you want to setup when you connect to any irc server to use proxy, execute this command
-/set irc.server_default.proxy &amp;#34;tor&amp;#34; But, if you want for specific server run this
-/set irc.server.server_name.proxy &amp;#34;tor&amp;#34; Of course you should change server_name with server name.</description>
+/set irc.server_default.proxy &amp;#34;tor&amp;#34; But, if you want for specific server run this</description>
     </item>
     
     <item>
@@ -123,7 +121,7 @@ sudo systemctl start tor Then add proxy with this command
       <pubDate>Wed, 17 May 2023 20:42:25 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/my-new-look-on-how-to-be-productive/</guid>
-      <description>I&amp;rsquo;ve researched on some ways to be productive(i.e. wasting my damn time). And I completely overlooked the calendar.
+      <description>My New Look on How to Be Productive I&amp;rsquo;ve researched on some ways to be productive(i.e. wasting my damn time). And I completely overlooked the calendar.
 Now you should manage your time in blocks. That means for every task you block a time in calendar. One that works for me is Google Calendar, yes I know Google! But I can&amp;rsquo;t found reliable alternative if you&amp;rsquo;ve some alternative mail me.
 With this method I know at what time I supposed to do something.</description>
     </item>
@@ -134,7 +132,7 @@ With this method I know at what time I supposed to do something.</description>
       <pubDate>Thu, 13 Apr 2023 07:46:40 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/started-my-journey-on-envs.net/</guid>
-      <description>I&amp;rsquo;ve started my journey on envs.net. It&amp;rsquo;s minimalistic tilde server. All of my journey updates are going to be here.</description>
+      <description>Started My Journey on Envs.net I&amp;rsquo;ve started my journey on envs.net. It&amp;rsquo;s minimalistic tilde server. All of my journey updates are going to be here.</description>
     </item>
     
     <item>
@@ -143,7 +141,7 @@ With this method I know at what time I supposed to do something.</description>
       <pubDate>Sun, 09 Apr 2023 16:53:46 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/ive-set-up-my-gemini-capsule/</guid>
-      <description>I&amp;rsquo;ve finally set up my gemini capsule. You can access it at koyu.space/youshitsune.</description>
+      <description>I&amp;rsquo;ve Set Up My Gemini Capsule I&amp;rsquo;ve finally set up my gemini capsule. You can access it at koyu.space/youshitsune.</description>
     </item>
     
     <item>
@@ -152,7 +150,7 @@ With this method I know at what time I supposed to do something.</description>
       <pubDate>Mon, 13 Mar 2023 16:26:42 +0100</pubDate>
       
       <guid>https://youshitsune.tech/posts/could-we-really-be-made-of-swiss-cheese/</guid>
-      <description>&amp;ldquo;Could we really be made of Swiss cheese?&amp;rdquo; is paper that explains xenobiology. It&amp;rsquo;s really great introduction to xenobiology. I recommend to read it. PDF
+      <description>Could We Really Be Made of Swiss Cheese? &amp;ldquo;Could we really be made of Swiss cheese?&amp;rdquo; is paper that explains xenobiology. It&amp;rsquo;s really great introduction to xenobiology. I recommend to read it. PDF
 Xenobiology studies life with alternate way to get energy.
 Information =&amp;gt; DNA -&amp;gt; Protein Form =&amp;gt; Life as series of innate patterns Metabolism &amp;lt;-&amp;gt; Information =&amp;gt; Life as process of chemical transformation of substances Information &amp;lt;-&amp;gt; Form =&amp;gt; Life as flow of information Energy&amp;lt;-&amp;gt; Form =&amp;gt; Life as energy flow Metabolism &amp;lt;-&amp;gt; Energy =&amp;gt; Life as thermodynamic and kinetic process Xenobiology can provide potential medical and biosafety applications, as well as challenge the foundations of biological engineering.</description>
     </item>
@@ -163,9 +161,8 @@ Information =&amp;gt; DNA -&amp;gt; Protein Form =&amp;gt; Life as series of inn
       <pubDate>Sun, 19 Feb 2023 05:55:30 +0100</pubDate>
       
       <guid>https://youshitsune.tech/posts/attention-is-all-you-need/</guid>
-      <description>&amp;ldquo;Attention is all you need&amp;rdquo; is a research paper that proposes a new way of making an AI.
-Attention is mapping a query and a set of key-value pairs to an output, all of which are vectors: the query, the keys, and the values. The results are calculated as a weighted sum of the values, ith each value&amp;rsquo;s weight determined by the query&amp;rsquo;s compatibility function with its corresponding key.
-There are to type of attentions:</description>
+      <description>Attention is all you need &amp;ldquo;Attention is all you need&amp;rdquo; is a research paper that proposes a new way of making an AI.
+Attention is mapping a query and a set of key-value pairs to an output, all of which are vectors: the query, the keys, and the values. The results are calculated as a weighted sum of the values, ith each value&amp;rsquo;s weight determined by the query&amp;rsquo;s compatibility function with its corresponding key.</description>
     </item>
     
     <item>
@@ -174,9 +171,9 @@ There are to type of attentions:</description>
       <pubDate>Sat, 18 Feb 2023 11:18:19 +0100</pubDate>
       
       <guid>https://youshitsune.tech/posts/dark-matter-possible-new-energy-source/</guid>
-      <description>Basically, there is idea for engine: Dark Matter engine uses Dark Matter particles annihilation remnants as propulsion.
+      <description>Dark Matter As A Possible New Energy Source Basically, there is idea for engine: Dark Matter engine uses Dark Matter particles annihilation remnants as propulsion.
 Basically, you can have a engine in shape of cube, then you have a high pressure on it. Then just remove one side of cube, place where remnants can exit. Which in result propels the cube.
-More about this is written in this paper by Jia Liu. PDF</description>
+More about this is written in this paper by Jia Liu.</description>
     </item>
     
   </channel>

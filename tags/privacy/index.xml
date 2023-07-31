@@ -14,7 +14,7 @@
       <pubDate>Tue, 20 Jun 2023 06:50:28 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/hosting-librex/</guid>
-      <description>What is LibreX? LibreX is meta-search engine which gives you results from Google, Qwant, Ahmia and popular torrent sites without spying on you. LibreX doesn&amp;rsquo;t save any type of data about the user, there are no logs, no caches.
+      <description>Hosting LibreX What is LibreX? LibreX is meta-search engine which gives you results from Google, Qwant, Ahmia and popular torrent sites without spying on you. LibreX doesn&amp;rsquo;t save any type of data about the user, there are no logs, no caches.
 How to host LibreX in Docker container? To host librex in a Docker container, just use this command:
 docker run -d --name librex \ -e TZ=&amp;#34;America/New_York&amp;#34; \ -e CONFIG_GOOGLE_DOMAIN=&amp;#34;com&amp;#34; \ -e CONFIG_GOOGLE_LANGUAGE=&amp;#34;en&amp;#34; \ -p 8080:8080 \ librex/librex:latest How to host LibreX with Docker compose?</description>
     </item>
@@ -25,12 +25,11 @@ docker run -d --name librex \ -e TZ=&amp;#34;America/New_York&amp;#34; \ -e CONF
       <pubDate>Mon, 22 May 2023 12:45:14 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/configuring-weechat-proxy-to-use-tor/</guid>
-      <description>If you are lover of privacy like I am, you&amp;rsquo;ll love this configuration.
+      <description>Configuring Weechat Proxy to Use Tor If you are lover of privacy like I am, you&amp;rsquo;ll love this configuration.
 TOR Firstly, you need to start tor.
 sudo systemctl start tor Then add proxy with this command
 /proxy add tor socks5 127.0.0.1 9050 If you want to setup when you connect to any irc server to use proxy, execute this command
-/set irc.server_default.proxy &amp;#34;tor&amp;#34; But, if you want for specific server run this
-/set irc.server.server_name.proxy &amp;#34;tor&amp;#34; Of course you should change server_name with server name.</description>
+/set irc.server_default.proxy &amp;#34;tor&amp;#34; But, if you want for specific server run this</description>
     </item>
     
   </channel>

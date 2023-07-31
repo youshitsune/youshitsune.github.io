@@ -27,15 +27,14 @@ Second try Then, I found leaked version of odin for linux. I&amp;rsquo;ve flashe
       <pubDate>Sun, 02 Jul 2023 08:54:00 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/setup-ssh-over-tor/</guid>
-      <description>This is tutorial for Debian systems.
+      <description>Setup SSH Over TOR This is tutorial for Debian systems.
 Setting up Tor - Server First install tor.
 sudo apt install tor Then edit torrc file.
 sudo vim /etc/tor/torrc Add this to it
 HiddenServiceDir /var/lib/tor/hidden-service-example/ HiddenServicePort 22 127.0.0.1:22 HiddenServiceAuthorizeClient stealth hidden-service-example Restart tor
 sudo systemctl restart tor That&amp;rsquo;s it for the server
 Setting up Tor - Client First install tor.
-sudo apt install tor sudo systemctl start tor Then ssh into your machine
-torify user@hostname_of_your_service To get hostname run this.</description>
+sudo apt install tor sudo systemctl start tor Then ssh into your machine</description>
     </item>
     
     <item>
@@ -44,7 +43,7 @@ torify user@hostname_of_your_service To get hostname run this.</description>
       <pubDate>Mon, 26 Jun 2023 09:23:15 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/local-reality-and-the-chsh-inequality/</guid>
-      <description>The CHSH game is a thought experiment involving two parties separated at a great distance (far enough to preclude classical communication at the speed of light), each of whom has access to one half of an entangled two-qubit pair. Analysis of this game shows that no classical local hidden-variable theory can explain the correlations that can result from entanglement. Since this game is indeed physically realizable, this gives strong evidence that classical physics is fundamentally incapable of explaining certain quantum phenomena, at least in a &amp;ldquo;local&amp;rdquo; fashion.</description>
+      <description>Local Reality and the CHSH Inequality The CHSH game is a thought experiment involving two parties separated at a great distance (far enough to preclude classical communication at the speed of light), each of whom has access to one half of an entangled two-qubit pair. Analysis of this game shows that no classical local hidden-variable theory can explain the correlations that can result from entanglement. Since this game is indeed physically realizable, this gives strong evidence that classical physics is fundamentally incapable of explaining certain quantum phenomena, at least in a &amp;ldquo;local&amp;rdquo; fashion.</description>
     </item>
     
     <item>
@@ -53,9 +52,9 @@ torify user@hostname_of_your_service To get hostname run this.</description>
       <pubDate>Tue, 20 Jun 2023 12:53:34 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/</guid>
-      <description>It is a restricted version of the Deutsch-Jozsa algorithm where instead of distinguishing between two different classes of functions, it tries to learn a string encoded in a function.
+      <description>Bernstein-Vazirani Algorithm Implementation in Qiskit It is a restricted version of the Deutsch-Jozsa algorithm where instead of distinguishing between two different classes of functions, it tries to learn a string encoded in a function.
 Here is implementation for Bernstein-Vaziarini algorithm:
-from qiskit import * %matplotlib inline from qiskit.tools.visualization import plot_histogram num = &amp;#39;101001&amp;#39; circuit = QuantumCircuit(len(num)+1, len(num)) circuit.h(range(len(num))) circuit.x(len(num)) circuit.h(len(num)) circuit.barrier() &amp;lt;qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e80&amp;gt; for i, val in enumerate(reversed(num)): if val == &amp;#34;1&amp;#34;: circuit.cx(i,6) circuit.barrier() circuit.</description>
+from qiskit import * %matplotlib inline from qiskit.tools.visualization import plot_histogram num = &amp;#39;101001&amp;#39; circuit = QuantumCircuit(len(num)+1, len(num)) circuit.h(range(len(num))) circuit.x(len(num)) circuit.h(len(num)) circuit.barrier() &amp;lt;qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e80&amp;gt; for i, val in enumerate(reversed(num)): if val == &amp;#34;1&amp;#34;: circuit.</description>
     </item>
     
     <item>
@@ -64,7 +63,7 @@ from qiskit import * %matplotlib inline from qiskit.tools.visualization import p
       <pubDate>Tue, 20 Jun 2023 06:50:28 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/hosting-librex/</guid>
-      <description>What is LibreX? LibreX is meta-search engine which gives you results from Google, Qwant, Ahmia and popular torrent sites without spying on you. LibreX doesn&amp;rsquo;t save any type of data about the user, there are no logs, no caches.
+      <description>Hosting LibreX What is LibreX? LibreX is meta-search engine which gives you results from Google, Qwant, Ahmia and popular torrent sites without spying on you. LibreX doesn&amp;rsquo;t save any type of data about the user, there are no logs, no caches.
 How to host LibreX in Docker container? To host librex in a Docker container, just use this command:
 docker run -d --name librex \ -e TZ=&amp;#34;America/New_York&amp;#34; \ -e CONFIG_GOOGLE_DOMAIN=&amp;#34;com&amp;#34; \ -e CONFIG_GOOGLE_LANGUAGE=&amp;#34;en&amp;#34; \ -p 8080:8080 \ librex/librex:latest How to host LibreX with Docker compose?</description>
     </item>
@@ -75,7 +74,7 @@ docker run -d --name librex \ -e TZ=&amp;#34;America/New_York&amp;#34; \ -e CONF
       <pubDate>Thu, 15 Jun 2023 15:50:37 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/going-step-closer-to-full-suckless/</guid>
-      <description>Today, I was scrolling through suckless rocks page, as every other suckless user. And I saw section for shells, installed yash shell.
+      <description>Going Step Closer to Full Suckless Today, I was scrolling through suckless rocks page, as every other suckless user. And I saw section for shells, installed yash shell.
 I have to admit this is one of the best shells I used. It has functionality like fish shell, but script syntax like bash. Which I really love.
 So, that&amp;rsquo;s it. I&amp;rsquo;m one step closer to Full Suckless.</description>
     </item>
@@ -86,12 +85,11 @@ So, that&amp;rsquo;s it. I&amp;rsquo;m one step closer to Full Suckless.</descri
       <pubDate>Mon, 22 May 2023 12:45:14 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/configuring-weechat-proxy-to-use-tor/</guid>
-      <description>If you are lover of privacy like I am, you&amp;rsquo;ll love this configuration.
+      <description>Configuring Weechat Proxy to Use Tor If you are lover of privacy like I am, you&amp;rsquo;ll love this configuration.
 TOR Firstly, you need to start tor.
 sudo systemctl start tor Then add proxy with this command
 /proxy add tor socks5 127.0.0.1 9050 If you want to setup when you connect to any irc server to use proxy, execute this command
-/set irc.server_default.proxy &amp;#34;tor&amp;#34; But, if you want for specific server run this
-/set irc.server.server_name.proxy &amp;#34;tor&amp;#34; Of course you should change server_name with server name.</description>
+/set irc.server_default.proxy &amp;#34;tor&amp;#34; But, if you want for specific server run this</description>
     </item>
     
     <item>
@@ -100,7 +98,7 @@ sudo systemctl start tor Then add proxy with this command
       <pubDate>Thu, 13 Apr 2023 07:46:40 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/started-my-journey-on-envs.net/</guid>
-      <description>I&amp;rsquo;ve started my journey on envs.net. It&amp;rsquo;s minimalistic tilde server. All of my journey updates are going to be here.</description>
+      <description>Started My Journey on Envs.net I&amp;rsquo;ve started my journey on envs.net. It&amp;rsquo;s minimalistic tilde server. All of my journey updates are going to be here.</description>
     </item>
     
     <item>
@@ -109,7 +107,7 @@ sudo systemctl start tor Then add proxy with this command
       <pubDate>Sun, 09 Apr 2023 16:53:46 +0200</pubDate>
       
       <guid>https://youshitsune.tech/posts/ive-set-up-my-gemini-capsule/</guid>
-      <description>I&amp;rsquo;ve finally set up my gemini capsule. You can access it at koyu.space/youshitsune.</description>
+      <description>I&amp;rsquo;ve Set Up My Gemini Capsule I&amp;rsquo;ve finally set up my gemini capsule. You can access it at koyu.space/youshitsune.</description>
     </item>
     
   </channel>

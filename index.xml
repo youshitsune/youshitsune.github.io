@@ -190,11 +190,23 @@ Github Stats </description>
     
     <item>
       <title></title>
+      <link>https://youshitsune.tech/deroot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://youshitsune.tech/deroot/</guid>
+      <description>Deroot Deroot is basically clone of gopher with tls.
+TODO Implement my own dns Server Code: https://github.com/youshitsune/deroot-server
+Client Code: https://github.com/youshitsune/deroot-client</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://youshitsune.tech/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://youshitsune.tech/projects/</guid>
-      <description>Projects CGit URL: https://git.youshitsune.tech GitHub URL: https://github.com/youshitsune?tab=repositories</description>
+      <description>Projects Deroot URL: https://youshitsune.tech/deroot
+All projects Github: https://github.com/youshitsune?tab=repositories CGit: https://git.youshitsune.tech</description>
     </item>
     
     <item>

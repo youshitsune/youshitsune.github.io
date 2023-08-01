@@ -195,8 +195,9 @@ Github Stats </description>
       
       <guid>https://youshitsune.tech/deroot/</guid>
       <description>Deroot Deroot is basically clone of gopher with tls.
-TODO Implement my own dns Server Code: https://github.com/youshitsune/deroot-server
-Client Code: https://github.com/youshitsune/deroot-client</description>
+TODO DONE Implement my own dns Server Code: https://github.com/youshitsune/deroot-server
+Client Code: https://github.com/youshitsune/deroot-client
+DNS Code: https://github.com/youshitsune/deroot-dns</description>
     </item>
     
     <item>

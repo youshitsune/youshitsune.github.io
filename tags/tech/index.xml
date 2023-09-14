@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tech on ~youshitsune</title>
-    <link>https://youshitsune.tech/tags/tech/</link>
-    <description>Recent content in tech on ~youshitsune</description>
+    <title>tech on Youshitsune</title>
+    <link>http://example.com/tags/tech/</link>
+    <description>Recent content in tech on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>© 2021–2022 [Joe Roe](https://joeroe.io) &amp; [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors).</copyright>
-    <lastBuildDate>Fri, 21 Jul 2023 08:18:47 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Jul 2023 08:18:47 +0200</lastBuildDate><atom:link href="http://example.com/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flashing Lineage OS 20 on my Samsung Galaxy A50</title>
-      <link>https://youshitsune.tech/posts/flashing-custom-rom/</link>
+      <link>http://example.com/blog/flashing-custom-rom/</link>
       <pubDate>Fri, 21 Jul 2023 08:18:47 +0200</pubDate>
       
-      <guid>https://youshitsune.tech/posts/flashing-custom-rom/</guid>
+      <guid>http://example.com/blog/flashing-custom-rom/</guid>
       <description>Flashing Lineage OS 20 on my Samsung Galaxy A50 I always wanted to flash custom rom on my phone, but there isn&amp;rsquo;t any offical software for it.
 So, I started to search for best unoffical options.
 I&amp;rsquo;ve found Lineage OS 20 and TWRP.
@@ -23,10 +22,10 @@ Second try Then, I found leaked version of odin for linux. I&amp;rsquo;ve flashe
     
     <item>
       <title>Setup SSH Over TOR</title>
-      <link>https://youshitsune.tech/posts/setup-ssh-over-tor/</link>
+      <link>http://example.com/blog/setup-ssh-over-tor/</link>
       <pubDate>Sun, 02 Jul 2023 08:54:00 +0200</pubDate>
       
-      <guid>https://youshitsune.tech/posts/setup-ssh-over-tor/</guid>
+      <guid>http://example.com/blog/setup-ssh-over-tor/</guid>
       <description>Setup SSH Over TOR This is tutorial for Debian systems.
 Setting up Tor - Server First install tor.
 sudo apt install tor Then edit torrc file.
@@ -39,19 +38,19 @@ sudo apt install tor sudo systemctl start tor Then ssh into your machine</descri
     
     <item>
       <title>Local Reality and the CHSH Inequality</title>
-      <link>https://youshitsune.tech/posts/local-reality-and-the-chsh-inequality/</link>
+      <link>http://example.com/blog/local-reality-and-the-chsh-inequality/</link>
       <pubDate>Mon, 26 Jun 2023 09:23:15 +0200</pubDate>
       
-      <guid>https://youshitsune.tech/posts/local-reality-and-the-chsh-inequality/</guid>
+      <guid>http://example.com/blog/local-reality-and-the-chsh-inequality/</guid>
       <description>Local Reality and the CHSH Inequality The CHSH game is a thought experiment involving two parties separated at a great distance (far enough to preclude classical communication at the speed of light), each of whom has access to one half of an entangled two-qubit pair. Analysis of this game shows that no classical local hidden-variable theory can explain the correlations that can result from entanglement. Since this game is indeed physically realizable, this gives strong evidence that classical physics is fundamentally incapable of explaining certain quantum phenomena, at least in a &amp;ldquo;local&amp;rdquo; fashion.</description>
     </item>
     
     <item>
       <title>Bernstein-Vazirani Algorithm Implementation in Qiskit</title>
-      <link>https://youshitsune.tech/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/</link>
+      <link>http://example.com/blog/bernstein-vazirani-algorithm-implementation-in-qiskit/</link>
       <pubDate>Tue, 20 Jun 2023 12:53:34 +0200</pubDate>
       
-      <guid>https://youshitsune.tech/posts/bernstein-vazirani-algorithm-implementation-in-qiskit/</guid>
+      <guid>http://example.com/blog/bernstein-vazirani-algorithm-implementation-in-qiskit/</guid>
       <description>Bernstein-Vazirani Algorithm Implementation in Qiskit It is a restricted version of the Deutsch-Jozsa algorithm where instead of distinguishing between two different classes of functions, it tries to learn a string encoded in a function.
 Here is implementation for Bernstein-Vaziarini algorithm:
 from qiskit import * %matplotlib inline from qiskit.tools.visualization import plot_histogram num = &amp;#39;101001&amp;#39; circuit = QuantumCircuit(len(num)+1, len(num)) circuit.h(range(len(num))) circuit.x(len(num)) circuit.h(len(num)) circuit.barrier() &amp;lt;qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e80&amp;gt; for i, val in enumerate(reversed(num)): if val == &amp;#34;1&amp;#34;: circuit.</description>
@@ -59,10 +58,10 @@ from qiskit import * %matplotlib inline from qiskit.tools.visualization import p
     
     <item>
       <title>Hosting LibreX</title>
-      <link>https://youshitsune.tech/posts/hosting-librex/</link>
+      <link>http://example.com/blog/hosting-librex/</link>
       <pubDate>Tue, 20 Jun 2023 06:50:28 +0200</pubDate>
       
-      <guid>https://youshitsune.tech/posts/hosting-librex/</guid>
+      <guid>http://example.com/blog/hosting-librex/</guid>
       <description>Hosting LibreX What is LibreX? LibreX is meta-search engine which gives you results from Google, Qwant, Ahmia and popular torrent sites without spying on you. LibreX doesn&amp;rsquo;t save any type of data about the user, there are no logs, no caches.
 How to host LibreX in Docker container? To host librex in a Docker container, just use this command:
 docker run -d --name librex \ -e TZ=&amp;#34;America/New_York&amp;#34; \ -e CONFIG_GOOGLE_DOMAIN=&amp;#34;com&amp;#34; \ -e CONFIG_GOOGLE_LANGUAGE=&amp;#34;en&amp;#34; \ -p 8080:8080 \ librex/librex:latest How to host LibreX with Docker compose?</description>
@@ -70,10 +69,10 @@ docker run -d --name librex \ -e TZ=&amp;#34;America/New_York&amp;#34; \ -e CONF
     
     <item>
       <title>Going Step Closer to Full Suckless</title>
-      <link>https://youshitsune.tech/posts/going-step-closer-to-full-suckless/</link>
+      <link>http://example.com/blog/going-step-closer-to-full-suckless/</link>
       <pubDate>Thu, 15 Jun 2023 15:50:37 +0200</pubDate>
       
-      <guid>https://youshitsune.tech/posts/going-step-closer-to-full-suckless/</guid>
+      <guid>http://example.com/blog/going-step-closer-to-full-suckless/</guid>
       <description>Going Step Closer to Full Suckless Today, I was scrolling through suckless rocks page, as every other suckless user. And I saw section for shells, installed yash shell.
 I have to admit this is one of the best shells I used. It has functionality like fish shell, but script syntax like bash. Which I really love.
 So, that&amp;rsquo;s it. I&amp;rsquo;m one step closer to Full Suckless.</description>
@@ -81,10 +80,10 @@ So, that&amp;rsquo;s it. I&amp;rsquo;m one step closer to Full Suckless.</descri
     
     <item>
       <title>Configuring Weechat Proxy to Use Tor</title>
-      <link>https://youshitsune.tech/posts/configuring-weechat-proxy-to-use-tor/</link>
+      <link>http://example.com/blog/configuring-weechat-proxy-to-use-tor/</link>
       <pubDate>Mon, 22 May 2023 12:45:14 +0200</pubDate>
       
-      <guid>https://youshitsune.tech/posts/configuring-weechat-proxy-to-use-tor/</guid>
+      <guid>http://example.com/blog/configuring-weechat-proxy-to-use-tor/</guid>
       <description>Configuring Weechat Proxy to Use Tor If you are lover of privacy like I am, you&amp;rsquo;ll love this configuration.
 TOR Firstly, you need to start tor.
 sudo systemctl start tor Then add proxy with this command
@@ -94,19 +93,19 @@ sudo systemctl start tor Then add proxy with this command
     
     <item>
       <title>Started My Journey on Envs.net</title>
-      <link>https://youshitsune.tech/posts/started-my-journey-on-envs.net/</link>
+      <link>http://example.com/blog/started-my-journey-on-envs.net/</link>
       <pubDate>Thu, 13 Apr 2023 07:46:40 +0200</pubDate>
       
-      <guid>https://youshitsune.tech/posts/started-my-journey-on-envs.net/</guid>
+      <guid>http://example.com/blog/started-my-journey-on-envs.net/</guid>
       <description>Started My Journey on Envs.net I&amp;rsquo;ve started my journey on envs.net. It&amp;rsquo;s minimalistic tilde server. All of my journey updates are going to be here.</description>
     </item>
     
     <item>
       <title>I&#39;ve Set Up My Gemini Capsule</title>
-      <link>https://youshitsune.tech/posts/ive-set-up-my-gemini-capsule/</link>
+      <link>http://example.com/blog/ive-set-up-my-gemini-capsule/</link>
       <pubDate>Sun, 09 Apr 2023 16:53:46 +0200</pubDate>
       
-      <guid>https://youshitsune.tech/posts/ive-set-up-my-gemini-capsule/</guid>
+      <guid>http://example.com/blog/ive-set-up-my-gemini-capsule/</guid>
       <description>I&amp;rsquo;ve Set Up My Gemini Capsule I&amp;rsquo;ve finally set up my gemini capsule. You can access it at koyu.space/youshitsune.</description>
     </item>
     

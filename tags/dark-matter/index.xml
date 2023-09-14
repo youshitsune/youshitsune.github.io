@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dark Matter on ~youshitsune</title>
-    <link>https://youshitsune.tech/tags/dark-matter/</link>
-    <description>Recent content in Dark Matter on ~youshitsune</description>
+    <title>Dark Matter on Youshitsune</title>
+    <link>http://example.com/tags/dark-matter/</link>
+    <description>Recent content in Dark Matter on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>© 2021–2022 [Joe Roe](https://joeroe.io) &amp; [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors).</copyright>
-    <lastBuildDate>Sat, 18 Feb 2023 11:18:19 +0100</lastBuildDate><atom:link href="https://youshitsune.tech/tags/dark-matter/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Feb 2023 11:18:19 +0100</lastBuildDate><atom:link href="http://example.com/tags/dark-matter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dark Matter As A Possible New Energy Source</title>
-      <link>https://youshitsune.tech/posts/dark-matter-possible-new-energy-source/</link>
+      <link>http://example.com/blog/dark-matter-possible-new-energy-source/</link>
       <pubDate>Sat, 18 Feb 2023 11:18:19 +0100</pubDate>
       
-      <guid>https://youshitsune.tech/posts/dark-matter-possible-new-energy-source/</guid>
+      <guid>http://example.com/blog/dark-matter-possible-new-energy-source/</guid>
       <description>Dark Matter As A Possible New Energy Source Basically, there is idea for engine: Dark Matter engine uses Dark Matter particles annihilation remnants as propulsion.
 Basically, you can have a engine in shape of cube, then you have a high pressure on it. Then just remove one side of cube, place where remnants can exit. Which in result propels the cube.
 More about this is written in this paper by Jia Liu.</description>

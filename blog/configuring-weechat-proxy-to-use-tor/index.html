@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+        
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Website Description">
+<title>
+Configuring Weechat Proxy to Use Tor - Youshitsune
+</title>
+
+
+
+        
+        <meta property="og:title" content="Configuring Weechat Proxy to Use Tor - Youshitsune" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Website Description"/>
+<meta property="og:url" content="http://example.com/blog/configuring-weechat-proxy-to-use-tor/"/>
+<meta property="og:site_name" content="Youshitsune"/>
+
+
+
+
+<meta property="og:image" content="http://example.com/home/avatar.png"/>
+
+
+
+
+        
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+        
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.f8310307e7689f75fe430255441a49dac41c2321ae5a250ff11775d4080e4365.css" integrity="sha256-&#43;DEDB&#43;don3X&#43;QwJVRBpJ2sQcIyGuWiUP8Rd11AgOQ2U=" crossorigin="anonymous" media="screen">
+
+
+
+
+
+        
+        
+        
+        
+    </head>
+    <body>
+        <section id="top" class="section">
+            
+            <div class="container hero  fade-in one ">
+                
+
+<h1 class="bold-title is-1">Blog</h1>
+
+
+            </div>
+            
+            <div class="section  fade-in two ">
+                
+
+<div class="container">
+    <hr>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        <div class="navbar-menu " id="navMenu">
+            
+            
+            
+            
+            <a class="navbar-item" href="/">main</a>
+            
+
+            
+            
+
+            
+                
+            
+
+            
+                
+            
+
+            
+            
+            
+                
+                
+                
+                
+                  <a class="navbar-item" href="http://example.com/projects/">
+                  
+                  
+                  Projects
+                  
+                  
+                  </a>
+                
+                
+            
+            
+            
+            
+            
+            <a class="navbar-item" href="/#about">About</a>
+            
+            
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                  <a class="navbar-item" href="http://example.com/blog/">
+                  
+                  Back to Blog
+                  
+                  </a>
+                
+                
+            
+            
+            
+            
+
+            
+            
+            <a class="navbar-item" href="/#contact">Contact</a>
+            
+            
+
+            
+
+            
+            <a class="navbar-item" href="http://example.com/index.xml"><i class="fas fa-rss"></i></a>
+            
+            
+        </div>
+    </nav>
+    <hr>
+</div>
+
+
+
+
+                
+<div class="container">
+    <h2 class="title is-1 top-pad strong-post-title">
+        <a href="http://example.com/blog/configuring-weechat-proxy-to-use-tor/">Configuring Weechat Proxy to Use Tor</a>
+    </h2>
+    
+    <div class="post-data">
+        May 22, 2023
+        
+         | 
+        1 minute read
+        
+    </div>
+    
+    <div class="blog-share">
+        Share this:
+        
+        <a class="twitter-share-button"
+            href="https://twitter.com/intent/tweet?text=Configuring%20Weechat%20Proxy%20to%20Use%20Tor%20http%3a%2f%2fexample.com%2fblog%2fconfiguring-weechat-proxy-to-use-tor%2f"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <i class="fab fa-twitter"></i>
+            <span class="hidden">Twitter</span>
+        </a>
+        
+        
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fexample.com%2fblog%2fconfiguring-weechat-proxy-to-use-tor%2f"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <i class="fab fa-facebook-f"></i>
+            <span class="hidden">Facebook</span>
+        </a>
+        
+        
+        <a class="icon-pinterest"
+            href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fexample.com%2fblog%2fconfiguring-weechat-proxy-to-use-tor%2f&amp;description=Configuring%20Weechat%20Proxy%20to%20Use%20Tor"
+            onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+            <i class="fab fa-pinterest-p"></i>
+            <span class="hidden">Pinterest</span>
+        </a>
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <p>
+        Tags:
+        
+        <a href="/tags/privacy">
+            privacy</a>,
+        
+        <a href="/tags/tech">
+            tech</a>
+        
+    </p>
+    
+    
+    
+    
+    
+    
+</div>
+
+<div class="container markdown top-pad">
+    
+<h1 id="configuring-weechat-proxy-to-use-tor" class="anchor-link"><a href="#configuring-weechat-proxy-to-use-tor">Configuring Weechat Proxy to Use Tor</a></h1>
+<p>If you are lover of privacy like I am, you&rsquo;ll love this configuration.</p>
+
+<h3 id="tor" class="anchor-link"><a href="#tor">TOR</a></h3>
+<p>Firstly, you need to start tor.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start tor
+</span></span></code></pre></div><p>Then add proxy with this command</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/proxy add tor socks5 127.0.0.1 <span style="color:#2aa198">9050</span>
+</span></span></code></pre></div><p>If you want to setup when you connect to any irc server to use proxy, execute this command</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/set irc.server_default.proxy <span style="color:#2aa198">&#34;tor&#34;</span>
+</span></span></code></pre></div><p>But, if you want for specific server run this</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/set irc.server.server_name.proxy <span style="color:#2aa198">&#34;tor&#34;</span>
+</span></span></code></pre></div><p>Of course you should change server_name with server name.</p>
+<p>Tor and ssl_verify don&rsquo;t like each other so you must turn ssl_verify off.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/set irc.server.server_name.ssl_verify off
+</span></span></code></pre></div><p>You can also set this for every irc server, but I don&rsquo;t recommend it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/set irc.server_default.ssl_verify off
+</span></span></code></pre></div>
+<h3 id="enhance-your-privacy" class="anchor-link"><a href="#enhance-your-privacy">Enhance your privacy</a></h3>
+<p>If you want to enhance your privacy run this commands.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/set irc.server_default.msg_part <span style="color:#2aa198">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.server_default.msg_quit <span style="color:#2aa198">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.clientinfo <span style="color:#2aa198">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.finger <span style="color:#2aa198">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.source <span style="color:#2aa198">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.time <span style="color:#2aa198">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.userinfo <span style="color:#2aa198">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.version <span style="color:#2aa198">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/set irc.ctcp.ping <span style="color:#2aa198">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>/plugin unload xfer
+</span></span><span style="display:flex;"><span>/set weechat.plugin.autoload <span style="color:#2aa198">&#34;*,!xfer&#34;</span>
+</span></span></code></pre></div><p>After all this you just need to run one more command</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/save
+</span></span></code></pre></div><p>And that&rsquo;s it, you have irc tor proxy.</p>
+
+</div>
+
+
+    <div class="container disqus">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "youshitsune" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+
+
+                
+                <div class="container">
+    <hr>
+</div>
+<div class="container has-text-centered top-pad">
+    <a href="#top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+</div>
+
+<div class="container">
+    <hr>
+</div>
+
+                <div class="section" id="footer">
+    <div class="container has-text-centered">
+    
+        <span class="footer-text">
+            <a href="https://github.com/victoriadrake/hugo-theme-introduction/"><strong>Introduction</strong></a> theme for <a href="http://gohugo.io/">Hugo</a>. Made with <a href="https://victoria.dev"><i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i></a> by open source contributors.
+        </span>
+    
+    </div>
+</div>
+
+                
+            </div>
+        </section>
+        
+        
+
+
+<script src="http://example.com/js/bundle.5c23c0437f001a469ca373a465a6f7487203d18e10cdff76d86a60af66d5ee28.js" integrity="sha256-XCPAQ38AGkaco3OkZab3SHID0Y4Qzf922Gpgr2bV7ig="></script>
+
+
+
+
+        
+        
+        
+        
+    </body>
+</html>

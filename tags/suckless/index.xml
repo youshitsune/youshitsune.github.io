@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>suckless on Youshitsune</title>
-    <link>http://example.com/tags/suckless/</link>
+    <link>https://youshitsune.tech/tags/suckless/</link>
     <description>Recent content in suckless on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jun 2023 15:50:37 +0200</lastBuildDate><atom:link href="http://example.com/tags/suckless/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jun 2023 15:50:37 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/tags/suckless/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Going Step Closer to Full Suckless</title>
-      <link>http://example.com/blog/going-step-closer-to-full-suckless/</link>
+      <link>https://youshitsune.tech/blog/going-step-closer-to-full-suckless/</link>
       <pubDate>Thu, 15 Jun 2023 15:50:37 +0200</pubDate>
       
-      <guid>http://example.com/blog/going-step-closer-to-full-suckless/</guid>
+      <guid>https://youshitsune.tech/blog/going-step-closer-to-full-suckless/</guid>
       <description>Going Step Closer to Full Suckless Today, I was scrolling through suckless rocks page, as every other suckless user. And I saw section for shells, installed yash shell.
 I have to admit this is one of the best shells I used. It has functionality like fish shell, but script syntax like bash. Which I really love.
 So, that&amp;rsquo;s it. I&amp;rsquo;m one step closer to Full Suckless.</description>

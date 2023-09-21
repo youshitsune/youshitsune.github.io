@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rom on Youshitsune</title>
-    <link>http://example.com/tags/rom/</link>
+    <link>https://youshitsune.tech/tags/rom/</link>
     <description>Recent content in rom on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Jul 2023 08:18:47 +0200</lastBuildDate><atom:link href="http://example.com/tags/rom/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jul 2023 08:18:47 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/tags/rom/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flashing Lineage OS 20 on my Samsung Galaxy A50</title>
-      <link>http://example.com/blog/flashing-custom-rom/</link>
+      <link>https://youshitsune.tech/blog/flashing-custom-rom/</link>
       <pubDate>Fri, 21 Jul 2023 08:18:47 +0200</pubDate>
       
-      <guid>http://example.com/blog/flashing-custom-rom/</guid>
+      <guid>https://youshitsune.tech/blog/flashing-custom-rom/</guid>
       <description>Flashing Lineage OS 20 on my Samsung Galaxy A50 I always wanted to flash custom rom on my phone, but there isn&amp;rsquo;t any offical software for it.
 So, I started to search for best unoffical options.
 I&amp;rsquo;ve found Lineage OS 20 and TWRP.

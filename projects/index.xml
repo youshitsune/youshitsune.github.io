@@ -5,38 +5,28 @@
     <link>https://youshitsune.tech/projects/</link>
     <description>Recent content in Projects on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://youshitsune.tech/projects/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://youshitsune.tech/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arduino Hand Recognition</title>
       <link>https://youshitsune.tech/projects/arduino-hand-recognition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://youshitsune.tech/projects/arduino-hand-recognition/</guid>
       <description>arduino-hand-recognition This code runs on your computer and when you open and close your hand, LED turns on and off accordingly.</description>
     </item>
-    
     <item>
       <title>Email Mastodon</title>
       <link>https://youshitsune.tech/projects/emailmastodon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://youshitsune.tech/projects/emailmastodon/</guid>
       <description>emailmastodon Bot that mirrors emails to Mastodon account</description>
     </item>
-    
     <item>
       <title>Lastname Gen</title>
       <link>https://youshitsune.tech/projects/lastname-gen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://youshitsune.tech/projects/lastname-gen/</guid>
-      <description>lastname-gen This is Python program that generates last names using very simple &amp;ldquo;neural net&amp;rdquo;.
-Usage on your computer Usage on web Usage (on your computer) First, make sure you have PyTorch installed.
-pip install torch Then, clone this repo.
-git clone https://github.com/youshitsune/lastname-gen If you want to just run pre-trained model, just run run.py script.
-python3 run_local.py If you want to train it, run train.py script.
-python3 train.py Then you can use it.</description>
+      <description>lastname-gen This is Python program that generates last names using very simple &amp;ldquo;neural net&amp;rdquo;.&#xA;Usage on your computer Usage on web Usage (on your computer) First, make sure you have PyTorch installed.&#xA;pip install torch Then, clone this repo.&#xA;git clone https://github.com/youshitsune/lastname-gen If you want to just run pre-trained model, just run run.py script.&#xA;python3 run_local.py If you want to train it, run train.py script.&#xA;python3 train.py Then you can use it.</description>
     </item>
-    
   </channel>
 </rss>

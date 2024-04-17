@@ -1,236 +1,127 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1"><title>Attention is all you need - Youshitsune</title>
+<meta property="og:title" content="Attention is all you need - Youshitsune">
+<meta property="og:type" content="article">
+
+
+<meta property="og:image" content="avatar.png">
+
+<meta property="og:url" content="https://youshitsune.top/blog/attention-is-all-you-need/"><meta property="og:description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
+<meta name="Description" property="description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
+
+<link rel="me" href="https://tilde.town/@youshitsune">
+
+
+<meta property="keywords" content ="ai">
+
+
+
+<link rel="stylesheet" href="https://youshitsune.top/css/style.min.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link href="https://youshitsune.top/index.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
+<meta name="theme-color" content="#ffffff">
+
+
+<script>function updateMode(){localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")}function toggleMode(){localStorage.theme==="dark"?localStorage.theme="light":localStorage.theme="dark",updateMode()}window.onload=updateMode();function toggleMenu(){let e=document.getElementById("navbar-default");e.classList.contains("hidden")?e.classList.remove("hidden"):e.classList.add("hidden")}</script>
+
+  </head>
+  <body>
+    <header class="md:px-0 px-2">
+        <nav >
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <div class="nav-main my-2.5">
+      <a href="https://youshitsune.top/" class="nav-title py-2.5 text-2xl
+               text-zinc-600 dark:text-zinc-300 hover:border-b-0">Youshitsune</a>
+    </div>
+    <button type="button"
+            onclick="toggleMenu()"
+            class="inline-flex items-center p-2 ml-3
+                  text-sm text-gray-500
+                  rounded-lg md:hidden hover:bg-gray-100
+                  focus:outline-none focus:ring-2
+                  focus:ring-gray-200 dark:text-gray-400
+                  dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor"
+             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1
+                           0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1z" clip-rule="evenodd"></path>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="grid md:grid-flow-col items-center justify-between text-lg
+                 my-2.5 grid-cols-1 pl-0 text-center">
         
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/blog/">Posts</a>
+        </li>
         
-
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
-<meta name="description" content="Website Description">
-<title>
-Attention Is All You Need - Youshitsune
-</title>
-
-
-
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/tags/">Tags</a>
+        </li>
         
-        <meta property="og:title" content="Attention is all you need - Youshitsune" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="Website Description"/>
-<meta property="og:url" content="https://youshitsune.tech/blog/attention-is-all-you-need/"/>
-<meta property="og:site_name" content="Youshitsune"/>
+        <li class="h-7 pl-2.5 pr-0 list-none">
+          <button type="button" onclick="toggleMode()" class="h-full"  aria-label="Toggle between dark and light mode">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 hidden dark:inline"
+                 id="ligh-mode-button-img"
+                 alt="A sun icon for switching to light mode"
+                 src="https://youshitsune.top/img/light_mode.svg">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 inline dark:hidden"
+                 id="dark-mode-button-img"
+                 alt="A moon icon for switching to dark mode"
+                 src="https://youshitsune.top/img/dark_mode.svg">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
-
-
-<meta property="og:image" content="https://youshitsune.tech/home/avatar.png"/>
-
-
-
-
+    </header>
+    <main class="content h-card container mt-2 m-auto
+                 leading-loose md:px-0 px-2 z-0"
+          role="main">
+    
+<article class="article h-entry" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="title-container">
+        <h1 class="article-title p-name" itemprop="name">Attention is all you need</h1>
         
-<link rel="shortcut icon" href="/favicon.ico">
-
-
-        
-
-
-
-
-
-<link rel="stylesheet" href="/css/main.min.f8310307e7689f75fe430255441a49dac41c2321ae5a250ff11775d4080e4365.css" integrity="sha256-&#43;DEDB&#43;don3X&#43;QwJVRBpJ2sQcIyGuWiUP8Rd11AgOQ2U=" crossorigin="anonymous" media="screen">
-
-
-
-
-
-        
-        
-        
-        
-    </head>
-    <body>
-        <section id="top" class="section">
+        <div class="flex justify-between items-center">
             
-            <div class="container hero  fade-in one ">
-                
-
-<h1 class="bold-title is-1">Blog</h1>
-
-
-            </div>
-            
-            <div class="section  fade-in two ">
-                
-
-<div class="container">
-    <hr>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        
-        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-        <div class="navbar-menu " id="navMenu">
-            
-            
-            
-            
-            <a class="navbar-item" href="/">main</a>
-            
-
-            
-            
-
-            
-                
-            
-
-            
-                
-            
-
-            
+            <a class="text-lg text-gray-600 dark:text-gray-400 border-none u-url" href="https://youshitsune.top/blog/attention-is-all-you-need/">
+                <time itemprop="datePublished" class="dt-published"
+                    datetime="2023-02-19T05:55:30&#43;0100"
+                    content="2023-02-19T05:55:30&#43;0100">
+                    2023.02.19
+                </time>
+            </a>
             
             
                 
+                <a class="text-gray-600 dark:text-gray-400 text-right border-none p-author h-card" rel="author" href="https://youshitsune.top/" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Youshitsune</span></a>
                 
-                
-                
-                  <a class="navbar-item" href="https://youshitsune.tech/projects/">
-                  
-                  
-                  Projects
-                  
-                  
-                  </a>
-                
-                
-            
-            
-            
-            
-            
-            <a class="navbar-item" href="/#about">About</a>
-            
-            
-            
-            
-            
-            
-            
-                
-                
-                
-                
-                  <a class="navbar-item" href="https://youshitsune.tech/blog/">
-                  
-                  Back to Blog
-                  
-                  </a>
-                
-                
-            
-            
-            
-            
-
-            
-            
-            <a class="navbar-item" href="/#contact">Contact</a>
-            
-            
-
-            
-
-            
-            <a class="navbar-item" href="https://youshitsune.tech/index.xml"><i class="fas fa-rss"></i></a>
-            
             
         </div>
-    </nav>
-    <hr>
-</div>
-
-
-
-
-                
-<div class="container">
-    <h2 class="title is-1 top-pad strong-post-title">
-        <a href="https://youshitsune.tech/blog/attention-is-all-you-need/">Attention is all you need</a>
-    </h2>
-    
-    <div class="post-data">
-        Feb 19, 2023
-        
-         | 
-        1 minute read
         
     </div>
-    
-    <div class="blog-share">
-        Share this:
-        
-        <a class="twitter-share-button"
-            href="https://twitter.com/intent/tweet?text=Attention%20is%20all%20you%20need%20https%3a%2f%2fyoushitsune.tech%2fblog%2fattention-is-all-you-need%2f"
-            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-            <i class="fab fa-twitter"></i>
-            <span class="hidden">Twitter</span>
-        </a>
-        
-        
-        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fyoushitsune.tech%2fblog%2fattention-is-all-you-need%2f"
-            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-            <i class="fab fa-facebook-f"></i>
-            <span class="hidden">Facebook</span>
-        </a>
-        
-        
-        <a class="icon-pinterest"
-            href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fyoushitsune.tech%2fblog%2fattention-is-all-you-need%2f&amp;description=Attention%20is%20all%20you%20need"
-            onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
-            <i class="fab fa-pinterest-p"></i>
-            <span class="hidden">Pinterest</span>
-        </a>
-        
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <p>
-        Tags:
-        
-        <a href="/tags/ai">
-            ai</a>
-        
-    </p>
-    
-    
-    
-    
-</div>
 
-<div class="container markdown top-pad">
-    
-<h1 id="attention-is-all-you-need" class="anchor-link"><a href="#attention-is-all-you-need">Attention is all you need</a></h1>
+    <div class="article-content e-content" itemprop="articleBody">
+        <h1 id="attention-is-all-you-need">Attention is all you need</h1>
 <p>&ldquo;Attention is all you need&rdquo; is a research paper that proposes a new way of making an AI.</p>
 <p>Attention is mapping a query and a set of key-value pairs to an output, all of which are vectors: the query, the keys, and the values.
 The results are calculated as a weighted sum of the values, ith each value&rsquo;s weight determined by the query&rsquo;s compatibility function with its corresponding key.</p>
@@ -244,73 +135,67 @@ The results are calculated as a weighted sum of the values, ith each value&rsquo
 Reading comprehension, abstractive summarization, textual entailment, and the acquisition of task-independent phrase representation are just a few of the activities in which self-attention has been successfully applied.</p>
 <p>More about this you can read in &ldquo;Attention is all you need&rdquo;. Here is <a href="../../../pdf/Attention_is_all_you_need.pdf">PDF</a> of it.</p>
 
-</div>
-
-
-    <div class="container disqus">
-        <div id="disqus_thread"></div>
-<script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "youshitsune" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
 
-
-
-                
-                <div class="container">
-    <hr>
-</div>
-<div class="container has-text-centered top-pad">
-    <a href="#top">
-        <i class="fa fa-arrow-up"></i>
-    </a>
-</div>
-
-<div class="container">
-    <hr>
-</div>
-
-                <div class="section" id="footer">
-    <div class="container has-text-centered">
     
-        <span class="footer-text">
-            <a href="https://github.com/victoriadrake/hugo-theme-introduction/"><strong>Introduction</strong></a> theme for <a href="http://gohugo.io/">Hugo</a>. Made with <a href="https://victoria.dev"><i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i></a> by open source contributors.
+<ul class="list-none pl-0 font-sm align-left">
+
+
+<li class="list-none">
+    Tags:
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/tags/ai">
+        <span class="flex flex-row justify-start items-center
+                     dark:bg-zinc-900 dark:hover:bg-zinc-700
+                     hover:bg-zinc-300 bg-zinc-200
+                     dark:border-zinc-600 py-0.5
+                     px-1 rounded-t border-b-2 border-zinc-300
+                     hover:border-zinc-500">
+            
+            <img class="h-4 mr-2 inline" src="https://youshitsune.top/images/tag_logo.svg"
+                 alt="Logo of a tag: indicates that a tag item follows.">
+            ai
         </span>
+    </a>
     
+</li>
+
+</ul>
+
+
+    
+
+    
+    <div class="text-neutral-500 mb-4">
+        Last modified <span itemprop="dateModified"
+                            datetime="2023-02-19T05:55:30&#43;0100"
+                            content="2023-02-19T05:55:30&#43;0100">
+        2023.02.19
+        </span>
     </div>
-</div>
+    
+</article>
 
-                
-            </div>
-        </section>
-        
-        
+    </main>
+    <footer class="footer container h-10 text-center mt-1">
+<hr class="my-4">
+  <ul class="pl-0 mt-1">
+    
+    <li class="ml-2 first:before:content-none before:content-['•']
+               inline-block list-none">
+      <a class="ml-2 text-neutral-800
+                dark:text-neutral-400 border-none"
+          href="https://github.com/hugcis/hugo-astatine-theme">Code</a>
+    </li>
+    <li class="ml-2 first:before:content-none before:content-['•']
+                text-neutral-800 dark:text-neutral-400 inline-block list-none">
+      <span class="ml-2">© Youshitsune 2024</span>
+    </li>
+  </ul>
+</footer>
 
 
-<script src="https://youshitsune.tech/js/bundle.5c23c0437f001a469ca373a465a6f7487203d18e10cdff76d86a60af66d5ee28.js" integrity="sha256-XCPAQ38AGkaco3OkZab3SHID0Y4Qzf922Gpgr2bV7ig="></script>
 
-
-
-
-        
-        
-        
-        
-    </body>
+  </body>
 </html>

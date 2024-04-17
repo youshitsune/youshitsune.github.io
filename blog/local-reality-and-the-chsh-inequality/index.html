@@ -1,405 +1,312 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1"><title>Local Reality and the CHSH Inequality - Youshitsune</title>
+<meta property="og:title" content="Local Reality and the CHSH Inequality - Youshitsune">
+<meta property="og:type" content="article">
+
+
+<meta property="og:image" content="avatar.png">
+
+<meta property="og:url" content="https://youshitsune.top/blog/local-reality-and-the-chsh-inequality/"><meta property="og:description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
+<meta name="Description" property="description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
+
+<link rel="me" href="https://tilde.town/@youshitsune">
+
+
+<meta property="keywords" content ="qiskit, quantum, tech">
+
+
+
+<link rel="stylesheet" href="https://youshitsune.top/css/style.min.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link href="https://youshitsune.top/index.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
+<meta name="theme-color" content="#ffffff">
+
+
+<script>function updateMode(){localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")}function toggleMode(){localStorage.theme==="dark"?localStorage.theme="light":localStorage.theme="dark",updateMode()}window.onload=updateMode();function toggleMenu(){let e=document.getElementById("navbar-default");e.classList.contains("hidden")?e.classList.remove("hidden"):e.classList.add("hidden")}</script>
+
+  </head>
+  <body>
+    <header class="md:px-0 px-2">
+        <nav >
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <div class="nav-main my-2.5">
+      <a href="https://youshitsune.top/" class="nav-title py-2.5 text-2xl
+               text-zinc-600 dark:text-zinc-300 hover:border-b-0">Youshitsune</a>
+    </div>
+    <button type="button"
+            onclick="toggleMenu()"
+            class="inline-flex items-center p-2 ml-3
+                  text-sm text-gray-500
+                  rounded-lg md:hidden hover:bg-gray-100
+                  focus:outline-none focus:ring-2
+                  focus:ring-gray-200 dark:text-gray-400
+                  dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor"
+             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1
+                           0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1z" clip-rule="evenodd"></path>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="grid md:grid-flow-col items-center justify-between text-lg
+                 my-2.5 grid-cols-1 pl-0 text-center">
         
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/blog/">Posts</a>
+        </li>
         
-
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
-<meta name="description" content="Website Description">
-<title>
-Local Reality and the Chsh Inequality - Youshitsune
-</title>
-
-
-
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/tags/">Tags</a>
+        </li>
         
-        <meta property="og:title" content="Local Reality and the CHSH Inequality - Youshitsune" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="Website Description"/>
-<meta property="og:url" content="https://youshitsune.tech/blog/local-reality-and-the-chsh-inequality/"/>
-<meta property="og:site_name" content="Youshitsune"/>
+        <li class="h-7 pl-2.5 pr-0 list-none">
+          <button type="button" onclick="toggleMode()" class="h-full"  aria-label="Toggle between dark and light mode">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 hidden dark:inline"
+                 id="ligh-mode-button-img"
+                 alt="A sun icon for switching to light mode"
+                 src="https://youshitsune.top/img/light_mode.svg">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 inline dark:hidden"
+                 id="dark-mode-button-img"
+                 alt="A moon icon for switching to dark mode"
+                 src="https://youshitsune.top/img/dark_mode.svg">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
-
-
-<meta property="og:image" content="https://youshitsune.tech/home/avatar.png"/>
-
-
-
-
+    </header>
+    <main class="content h-card container mt-2 m-auto
+                 leading-loose md:px-0 px-2 z-0"
+          role="main">
+    
+<article class="article h-entry" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="title-container">
+        <h1 class="article-title p-name" itemprop="name">Local Reality and the CHSH Inequality</h1>
         
-<link rel="shortcut icon" href="/favicon.ico">
-
-
-        
-
-
-
-
-
-<link rel="stylesheet" href="/css/main.min.f8310307e7689f75fe430255441a49dac41c2321ae5a250ff11775d4080e4365.css" integrity="sha256-&#43;DEDB&#43;don3X&#43;QwJVRBpJ2sQcIyGuWiUP8Rd11AgOQ2U=" crossorigin="anonymous" media="screen">
-
-
-
-
-
-        
-        
-        
-        
-    </head>
-    <body>
-        <section id="top" class="section">
+        <div class="flex justify-between items-center">
             
-            <div class="container hero  fade-in one ">
-                
-
-<h1 class="bold-title is-1">Blog</h1>
-
-
-            </div>
-            
-            <div class="section  fade-in two ">
-                
-
-<div class="container">
-    <hr>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        
-        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-        <div class="navbar-menu " id="navMenu">
-            
-            
-            
-            
-            <a class="navbar-item" href="/">main</a>
-            
-
-            
-            
-
-            
-                
-            
-
-            
-                
-            
-
-            
+            <a class="text-lg text-gray-600 dark:text-gray-400 border-none u-url" href="https://youshitsune.top/blog/local-reality-and-the-chsh-inequality/">
+                <time itemprop="datePublished" class="dt-published"
+                    datetime="2023-06-26T09:23:15&#43;0200"
+                    content="2023-06-26T09:23:15&#43;0200">
+                    2023.06.26
+                </time>
+            </a>
             
             
                 
+                <a class="text-gray-600 dark:text-gray-400 text-right border-none p-author h-card" rel="author" href="https://youshitsune.top/" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Youshitsune</span></a>
                 
-                
-                
-                  <a class="navbar-item" href="https://youshitsune.tech/projects/">
-                  
-                  
-                  Projects
-                  
-                  
-                  </a>
-                
-                
-            
-            
-            
-            
-            
-            <a class="navbar-item" href="/#about">About</a>
-            
-            
-            
-            
-            
-            
-            
-                
-                
-                
-                
-                  <a class="navbar-item" href="https://youshitsune.tech/blog/">
-                  
-                  Back to Blog
-                  
-                  </a>
-                
-                
-            
-            
-            
-            
-
-            
-            
-            <a class="navbar-item" href="/#contact">Contact</a>
-            
-            
-
-            
-
-            
-            <a class="navbar-item" href="https://youshitsune.tech/index.xml"><i class="fas fa-rss"></i></a>
-            
             
         </div>
-    </nav>
-    <hr>
-</div>
-
-
-
-
-                
-<div class="container">
-    <h2 class="title is-1 top-pad strong-post-title">
-        <a href="https://youshitsune.tech/blog/local-reality-and-the-chsh-inequality/">Local Reality and the CHSH Inequality</a>
-    </h2>
-    
-    <div class="post-data">
-        Jun 26, 2023
-        
-         | 
-        2 minutes read
         
     </div>
-    
-    <div class="blog-share">
-        Share this:
-        
-        <a class="twitter-share-button"
-            href="https://twitter.com/intent/tweet?text=Local%20Reality%20and%20the%20CHSH%20Inequality%20https%3a%2f%2fyoushitsune.tech%2fblog%2flocal-reality-and-the-chsh-inequality%2f"
-            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-            <i class="fab fa-twitter"></i>
-            <span class="hidden">Twitter</span>
-        </a>
-        
-        
-        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fyoushitsune.tech%2fblog%2flocal-reality-and-the-chsh-inequality%2f"
-            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-            <i class="fab fa-facebook-f"></i>
-            <span class="hidden">Facebook</span>
-        </a>
-        
-        
-        <a class="icon-pinterest"
-            href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fyoushitsune.tech%2fblog%2flocal-reality-and-the-chsh-inequality%2f&amp;description=Local%20Reality%20and%20the%20CHSH%20Inequality"
-            onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
-            <i class="fab fa-pinterest-p"></i>
-            <span class="hidden">Pinterest</span>
-        </a>
-        
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <p>
-        Tags:
-        
-        <a href="/tags/qiskit">
-            qiskit</a>,
-        
-        <a href="/tags/quantum">
-            quantum</a>,
-        
-        <a href="/tags/tech">
-            tech</a>
-        
-    </p>
-    
-    
-    
-    
-    
-    
-</div>
 
-<div class="container markdown top-pad">
-    
-<h1 id="local-reality-and-the-chsh-inequality" class="anchor-link"><a href="#local-reality-and-the-chsh-inequality">Local Reality and the CHSH Inequality</a></h1>
+    <div class="article-content e-content" itemprop="articleBody">
+        <h1 id="local-reality-and-the-chsh-inequality">Local Reality and the CHSH Inequality</h1>
 <p>The CHSH game is a thought experiment involving two parties separated at a great distance (far enough to preclude classical communication at the speed of light), each of whom has access to one half of an entangled two-qubit pair. Analysis of this game shows that no classical local hidden-variable theory can explain the correlations that can result from entanglement. Since this game is indeed physically realizable, this gives strong evidence that classical physics is fundamentally incapable of explaining certain quantum phenomena, at least in a &ldquo;local&rdquo; fashion.</p>
 <p>Here is implementation for CHSH Inequality</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#719e07">import</span> qiskit
-</span></span><span style="display:flex;"><span><span style="color:#719e07">from</span> qiskit <span style="color:#719e07">import</span> QuantumCircuit, ClassicalRegister, QuantumRegister,transpile, Aer
-</span></span><span style="display:flex;"><span><span style="color:#719e07">from</span> qiskit.tools.visualization <span style="color:#719e07">import</span> circuit_drawer
-</span></span><span style="display:flex;"><span><span style="color:#719e07">from</span> qiskit.tools.monitor <span style="color:#719e07">import</span> job_monitor, backend_monitor, backend_overview
-</span></span><span style="display:flex;"><span><span style="color:#719e07">from</span> qiskit.providers.aer <span style="color:#719e07">import</span> noise
-</span></span><span style="display:flex;"><span><span style="color:#719e07">from</span> qiskit_ibm_provider <span style="color:#719e07">import</span> IBMProvider
+<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#6ab825;font-weight:bold">import</span> <span style="color:#447fcf;text-decoration:underline">qiskit</span>
+</span></span><span style="display:flex;"><span><span style="color:#6ab825;font-weight:bold">from</span> <span style="color:#447fcf;text-decoration:underline">qiskit</span> <span style="color:#6ab825;font-weight:bold">import</span> QuantumCircuit, ClassicalRegister, QuantumRegister,transpile, Aer
+</span></span><span style="display:flex;"><span><span style="color:#6ab825;font-weight:bold">from</span> <span style="color:#447fcf;text-decoration:underline">qiskit.tools.visualization</span> <span style="color:#6ab825;font-weight:bold">import</span> circuit_drawer
+</span></span><span style="display:flex;"><span><span style="color:#6ab825;font-weight:bold">from</span> <span style="color:#447fcf;text-decoration:underline">qiskit.tools.monitor</span> <span style="color:#6ab825;font-weight:bold">import</span> job_monitor, backend_monitor, backend_overview
+</span></span><span style="display:flex;"><span><span style="color:#6ab825;font-weight:bold">from</span> <span style="color:#447fcf;text-decoration:underline">qiskit.providers.aer</span> <span style="color:#6ab825;font-weight:bold">import</span> noise
+</span></span><span style="display:flex;"><span><span style="color:#6ab825;font-weight:bold">from</span> <span style="color:#447fcf;text-decoration:underline">qiskit_ibm_provider</span> <span style="color:#6ab825;font-weight:bold">import</span> IBMProvider
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#719e07">import</span> matplotlib.pyplot <span style="color:#719e07">as</span> plt
-</span></span><span style="display:flex;"><span><span style="color:#719e07">import</span> numpy <span style="color:#719e07">as</span> np
-</span></span><span style="display:flex;"><span><span style="color:#719e07">import</span> time
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sim <span style="color:#719e07">=</span> Aer<span style="color:#719e07">.</span>get_backend(<span style="color:#2aa198">&#39;aer_simulator&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#6ab825;font-weight:bold">import</span> <span style="color:#447fcf;text-decoration:underline">matplotlib.pyplot</span> <span style="color:#6ab825;font-weight:bold">as</span> <span style="color:#447fcf;text-decoration:underline">plt</span>
+</span></span><span style="display:flex;"><span><span style="color:#6ab825;font-weight:bold">import</span> <span style="color:#447fcf;text-decoration:underline">numpy</span> <span style="color:#6ab825;font-weight:bold">as</span> <span style="color:#447fcf;text-decoration:underline">np</span>
+</span></span><span style="display:flex;"><span><span style="color:#6ab825;font-weight:bold">import</span> <span style="color:#447fcf;text-decoration:underline">time</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sim = Aer.get_backend(<span style="color:#ed9d13">&#39;aer_simulator&#39;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>provider <span style="color:#719e07">=</span> IBMProvider(<span style="color:#2aa198">&#39;imbq-key&#39;</span>)
-</span></span><span style="display:flex;"><span>backend <span style="color:#719e07">=</span> provider<span style="color:#719e07">.</span>get_backend(<span style="color:#2aa198">&#39;ibmq_lima&#39;</span>)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#719e07">def</span> <span style="color:#268bd2">make_chsh_circuit</span>(theta_vec):
-</span></span><span style="display:flex;"><span>    chsh_circuits <span style="color:#719e07">=</span> []
+</span></span><span style="display:flex;"><span>provider = IBMProvider(<span style="color:#ed9d13">&#39;imbq-key&#39;</span>)
+</span></span><span style="display:flex;"><span>backend = provider.get_backend(<span style="color:#ed9d13">&#39;ibmq_lima&#39;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#6ab825;font-weight:bold">def</span> <span style="color:#447fcf">make_chsh_circuit</span>(theta_vec):
+</span></span><span style="display:flex;"><span>    chsh_circuits = []
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#719e07">for</span> theta <span style="color:#719e07">in</span> theta_vec:
-</span></span><span style="display:flex;"><span>        obs_vec <span style="color:#719e07">=</span> [<span style="color:#2aa198">&#39;00&#39;</span>, <span style="color:#2aa198">&#39;01&#39;</span>, <span style="color:#2aa198">&#39;10&#39;</span>, <span style="color:#2aa198">&#39;11&#39;</span>]
-</span></span><span style="display:flex;"><span>        <span style="color:#719e07">for</span> el <span style="color:#719e07">in</span> obs_vec:
-</span></span><span style="display:flex;"><span>            qc <span style="color:#719e07">=</span> QuantumCircuit(<span style="color:#2aa198">2</span>,<span style="color:#2aa198">2</span>)
-</span></span><span style="display:flex;"><span>            qc<span style="color:#719e07">.</span>h(<span style="color:#2aa198">0</span>)
-</span></span><span style="display:flex;"><span>            qc<span style="color:#719e07">.</span>cx(<span style="color:#2aa198">0</span>,<span style="color:#2aa198">1</span>)
-</span></span><span style="display:flex;"><span>            qc<span style="color:#719e07">.</span>ry(theta, <span style="color:#2aa198">0</span>)
-</span></span><span style="display:flex;"><span>            <span style="color:#719e07">for</span> a <span style="color:#719e07">in</span> <span style="color:#b58900">range</span>(<span style="color:#2aa198">2</span>):
-</span></span><span style="display:flex;"><span>                <span style="color:#719e07">if</span> el[a] <span style="color:#719e07">==</span> <span style="color:#2aa198">&#39;1&#39;</span>:
-</span></span><span style="display:flex;"><span>                    qc<span style="color:#719e07">.</span>h(a)
-</span></span><span style="display:flex;"><span>            qc<span style="color:#719e07">.</span>measure(<span style="color:#b58900">range</span>(<span style="color:#2aa198">2</span>),<span style="color:#b58900">range</span>(<span style="color:#2aa198">2</span>))
-</span></span><span style="display:flex;"><span>            chsh_circuits<span style="color:#719e07">.</span>append(qc)
-</span></span><span style="display:flex;"><span>    <span style="color:#719e07">return</span> chsh_circuits
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#719e07">def</span> <span style="color:#268bd2">compute_chsh_witness</span>(counts):
-</span></span><span style="display:flex;"><span>    CHSH1 <span style="color:#719e07">=</span> []
-</span></span><span style="display:flex;"><span>    CHSH2 <span style="color:#719e07">=</span> []
-</span></span><span style="display:flex;"><span>    <span style="color:#719e07">for</span> i <span style="color:#719e07">in</span> <span style="color:#b58900">range</span>(<span style="color:#2aa198">0</span>, <span style="color:#b58900">len</span>(counts), <span style="color:#2aa198">4</span>):
-</span></span><span style="display:flex;"><span>        theta_dict <span style="color:#719e07">=</span> counts[i:i <span style="color:#719e07">+</span> <span style="color:#2aa198">4</span>]
-</span></span><span style="display:flex;"><span>        zz <span style="color:#719e07">=</span> theta_dict[<span style="color:#2aa198">0</span>]
-</span></span><span style="display:flex;"><span>        zx <span style="color:#719e07">=</span> theta_dict[<span style="color:#2aa198">1</span>]
-</span></span><span style="display:flex;"><span>        xz <span style="color:#719e07">=</span> theta_dict[<span style="color:#2aa198">2</span>]
-</span></span><span style="display:flex;"><span>        xx <span style="color:#719e07">=</span> theta_dict[<span style="color:#2aa198">3</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#6ab825;font-weight:bold">for</span> theta <span style="color:#6ab825;font-weight:bold">in</span> theta_vec:
+</span></span><span style="display:flex;"><span>        obs_vec = [<span style="color:#ed9d13">&#39;00&#39;</span>, <span style="color:#ed9d13">&#39;01&#39;</span>, <span style="color:#ed9d13">&#39;10&#39;</span>, <span style="color:#ed9d13">&#39;11&#39;</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#6ab825;font-weight:bold">for</span> el <span style="color:#6ab825;font-weight:bold">in</span> obs_vec:
+</span></span><span style="display:flex;"><span>            qc = QuantumCircuit(<span style="color:#3677a9">2</span>,<span style="color:#3677a9">2</span>)
+</span></span><span style="display:flex;"><span>            qc.h(<span style="color:#3677a9">0</span>)
+</span></span><span style="display:flex;"><span>            qc.cx(<span style="color:#3677a9">0</span>,<span style="color:#3677a9">1</span>)
+</span></span><span style="display:flex;"><span>            qc.ry(theta, <span style="color:#3677a9">0</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#6ab825;font-weight:bold">for</span> a <span style="color:#6ab825;font-weight:bold">in</span> <span style="color:#24909d">range</span>(<span style="color:#3677a9">2</span>):
+</span></span><span style="display:flex;"><span>                <span style="color:#6ab825;font-weight:bold">if</span> el[a] == <span style="color:#ed9d13">&#39;1&#39;</span>:
+</span></span><span style="display:flex;"><span>                    qc.h(a)
+</span></span><span style="display:flex;"><span>            qc.measure(<span style="color:#24909d">range</span>(<span style="color:#3677a9">2</span>),<span style="color:#24909d">range</span>(<span style="color:#3677a9">2</span>))
+</span></span><span style="display:flex;"><span>            chsh_circuits.append(qc)
+</span></span><span style="display:flex;"><span>    <span style="color:#6ab825;font-weight:bold">return</span> chsh_circuits
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#6ab825;font-weight:bold">def</span> <span style="color:#447fcf">compute_chsh_witness</span>(counts):
+</span></span><span style="display:flex;"><span>    CHSH1 = []
+</span></span><span style="display:flex;"><span>    CHSH2 = []
+</span></span><span style="display:flex;"><span>    <span style="color:#6ab825;font-weight:bold">for</span> i <span style="color:#6ab825;font-weight:bold">in</span> <span style="color:#24909d">range</span>(<span style="color:#3677a9">0</span>, <span style="color:#24909d">len</span>(counts), <span style="color:#3677a9">4</span>):
+</span></span><span style="display:flex;"><span>        theta_dict = counts[i:i + <span style="color:#3677a9">4</span>]
+</span></span><span style="display:flex;"><span>        zz = theta_dict[<span style="color:#3677a9">0</span>]
+</span></span><span style="display:flex;"><span>        zx = theta_dict[<span style="color:#3677a9">1</span>]
+</span></span><span style="display:flex;"><span>        xz = theta_dict[<span style="color:#3677a9">2</span>]
+</span></span><span style="display:flex;"><span>        xx = theta_dict[<span style="color:#3677a9">3</span>]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        no_shots <span style="color:#719e07">=</span> <span style="color:#b58900">sum</span>(xx[y] <span style="color:#719e07">for</span> y <span style="color:#719e07">in</span> xx)
-</span></span><span style="display:flex;"><span>        chsh1 <span style="color:#719e07">=</span> <span style="color:#2aa198">0</span>
-</span></span><span style="display:flex;"><span>        chsh2 <span style="color:#719e07">=</span> <span style="color:#2aa198">0</span>
+</span></span><span style="display:flex;"><span>        no_shots = <span style="color:#24909d">sum</span>(xx[y] <span style="color:#6ab825;font-weight:bold">for</span> y <span style="color:#6ab825;font-weight:bold">in</span> xx)
+</span></span><span style="display:flex;"><span>        chsh1 = <span style="color:#3677a9">0</span>
+</span></span><span style="display:flex;"><span>        chsh2 = <span style="color:#3677a9">0</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#719e07">for</span> element <span style="color:#719e07">in</span> zz:
-</span></span><span style="display:flex;"><span>            parity <span style="color:#719e07">=</span> (<span style="color:#719e07">-</span><span style="color:#2aa198">1</span>)<span style="color:#719e07">**</span>(<span style="color:#b58900">int</span>(element[<span style="color:#2aa198">0</span>])<span style="color:#719e07">+</span><span style="color:#b58900">int</span>(element[<span style="color:#2aa198">1</span>]))
-</span></span><span style="display:flex;"><span>            chsh1<span style="color:#719e07">+=</span>parity<span style="color:#719e07">*</span>zz[element]
-</span></span><span style="display:flex;"><span>            chsh2<span style="color:#719e07">+=</span>parity<span style="color:#719e07">*</span>zz[element]
+</span></span><span style="display:flex;"><span>        <span style="color:#6ab825;font-weight:bold">for</span> element <span style="color:#6ab825;font-weight:bold">in</span> zz:
+</span></span><span style="display:flex;"><span>            parity = (-<span style="color:#3677a9">1</span>)**(<span style="color:#24909d">int</span>(element[<span style="color:#3677a9">0</span>])+<span style="color:#24909d">int</span>(element[<span style="color:#3677a9">1</span>]))
+</span></span><span style="display:flex;"><span>            chsh1+=parity*zz[element]
+</span></span><span style="display:flex;"><span>            chsh2+=parity*zz[element]
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>        <span style="color:#719e07">for</span> element <span style="color:#719e07">in</span> zx:
-</span></span><span style="display:flex;"><span>            parity <span style="color:#719e07">=</span> (<span style="color:#719e07">-</span><span style="color:#2aa198">1</span>)<span style="color:#719e07">**</span>(<span style="color:#b58900">int</span>(element[<span style="color:#2aa198">0</span>])<span style="color:#719e07">+</span><span style="color:#b58900">int</span>(element[<span style="color:#2aa198">1</span>]))
-</span></span><span style="display:flex;"><span>            chsh1<span style="color:#719e07">+=</span> parity<span style="color:#719e07">*</span>zx[element]
-</span></span><span style="display:flex;"><span>            chsh2<span style="color:#719e07">-=</span> parity<span style="color:#719e07">*</span>zx[element]
+</span></span><span style="display:flex;"><span>        <span style="color:#6ab825;font-weight:bold">for</span> element <span style="color:#6ab825;font-weight:bold">in</span> zx:
+</span></span><span style="display:flex;"><span>            parity = (-<span style="color:#3677a9">1</span>)**(<span style="color:#24909d">int</span>(element[<span style="color:#3677a9">0</span>])+<span style="color:#24909d">int</span>(element[<span style="color:#3677a9">1</span>]))
+</span></span><span style="display:flex;"><span>            chsh1+= parity*zx[element]
+</span></span><span style="display:flex;"><span>            chsh2-= parity*zx[element]
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>        <span style="color:#719e07">for</span> element <span style="color:#719e07">in</span> xz:
-</span></span><span style="display:flex;"><span>            parity <span style="color:#719e07">=</span> (<span style="color:#719e07">-</span><span style="color:#2aa198">1</span>)<span style="color:#719e07">**</span>(<span style="color:#b58900">int</span>(element[<span style="color:#2aa198">0</span>])<span style="color:#719e07">+</span><span style="color:#b58900">int</span>(element[<span style="color:#2aa198">1</span>]))
-</span></span><span style="display:flex;"><span>            chsh1<span style="color:#719e07">-=</span> parity<span style="color:#719e07">*</span>xz[element]
-</span></span><span style="display:flex;"><span>            chsh2<span style="color:#719e07">+=</span> parity<span style="color:#719e07">*</span>xz[element]
+</span></span><span style="display:flex;"><span>        <span style="color:#6ab825;font-weight:bold">for</span> element <span style="color:#6ab825;font-weight:bold">in</span> xz:
+</span></span><span style="display:flex;"><span>            parity = (-<span style="color:#3677a9">1</span>)**(<span style="color:#24909d">int</span>(element[<span style="color:#3677a9">0</span>])+<span style="color:#24909d">int</span>(element[<span style="color:#3677a9">1</span>]))
+</span></span><span style="display:flex;"><span>            chsh1-= parity*xz[element]
+</span></span><span style="display:flex;"><span>            chsh2+= parity*xz[element]
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>        <span style="color:#719e07">for</span> element <span style="color:#719e07">in</span> xx:
-</span></span><span style="display:flex;"><span>            parity <span style="color:#719e07">=</span> (<span style="color:#719e07">-</span><span style="color:#2aa198">1</span>)<span style="color:#719e07">**</span>(<span style="color:#b58900">int</span>(element[<span style="color:#2aa198">0</span>])<span style="color:#719e07">+</span><span style="color:#b58900">int</span>(element[<span style="color:#2aa198">1</span>]))
-</span></span><span style="display:flex;"><span>            chsh1<span style="color:#719e07">+=</span> parity<span style="color:#719e07">*</span>xx[element]
-</span></span><span style="display:flex;"><span>            chsh2<span style="color:#719e07">+=</span> parity<span style="color:#719e07">*</span>xx[element]
+</span></span><span style="display:flex;"><span>        <span style="color:#6ab825;font-weight:bold">for</span> element <span style="color:#6ab825;font-weight:bold">in</span> xx:
+</span></span><span style="display:flex;"><span>            parity = (-<span style="color:#3677a9">1</span>)**(<span style="color:#24909d">int</span>(element[<span style="color:#3677a9">0</span>])+<span style="color:#24909d">int</span>(element[<span style="color:#3677a9">1</span>]))
+</span></span><span style="display:flex;"><span>            chsh1+= parity*xx[element]
+</span></span><span style="display:flex;"><span>            chsh2+= parity*xx[element]
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>        CHSH1<span style="color:#719e07">.</span>append(chsh1<span style="color:#719e07">/</span>no_shots)
-</span></span><span style="display:flex;"><span>        CHSH2<span style="color:#719e07">.</span>append(chsh2<span style="color:#719e07">/</span>no_shots)
+</span></span><span style="display:flex;"><span>        CHSH1.append(chsh1/no_shots)
+</span></span><span style="display:flex;"><span>        CHSH2.append(chsh2/no_shots)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#719e07">return</span> CHSH1, CHSH2
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>number_of_thetas <span style="color:#719e07">=</span> <span style="color:#2aa198">15</span>
-</span></span><span style="display:flex;"><span>theta_vec <span style="color:#719e07">=</span> np<span style="color:#719e07">.</span>linspace(<span style="color:#2aa198">0</span>,<span style="color:#2aa198">2</span><span style="color:#719e07">*</span>np<span style="color:#719e07">.</span>pi,number_of_thetas)
-</span></span><span style="display:flex;"><span>my_chsh_circuits <span style="color:#719e07">=</span> make_chsh_circuit(theta_vec)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_chsh_circuits[<span style="color:#2aa198">4</span>]<span style="color:#719e07">.</span>draw(output<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;mpl&#34;</span>)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>result_ideal <span style="color:#719e07">=</span> sim<span style="color:#719e07">.</span>run(my_chsh_circuits)<span style="color:#719e07">.</span>result()
+</span></span><span style="display:flex;"><span>    <span style="color:#6ab825;font-weight:bold">return</span> CHSH1, CHSH2
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>number_of_thetas = <span style="color:#3677a9">15</span>
+</span></span><span style="display:flex;"><span>theta_vec = np.linspace(<span style="color:#3677a9">0</span>,<span style="color:#3677a9">2</span>*np.pi,number_of_thetas)
+</span></span><span style="display:flex;"><span>my_chsh_circuits = make_chsh_circuit(theta_vec)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_chsh_circuits[<span style="color:#3677a9">4</span>].draw(output=<span style="color:#ed9d13">&#34;mpl&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>result_ideal = sim.run(my_chsh_circuits).result()
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>tic <span style="color:#719e07">=</span> time<span style="color:#719e07">.</span>time()
-</span></span><span style="display:flex;"><span>transpiled_circuits <span style="color:#719e07">=</span> transpile(my_chsh_circuits, backend)
-</span></span><span style="display:flex;"><span>job_real <span style="color:#719e07">=</span> backend<span style="color:#719e07">.</span>run(transpiled_circuits, shots<span style="color:#719e07">=</span><span style="color:#2aa198">8192</span>)
+</span></span><span style="display:flex;"><span>tic = time.time()
+</span></span><span style="display:flex;"><span>transpiled_circuits = transpile(my_chsh_circuits, backend)
+</span></span><span style="display:flex;"><span>job_real = backend.run(transpiled_circuits, shots=<span style="color:#3677a9">8192</span>)
 </span></span><span style="display:flex;"><span>job_monitor(job_real)
-</span></span><span style="display:flex;"><span>result_real <span style="color:#719e07">=</span> job_real<span style="color:#719e07">.</span>result()
-</span></span><span style="display:flex;"><span>toc <span style="color:#719e07">=</span> time<span style="color:#719e07">.</span>time()
-</span></span><span style="display:flex;"><span><span style="color:#b58900">print</span>(toc<span style="color:#719e07">-</span>tic)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>CHSH1_ideal, CHSH2_ideal <span style="color:#719e07">=</span> compute_chsh_witness(result_ideal<span style="color:#719e07">.</span>get_counts())
-</span></span><span style="display:flex;"><span>CHSH1_real, CHSH2_real <span style="color:#719e07">=</span> compute_chsh_witness(result_real<span style="color:#719e07">.</span>get_counts())
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#719e07">.</span>figure(figsize<span style="color:#719e07">=</span>(<span style="color:#2aa198">12</span>,<span style="color:#2aa198">8</span>))
-</span></span><span style="display:flex;"><span>plt<span style="color:#719e07">.</span>plot(theta_vec, CHSH1_ideal,<span style="color:#2aa198">&#39;o-&#39;</span>,label <span style="color:#719e07">=</span> <span style="color:#2aa198">&#39;CHSH1 Noiseless&#39;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#719e07">.</span>plot(theta_vec, CHSH2_ideal, <span style="color:#2aa198">&#39;o-&#39;</span>, label<span style="color:#719e07">=</span><span style="color:#2aa198">&#39;CHSH2 Noiseless&#39;</span>)
+</span></span><span style="display:flex;"><span>result_real = job_real.result()
+</span></span><span style="display:flex;"><span>toc = time.time()
+</span></span><span style="display:flex;"><span><span style="color:#24909d">print</span>(toc-tic)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>CHSH1_ideal, CHSH2_ideal = compute_chsh_witness(result_ideal.get_counts())
+</span></span><span style="display:flex;"><span>CHSH1_real, CHSH2_real = compute_chsh_witness(result_real.get_counts())
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt.figure(figsize=(<span style="color:#3677a9">12</span>,<span style="color:#3677a9">8</span>))
+</span></span><span style="display:flex;"><span>plt.plot(theta_vec, CHSH1_ideal,<span style="color:#ed9d13">&#39;o-&#39;</span>,label = <span style="color:#ed9d13">&#39;CHSH1 Noiseless&#39;</span>)
+</span></span><span style="display:flex;"><span>plt.plot(theta_vec, CHSH2_ideal, <span style="color:#ed9d13">&#39;o-&#39;</span>, label=<span style="color:#ed9d13">&#39;CHSH2 Noiseless&#39;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#719e07">.</span>plot(theta_vec, CHSH1_real, <span style="color:#2aa198">&#39;x-&#39;</span>, label<span style="color:#719e07">=</span><span style="color:#2aa198">&#39;CHSH1 Quito&#39;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#719e07">.</span>plot(theta_vec, CHSH2_real, <span style="color:#2aa198">&#39;x-&#39;</span>, label<span style="color:#719e07">=</span><span style="color:#2aa198">&#39;CHSH2 Quito&#39;</span>)
+</span></span><span style="display:flex;"><span>plt.plot(theta_vec, CHSH1_real, <span style="color:#ed9d13">&#39;x-&#39;</span>, label=<span style="color:#ed9d13">&#39;CHSH1 Quito&#39;</span>)
+</span></span><span style="display:flex;"><span>plt.plot(theta_vec, CHSH2_real, <span style="color:#ed9d13">&#39;x-&#39;</span>, label=<span style="color:#ed9d13">&#39;CHSH2 Quito&#39;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#719e07">.</span>legend()
+</span></span><span style="display:flex;"><span>plt.legend()
 </span></span></code></pre></div>
-</div>
-
-
-    <div class="container disqus">
-        <div id="disqus_thread"></div>
-<script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "youshitsune" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
 
-
-
-                
-                <div class="container">
-    <hr>
-</div>
-<div class="container has-text-centered top-pad">
-    <a href="#top">
-        <i class="fa fa-arrow-up"></i>
-    </a>
-</div>
-
-<div class="container">
-    <hr>
-</div>
-
-                <div class="section" id="footer">
-    <div class="container has-text-centered">
     
-        <span class="footer-text">
-            <a href="https://github.com/victoriadrake/hugo-theme-introduction/"><strong>Introduction</strong></a> theme for <a href="http://gohugo.io/">Hugo</a>. Made with <a href="https://victoria.dev"><i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i></a> by open source contributors.
+<ul class="list-none pl-0 font-sm align-left">
+
+
+<li class="list-none">
+    Tags:
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/tags/qiskit">
+        <span class="flex flex-row justify-start items-center
+                     dark:bg-zinc-900 dark:hover:bg-zinc-700
+                     hover:bg-zinc-300 bg-zinc-200
+                     dark:border-zinc-600 py-0.5
+                     px-1 rounded-t border-b-2 border-zinc-300
+                     hover:border-zinc-500">
+            
+            <img class="h-4 mr-2 inline" src="https://youshitsune.top/images/tag_logo.svg"
+                 alt="Logo of a tag: indicates that a tag item follows.">
+            qiskit
         </span>
+    </a>
     
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/tags/quantum">
+        <span class="flex flex-row justify-start items-center
+                     dark:bg-zinc-900 dark:hover:bg-zinc-700
+                     hover:bg-zinc-300 bg-zinc-200
+                     dark:border-zinc-600 py-0.5
+                     px-1 rounded-t border-b-2 border-zinc-300
+                     hover:border-zinc-500">
+            
+            <img class="h-4 mr-2 inline" src="https://youshitsune.top/images/tag_logo.svg"
+                 alt="Logo of a tag: indicates that a tag item follows.">
+            quantum
+        </span>
+    </a>
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/tags/tech">
+        <span class="flex flex-row justify-start items-center
+                     dark:bg-zinc-900 dark:hover:bg-zinc-700
+                     hover:bg-zinc-300 bg-zinc-200
+                     dark:border-zinc-600 py-0.5
+                     px-1 rounded-t border-b-2 border-zinc-300
+                     hover:border-zinc-500">
+            
+            <img class="h-4 mr-2 inline" src="https://youshitsune.top/images/tag_logo.svg"
+                 alt="Logo of a tag: indicates that a tag item follows.">
+            tech
+        </span>
+    </a>
+    
+</li>
+
+</ul>
+
+
+    
+
+    
+    <div class="text-neutral-500 mb-4">
+        Last modified <span itemprop="dateModified"
+                            datetime="2023-06-26T09:23:15&#43;0200"
+                            content="2023-06-26T09:23:15&#43;0200">
+        2023.06.26
+        </span>
     </div>
-</div>
+    
+</article>
 
-                
-            </div>
-        </section>
-        
-        
+    </main>
+    <footer class="footer container h-10 text-center mt-1">
+<hr class="my-4">
+  <ul class="pl-0 mt-1">
+    
+    <li class="ml-2 first:before:content-none before:content-['•']
+               inline-block list-none">
+      <a class="ml-2 text-neutral-800
+                dark:text-neutral-400 border-none"
+          href="https://github.com/hugcis/hugo-astatine-theme">Code</a>
+    </li>
+    <li class="ml-2 first:before:content-none before:content-['•']
+                text-neutral-800 dark:text-neutral-400 inline-block list-none">
+      <span class="ml-2">© Youshitsune 2024</span>
+    </li>
+  </ul>
+</footer>
 
 
-<script src="https://youshitsune.tech/js/bundle.5c23c0437f001a469ca373a465a6f7487203d18e10cdff76d86a60af66d5ee28.js" integrity="sha256-XCPAQ38AGkaco3OkZab3SHID0Y4Qzf922Gpgr2bV7ig="></script>
 
-
-
-
-        
-        
-        
-        
-    </body>
+  </body>
 </html>

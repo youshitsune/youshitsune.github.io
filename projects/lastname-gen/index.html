@@ -1,275 +1,179 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1"><title>Lastname Gen - Youshitsune</title>
+<meta property="og:title" content="Lastname Gen - Youshitsune">
+<meta property="og:type" content="article">
+
+
+<meta property="og:image" content="avatar.png">
+
+<meta property="og:url" content="http://localhost:1313/projects/lastname-gen/"><meta property="og:description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
+<meta name="Description" property="description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
+
+<link rel="me" href="https://tilde.town/@youshitsune">
+
+
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/style.min.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link href="http://localhost:1313/index.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
+<meta name="theme-color" content="#ffffff">
+
+
+<script>function updateMode(){localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")}function toggleMode(){localStorage.theme==="dark"?localStorage.theme="light":localStorage.theme="dark",updateMode()}window.onload=updateMode();function toggleMenu(){let e=document.getElementById("navbar-default");e.classList.contains("hidden")?e.classList.remove("hidden"):e.classList.add("hidden")}</script>
+
+  </head>
+  <body>
+    <header class="md:px-0 px-2">
+        <nav >
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <div class="nav-main my-2.5">
+      <a href="http://localhost:1313/" class="nav-title py-2.5 text-2xl
+               text-zinc-600 dark:text-zinc-300 hover:border-b-0">Youshitsune</a>
+    </div>
+    <button type="button"
+            onclick="toggleMenu()"
+            class="inline-flex items-center p-2 ml-3
+                  text-sm text-gray-500
+                  rounded-lg md:hidden hover:bg-gray-100
+                  focus:outline-none focus:ring-2
+                  focus:ring-gray-200 dark:text-gray-400
+                  dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor"
+             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1
+                           0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1z" clip-rule="evenodd"></path>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="grid md:grid-flow-col items-center justify-between text-lg
+                 my-2.5 grid-cols-1 pl-0 text-center">
         
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/blog/">Posts</a>
+        </li>
         
-
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
-<meta name="description" content="Website Description">
-<title>
-Lastname Gen - Youshitsune
-</title>
-
-
-
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/tags/">Tags</a>
+        </li>
         
-        <meta property="og:title" content="Lastname Gen - Youshitsune" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="Website Description"/>
-<meta property="og:url" content="https://youshitsune.tech/projects/lastname-gen/"/>
-<meta property="og:site_name" content="Youshitsune"/>
-
-
-
-<meta property="og:image" content="https://youshitsune.tech/projects/lastname-gen/img.jpg"/>
-
-
-
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/about/">About</a>
+        </li>
         
-<link rel="shortcut icon" href="/favicon.ico">
+        <li class="h-7 pl-2.5 pr-0 list-none">
+          <button type="button" onclick="toggleMode()" class="h-full"  aria-label="Toggle between dark and light mode">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 hidden dark:inline"
+                 id="ligh-mode-button-img"
+                 alt="A sun icon for switching to light mode"
+                 src="http://localhost:1313/img/light_mode.svg">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 inline dark:hidden"
+                 id="dark-mode-button-img"
+                 alt="A moon icon for switching to dark mode"
+                 src="http://localhost:1313/img/dark_mode.svg">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
+    </header>
+    <main class="content h-card container mt-2 m-auto
+                 leading-loose md:px-0 px-2 z-0"
+          role="main">
+    
+<article class="article h-entry" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="title-container">
+        <h1 class="article-title p-name" itemprop="name">Lastname Gen</h1>
         
-
-
-
-
-
-<link rel="stylesheet" href="/css/main.min.f8310307e7689f75fe430255441a49dac41c2321ae5a250ff11775d4080e4365.css" integrity="sha256-&#43;DEDB&#43;don3X&#43;QwJVRBpJ2sQcIyGuWiUP8Rd11AgOQ2U=" crossorigin="anonymous" media="screen">
-
-
-
-
-
-        
-        
-        
-
-
-
-<link rel="stylesheet" href="https://youshitsune.tech/styles/owlCarousel.min.b1f26e29c43c61fe8b5a6f225b4ee7c5f969a7b33cfe512706271e07246d93d1.css" integrity="sha256-sfJuKcQ8Yf6LWm8iW07nxflpp7M8/lEnBiceByRtk9E=" crossorigin="anonymous" media="screen">
-
-
-    </head>
-    <body>
-        <section id="top" class="section">
+        <div class="flex justify-between items-center">
             
-            <div class="container hero  fade-in one ">
-                
-                <h1 class="bold-title is-1">Lastname Gen</h1>
-                
-            </div>
-            
-            <div class="section  fade-in two ">
-                
-
-<div class="container">
-    <hr>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        
-        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-        <div class="navbar-menu " id="navMenu">
-            
-            
-            
-            
-            <a class="navbar-item" href="/">main</a>
-            
-
-            
-            
-
-            
-                
-            
-
-            
-                
-            
-
-            
+            <a class="text-lg text-gray-600 dark:text-gray-400 border-none u-url" href="http://localhost:1313/projects/lastname-gen/">
+                <time itemprop="datePublished" class="dt-published"
+                    datetime="0001-01-01T00:00:00Z"
+                    content="0001-01-01T00:00:00Z">
+                    0001.01.01
+                </time>
+            </a>
             
             
                 
-                
-                
-                
-                  <a class="navbar-item" href="https://youshitsune.tech/projects/">
-                  
-                  Back to Projects
-                  
-                  </a>
-                
-                
-            
-            
-            
-            
-            
-            <a class="navbar-item" href="/#about">About</a>
-            
-            
-            
-            
-            
-            
-            
-                
-                
-                
-                
-                  <a class="navbar-item" href="https://youshitsune.tech/blog/">
-                  
-                  Blog
-                  
-                  </a>
-                
-                
-            
-            
-            
-            
-
-            
-            
-            <a class="navbar-item" href="/#contact">Contact</a>
-            
-            
-
-            
-
-            
-            <a class="navbar-item" href="https://youshitsune.tech/index.xml"><i class="fas fa-rss"></i></a>
-            
-            
-        </div>
-    </nav>
-    <hr>
-</div>
-
-
-
-
-                
-    <div class="container markdown top-pad">
-        
-        <div class="has-text-centered">
-            
-            
-                
-                    
-                    
-                        <img src="/projects/lastname-gen/img_huace73171c358ccdfbb5be7eed61e8d72_1133381_1000x0_resize_q75_box.jpg" class="img-responsive" alt="img.jpg">
-                    
+                <a class="text-gray-600 dark:text-gray-400 text-right border-none p-author h-card" rel="author" href="http://localhost:1313/" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Youshitsune</span></a>
                 
             
         </div>
         
-        
-<h1 id="lastname-gen" class="anchor-link"><a href="#lastname-gen">lastname-gen</a></h1>
+    </div>
+
+    <div class="article-content e-content" itemprop="articleBody">
+        <h1 id="lastname-gen">lastname-gen</h1>
 <p>This is Python program that generates last names using very simple &ldquo;neural net&rdquo;.</p>
 <ul>
 <li><a href="https://github.com/youshitsune/lastname-gen#usage-on-your-computer">Usage on your computer</a></li>
 <li><a href="https://github.com/youshitsune/lastname-gen#usage-on-web">Usage on web</a></li>
 </ul>
-
-<h3 id="usage-on-your-computer" class="anchor-link"><a href="#usage-on-your-computer">Usage (on your computer)</a></h3>
+<h3 id="usage-on-your-computer">Usage (on your computer)</h3>
 <p>First, make sure you have PyTorch installed.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install torch
+<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install torch
 </span></span></code></pre></div><p>Then, clone this repo.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/youshitsune/lastname-gen
+<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/youshitsune/lastname-gen
 </span></span></code></pre></div><p>If you want to just run pre-trained model, just run run.py script.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 run_local.py
+<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 run_local.py
 </span></span></code></pre></div><p>If you want to train it, run train.py script.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 train.py
+<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 train.py
 </span></span></code></pre></div><p>Then you can use it.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 run_local.py
-</span></span></code></pre></div>
-<h3 id="usage-on-web" class="anchor-link"><a href="#usage-on-web">Usage (on web)</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 run_local.py
+</span></span></code></pre></div><h3 id="usage-on-web">Usage (on web)</h3>
 <p>Just click <a href="https://lastname-gen.streamlit.app/">here</a>.</p>
 
     </div>
+
     
+
     
-    <div class="container disqus">
-        <div id="disqus_thread"></div>
-<script>
-    window.disqus_config = function () {
+
     
+</article>
+
+    </main>
+    <footer class="footer container h-10 text-center mt-1">
+<hr class="my-4">
+  <ul class="pl-0 mt-1">
     
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "youshitsune" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </div>
+    <li class="ml-2 first:before:content-none before:content-['•']
+               inline-block list-none">
+      <a class="ml-2 text-neutral-800
+                dark:text-neutral-400 border-none"
+          href="https://github.com/hugcis/hugo-astatine-theme">Code</a>
+    </li>
+    <li class="ml-2 first:before:content-none before:content-['•']
+                text-neutral-800 dark:text-neutral-400 inline-block list-none">
+      <span class="ml-2">© Youshitsune 2024</span>
+    </li>
+  </ul>
+</footer>
 
 
 
-                
-                <div class="container">
-    <hr>
-</div>
-<div class="container has-text-centered top-pad">
-    <a href="#top">
-        <i class="fa fa-arrow-up"></i>
-    </a>
-</div>
-
-<div class="container">
-    <hr>
-</div>
-
-                <div class="section" id="footer">
-    <div class="container has-text-centered">
-    
-        <span class="footer-text">
-            <a href="https://github.com/victoriadrake/hugo-theme-introduction/"><strong>Introduction</strong></a> theme for <a href="http://gohugo.io/">Hugo</a>. Made with <a href="https://victoria.dev"><i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i></a> by open source contributors.
-        </span>
-    
-    </div>
-</div>
-
-                
-            </div>
-        </section>
-        
-        
-
-
-<script src="https://youshitsune.tech/js/bundle.5c23c0437f001a469ca373a465a6f7487203d18e10cdff76d86a60af66d5ee28.js" integrity="sha256-XCPAQ38AGkaco3OkZab3SHID0Y4Qzf922Gpgr2bV7ig="></script>
-
-
-
-
-        
-        
-        
-
-
-
-<script src="https://youshitsune.tech/js/bundleOwlCarousel.bc6b73f0a36bf19c70c5df8fc352d322988ca2bc40743fb836ee7371d555c28a.js" integrity="sha256-vGtz8KNr8Zxwxd&#43;Pw1LTIpiMorxAdD&#43;4Nu5zcdVVwoo="></script>
-
-
-    </body>
+  </body>
 </html>

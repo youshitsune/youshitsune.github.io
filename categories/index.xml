@@ -2,37 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Youshitsune</title>
-    <link>https://youshitsune.tech/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Jul 2023 07:28:06 +0200</lastBuildDate><atom:link href="https://youshitsune.tech/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>hacking</title>
-      <link>https://youshitsune.tech/categories/hacking/</link>
-      <pubDate>Thu, 27 Jul 2023 07:28:06 +0200</pubDate>
-      
-      <guid>https://youshitsune.tech/categories/hacking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hidden service</title>
-      <link>https://youshitsune.tech/categories/hidden-service/</link>
-      <pubDate>Thu, 27 Jul 2023 07:28:06 +0200</pubDate>
-      
-      <guid>https://youshitsune.tech/categories/hidden-service/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tor</title>
-      <link>https://youshitsune.tech/categories/tor/</link>
-      <pubDate>Thu, 27 Jul 2023 07:28:06 +0200</pubDate>
-      
-      <guid>https://youshitsune.tech/categories/tor/</guid>
-      <description></description>
-    </item>
-    
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

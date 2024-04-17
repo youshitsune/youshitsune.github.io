@@ -2,129 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Youshitsune</title>
-    <link>https://youshitsune.tech/tags/</link>
+    <link>https://youshitsune.top/tags/</link>
     <description>Recent content in Tags on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Jul 2023 08:18:47 +0200</lastBuildDate>
-    <atom:link href="https://youshitsune.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://youshitsune.top/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>android</title>
-      <link>https://youshitsune.tech/tags/android/</link>
+      <title>Android</title>
+      <link>https://youshitsune.top/tags/android/</link>
       <pubDate>Fri, 21 Jul 2023 08:18:47 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/android/</guid>
+      <guid>https://youshitsune.top/tags/android/</guid>
       <description></description>
     </item>
     <item>
-      <title>open-source</title>
-      <link>https://youshitsune.tech/tags/open-source/</link>
+      <title>Open-Source</title>
+      <link>https://youshitsune.top/tags/open-source/</link>
       <pubDate>Fri, 21 Jul 2023 08:18:47 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/open-source/</guid>
+      <guid>https://youshitsune.top/tags/open-source/</guid>
       <description></description>
     </item>
     <item>
-      <title>rom</title>
-      <link>https://youshitsune.tech/tags/rom/</link>
+      <title>Rom</title>
+      <link>https://youshitsune.top/tags/rom/</link>
       <pubDate>Fri, 21 Jul 2023 08:18:47 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/rom/</guid>
+      <guid>https://youshitsune.top/tags/rom/</guid>
       <description></description>
     </item>
     <item>
-      <title>tech</title>
-      <link>https://youshitsune.tech/tags/tech/</link>
+      <title>Tech</title>
+      <link>https://youshitsune.top/tags/tech/</link>
       <pubDate>Fri, 21 Jul 2023 08:18:47 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/tech/</guid>
+      <guid>https://youshitsune.top/tags/tech/</guid>
       <description></description>
     </item>
     <item>
-      <title>tor</title>
-      <link>https://youshitsune.tech/tags/tor/</link>
+      <title>Tor</title>
+      <link>https://youshitsune.top/tags/tor/</link>
       <pubDate>Sun, 02 Jul 2023 08:54:00 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/tor/</guid>
+      <guid>https://youshitsune.top/tags/tor/</guid>
       <description></description>
     </item>
     <item>
-      <title>qiskit</title>
-      <link>https://youshitsune.tech/tags/qiskit/</link>
+      <title>Qiskit</title>
+      <link>https://youshitsune.top/tags/qiskit/</link>
       <pubDate>Mon, 26 Jun 2023 09:23:15 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/qiskit/</guid>
+      <guid>https://youshitsune.top/tags/qiskit/</guid>
       <description></description>
     </item>
     <item>
-      <title>quantum</title>
-      <link>https://youshitsune.tech/tags/quantum/</link>
+      <title>Quantum</title>
+      <link>https://youshitsune.top/tags/quantum/</link>
       <pubDate>Mon, 26 Jun 2023 09:23:15 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/quantum/</guid>
+      <guid>https://youshitsune.top/tags/quantum/</guid>
       <description></description>
     </item>
     <item>
-      <title>privacy</title>
-      <link>https://youshitsune.tech/tags/privacy/</link>
+      <title>Privacy</title>
+      <link>https://youshitsune.top/tags/privacy/</link>
       <pubDate>Tue, 20 Jun 2023 06:50:28 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/privacy/</guid>
+      <guid>https://youshitsune.top/tags/privacy/</guid>
       <description></description>
     </item>
     <item>
-      <title>suckless</title>
-      <link>https://youshitsune.tech/tags/suckless/</link>
+      <title>Suckless</title>
+      <link>https://youshitsune.top/tags/suckless/</link>
       <pubDate>Thu, 15 Jun 2023 15:50:37 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/suckless/</guid>
+      <guid>https://youshitsune.top/tags/suckless/</guid>
       <description></description>
     </item>
     <item>
-      <title>currency</title>
-      <link>https://youshitsune.tech/tags/currency/</link>
+      <title>Currency</title>
+      <link>https://youshitsune.top/tags/currency/</link>
       <pubDate>Tue, 06 Jun 2023 06:50:55 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/currency/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>flask</title>
-      <link>https://youshitsune.tech/tags/flask/</link>
-      <pubDate>Tue, 06 Jun 2023 06:50:55 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/flask/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>project</title>
-      <link>https://youshitsune.tech/tags/project/</link>
-      <pubDate>Tue, 06 Jun 2023 06:50:55 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/project/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>sqlite3</title>
-      <link>https://youshitsune.tech/tags/sqlite3/</link>
-      <pubDate>Tue, 06 Jun 2023 06:50:55 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/sqlite3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>productivity</title>
-      <link>https://youshitsune.tech/tags/productivity/</link>
-      <pubDate>Wed, 17 May 2023 20:42:25 +0200</pubDate>
-      <guid>https://youshitsune.tech/tags/productivity/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>xenobiology</title>
-      <link>https://youshitsune.tech/tags/xenobiology/</link>
-      <pubDate>Mon, 13 Mar 2023 16:26:42 +0100</pubDate>
-      <guid>https://youshitsune.tech/tags/xenobiology/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ai</title>
-      <link>https://youshitsune.tech/tags/ai/</link>
-      <pubDate>Sun, 19 Feb 2023 05:55:30 +0100</pubDate>
-      <guid>https://youshitsune.tech/tags/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dark Matter</title>
-      <link>https://youshitsune.tech/tags/dark-matter/</link>
-      <pubDate>Sat, 18 Feb 2023 11:18:19 +0100</pubDate>
-      <guid>https://youshitsune.tech/tags/dark-matter/</guid>
+      <guid>https://youshitsune.top/tags/currency/</guid>
       <description></description>
     </item>
   </channel>

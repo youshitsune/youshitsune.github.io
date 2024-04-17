@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>flask on Youshitsune</title>
-    <link>https://youshitsune.tech/tags/flask/</link>
-    <description>Recent content in flask on Youshitsune</description>
+    <title>Flask on Youshitsune</title>
+    <link>https://youshitsune.top/tags/flask/</link>
+    <description>Recent content in Flask on Youshitsune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 Jun 2023 06:50:55 +0200</lastBuildDate>
-    <atom:link href="https://youshitsune.tech/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://youshitsune.top/tags/flask/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Created New Service - RADIANA</title>
-      <link>https://youshitsune.tech/blog/created-new-service-radiana/</link>
+      <link>https://youshitsune.top/blog/created-new-service---radiana/</link>
       <pubDate>Tue, 06 Jun 2023 06:50:55 +0200</pubDate>
-      <guid>https://youshitsune.tech/blog/created-new-service-radiana/</guid>
+      <guid>https://youshitsune.top/blog/created-new-service---radiana/</guid>
       <description>Created New Service - RADIANA I&amp;rsquo;ve built my own currency system, which you can access at https://rad.youshitsune.tech.&#xA;It&amp;rsquo;s open-source, everything is open-source except database.&#xA;It&amp;rsquo;s open for registration, if you want some of it just send me mail with title &amp;ldquo;Want Radiana&amp;rdquo;.</description>
     </item>
   </channel>

@@ -1,125 +1,183 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://youshitsune.tech/blog/</loc>
-    <lastmod>2023-09-13T06:58:18+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/</loc>
-    <lastmod>2023-09-13T06:58:18+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/android/</loc>
-    <lastmod>2023-07-21T08:18:47+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/flashing-custom-rom/</loc>
-    <lastmod>2023-07-21T08:18:47+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/open-source/</loc>
-    <lastmod>2023-07-21T08:18:47+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/rom/</loc>
-    <lastmod>2023-07-21T08:18:47+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/</loc>
-    <lastmod>2023-07-21T08:18:47+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/tech/</loc>
-    <lastmod>2023-07-21T08:18:47+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/setup-ssh-over-tor/</loc>
-    <lastmod>2023-07-02T08:54:00+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/tor/</loc>
-    <lastmod>2023-07-02T08:54:00+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/local-reality-and-the-chsh-inequality/</loc>
-    <lastmod>2023-06-26T09:23:15+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/qiskit/</loc>
-    <lastmod>2023-06-26T09:23:15+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/quantum/</loc>
-    <lastmod>2023-06-26T09:23:15+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/bernstein-vazirani-algorithm-implementation-in-qiskit/</loc>
-    <lastmod>2023-06-20T12:53:34+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/hosting-librex/</loc>
-    <lastmod>2023-06-20T06:50:28+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/privacy/</loc>
-    <lastmod>2023-06-20T06:50:28+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/going-step-closer-to-full-suckless/</loc>
-    <lastmod>2023-06-15T15:50:37+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/suckless/</loc>
-    <lastmod>2023-06-15T15:50:37+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/created-new-service-radiana/</loc>
-    <lastmod>2023-06-06T06:50:55+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/currency/</loc>
-    <lastmod>2023-06-06T06:50:55+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/flask/</loc>
-    <lastmod>2023-06-06T06:50:55+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/project/</loc>
-    <lastmod>2023-06-06T06:50:55+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/sqlite3/</loc>
-    <lastmod>2023-06-06T06:50:55+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/configuring-weechat-proxy-to-use-tor/</loc>
-    <lastmod>2023-05-22T12:45:14+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/my-new-look-on-how-to-be-productive/</loc>
-    <lastmod>2023-05-17T20:42:25+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/productivity/</loc>
-    <lastmod>2023-05-17T20:42:25+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/started-my-journey-on-envs.net/</loc>
-    <lastmod>2023-04-13T07:46:40+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/ive-set-up-my-gemini-capsule/</loc>
-    <lastmod>2023-04-09T16:53:46+02:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/could-we-really-be-made-of-swiss-cheese/</loc>
-    <lastmod>2023-03-13T16:26:42+01:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/xenobiology/</loc>
-    <lastmod>2023-03-13T16:26:42+01:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/ai/</loc>
-    <lastmod>2023-02-19T05:55:30+01:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/attention-is-all-you-need/</loc>
-    <lastmod>2023-02-19T05:55:30+01:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/tags/dark-matter/</loc>
-    <lastmod>2023-02-18T11:18:19+01:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/blog/dark-matter-possible-new-energy-source/</loc>
-    <lastmod>2023-02-18T11:18:19+01:00</lastmod>
-  </url><url>
-    <loc>https://youshitsune.tech/deroot/</loc>
-  </url><url>
-    <loc>https://youshitsune.tech/about/</loc>
-  </url><url>
-    <loc>https://youshitsune.tech/projects/arduino-hand-recognition/</loc>
-  </url><url>
-    <loc>https://youshitsune.tech/projects/emailmastodon/</loc>
-  </url><url>
-    <loc>https://youshitsune.tech/projects/lastname-gen/</loc>
-  </url><url>
-    <loc>https://youshitsune.tech/projects/</loc>
-  </url><url>
-    <loc>https://youshitsune.tech/series/</loc>
-  </url><url>
-    <loc>https://youshitsune.tech/services/</loc>
-  </url><url>
-    <loc>https://youshitsune.tech/tools/</loc>
-  </url>
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <url>
+        <loc>https://youshitsune.top/</loc>
+        <lastmod>2023-07-21T08:18:47+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/</loc>
+        <lastmod>2023-07-21T08:18:47+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/android/</loc>
+        <lastmod>2023-07-21T08:18:47+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/flashing-custom-rom/</loc>
+        <lastmod>2023-07-21T08:18:47+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/open-source/</loc>
+        <lastmod>2023-07-21T08:18:47+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/rom/</loc>
+        <lastmod>2023-07-21T08:18:47+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/</loc>
+        <lastmod>2023-07-21T08:18:47+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/tech/</loc>
+        <lastmod>2023-07-21T08:18:47+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/setup-ssh-over-tor/</loc>
+        <lastmod>2023-07-02T08:54:00+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/tor/</loc>
+        <lastmod>2023-07-02T08:54:00+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/local-reality-and-the-chsh-inequality/</loc>
+        <lastmod>2023-06-26T09:23:15+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/qiskit/</loc>
+        <lastmod>2023-06-26T09:23:15+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/quantum/</loc>
+        <lastmod>2023-06-26T09:23:15+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/bernstein-vazirani-algorithm-implementation-in-qiskit/</loc>
+        <lastmod>2023-06-20T12:53:34+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/hosting-librex/</loc>
+        <lastmod>2023-06-20T06:50:28+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/privacy/</loc>
+        <lastmod>2023-06-20T06:50:28+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/going-step-closer-to-full-suckless/</loc>
+        <lastmod>2023-06-15T15:50:37+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/suckless/</loc>
+        <lastmod>2023-06-15T15:50:37+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/created-new-service---radiana/</loc>
+        <lastmod>2023-06-06T06:50:55+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/currency/</loc>
+        <lastmod>2023-06-06T06:50:55+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/flask/</loc>
+        <lastmod>2023-06-06T06:50:55+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/project/</loc>
+        <lastmod>2023-06-06T06:50:55+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/sqlite3/</loc>
+        <lastmod>2023-06-06T06:50:55+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/configuring-weechat-proxy-to-use-tor/</loc>
+        <lastmod>2023-05-22T12:45:14+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/my-new-look-on-how-to-be-productive/</loc>
+        <lastmod>2023-05-17T20:42:25+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/productivity/</loc>
+        <lastmod>2023-05-17T20:42:25+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/started-my-journey-on-envs.net/</loc>
+        <lastmod>2023-04-13T07:46:40+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/ive-set-up-my-gemini-capsule/</loc>
+        <lastmod>2023-04-09T16:53:46+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/could-we-really-be-made-of-swiss-cheese/</loc>
+        <lastmod>2023-03-13T16:26:42+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/xenobiology/</loc>
+        <lastmod>2023-03-13T16:26:42+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/ai/</loc>
+        <lastmod>2023-02-19T05:55:30+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/attention-is-all-you-need/</loc>
+        <lastmod>2023-02-19T05:55:30+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tags/dark-matter/</loc>
+        <lastmod>2023-02-18T11:18:19+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/blog/dark-matter-possible-new-energy-source/</loc>
+        <lastmod>2023-02-18T11:18:19+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/services/</loc>
+    </url>
+    
+    <url>
+        <loc>https://youshitsune.top/tools/</loc>
+    </url>
+    
 </urlset>

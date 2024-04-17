@@ -1,641 +1,223 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+	<meta name="generator" content="Hugo 0.124.1">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1"><title>Youshitsune</title>
+<meta property="og:title" content="Youshitsune">
+<meta property="og:type" content="website">
 
-    <head>
-	<meta name="generator" content="Hugo 0.121.1">
+
+<meta property="og:image" content="avatar.png">
+
+<meta property="og:url" content="https://youshitsune.top/"><meta property="og:description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
+<meta name="Description" property="description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
+
+<link rel="me" href="https://tilde.town/@youshitsune">
+
+
+
+
+
+
+<link rel="stylesheet" href="https://youshitsune.top/css/style.min.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link href="https://youshitsune.top/index.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
+<meta name="theme-color" content="#ffffff">
+
+
+<script>function updateMode(){localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")}function toggleMode(){localStorage.theme==="dark"?localStorage.theme="light":localStorage.theme="dark",updateMode()}window.onload=updateMode();function toggleMenu(){let e=document.getElementById("navbar-default");e.classList.contains("hidden")?e.classList.remove("hidden"):e.classList.add("hidden")}</script>
+
+  </head>
+  <body>
+    <header class="md:px-0 px-2">
+        <nav >
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <div class="nav-main my-2.5">
+      <a href="https://youshitsune.top/" class="nav-title py-2.5 text-2xl
+               text-zinc-600 dark:text-zinc-300 hover:border-b-0">Youshitsune</a>
+    </div>
+    <button type="button"
+            onclick="toggleMenu()"
+            class="inline-flex items-center p-2 ml-3
+                  text-sm text-gray-500
+                  rounded-lg md:hidden hover:bg-gray-100
+                  focus:outline-none focus:ring-2
+                  focus:ring-gray-200 dark:text-gray-400
+                  dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor"
+             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1
+                           0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1z" clip-rule="evenodd"></path>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="grid md:grid-flow-col items-center justify-between text-lg
+                 my-2.5 grid-cols-1 pl-0 text-center">
         
-
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
-<meta name="description" content="Website Description">
-<title>
-Youshitsune
-</title>
-
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Youshitsune" />
-
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/blog/">Posts</a>
+        </li>
         
-        <meta property="og:title" content="Youshitsune" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="Website Description"/>
-<meta property="og:url" content="https://youshitsune.tech/"/>
-<meta property="og:site_name" content="Youshitsune"/>
-
-
-
-
-<meta property="og:image" content="https://youshitsune.tech/home/avatar.png"/>
-
-
-
-
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/tags/">Tags</a>
+        </li>
         
-<link rel="shortcut icon" href="/favicon.ico">
+        <li class="h-7 pl-2.5 pr-0 list-none">
+          <button type="button" onclick="toggleMode()" class="h-full"  aria-label="Toggle between dark and light mode">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 hidden dark:inline"
+                 id="ligh-mode-button-img"
+                 alt="A sun icon for switching to light mode"
+                 src="https://youshitsune.top/img/light_mode.svg">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 inline dark:hidden"
+                 id="dark-mode-button-img"
+                 alt="A moon icon for switching to dark mode"
+                 src="https://youshitsune.top/img/dark_mode.svg">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
-        
-
-
-
-
-
-<link rel="stylesheet" href="/css/main.min.f8310307e7689f75fe430255441a49dac41c2321ae5a250ff11775d4080e4365.css" integrity="sha256-&#43;DEDB&#43;don3X&#43;QwJVRBpJ2sQcIyGuWiUP8Rd11AgOQ2U=" crossorigin="anonymous" media="screen">
-
-
-
-
-
-        
-
-
-<link rel="stylesheet" href="https://youshitsune.tech/styles/owlCarousel.min.b1f26e29c43c61fe8b5a6f225b4ee7c5f969a7b33cfe512706271e07246d93d1.css" integrity="sha256-sfJuKcQ8Yf6LWm8iW07nxflpp7M8/lEnBiceByRtk9E=" crossorigin="anonymous" media="screen">
-
-    </head>
-
-    <body>
-        
-        <section id="top" class="hero is-fullheight">
-            
-            <div class="hero-head"></div>
-
-            
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    
-                    <h1 class="bold-title fade-in one">
-                        Hi, I&rsquo;m Luka Jovanovic
-                    </h1>
-                    <div class="subtitle is-3 fade-in two">
-                        <p>Programmer and self-taught mechatronics engineer, who likes open-source idea!</p>
-
-                    </div>
-                    
-                    
-                    <div class="fade-in three">
-                        <div class="social-icons">
+    </header>
+    <main class="content h-card container mt-2 m-auto
+                 leading-loose md:px-0 px-2 z-0"
+          role="main">
     
-      
-      
-      
-        <a href="mailto:youshitsune@dmz.rs" >
-          <i class="fas fas fa-paper-plane"></i>
+    <div class="head container grid sm:grid-cols-2 grid-cols-1
+            justify-around flex-wrap items-center"
+     itemscope itemtype="http://schema.org/Person">
+    <div class="picture p-8 max-w-[80%] mx-auto basis-20 grow shrink"
+         itemscope itemtype="http://schema.org/ImageObject">
+        <picture>
+            
+            <source srcset="avatar.png"
+                    >
+            <img class="main-image u-photo mx-auto"
+            itemprop="contentUrl" alt="Profile picture"
+                 src="avatar.png">
+        </picture>
+    </div>
+    <div class="mx-4 ml-8 basis-60 grow shrink-2 leading-snug text-base">
+        <a  class="u-url font-bold" rel="me" itemprop="url" href="https://youshitsune.top/">
+            <h1 class="text-black dark:text-zinc-300 p-name border-0"
+                itemprop="name">Youshitsune
+            </h1>
         </a>
-      
-      
-  
-      
-      
-        <a href="https://tilde.zone/@youshitsune" rel="me">
-          <i class="fab fab fa-mastodon"></i>
-        </a>
-      
-      
-      
-  
-      
-      
-        <a href="https://github.com/youshitsune" >
-          <i class="fab fab fa-github"></i>
-        </a>
-      
-      
-      
-  
+        
+        <h2 itemprop="jobTitle" class="text-xl my-0 border-none"></h2>
+            
+    </div>
 </div>
 
-                    </div>
-                    
-                </div>
-            </div> 
-            
-
-            <div class="hero-foot fade-in three">
-                
-                
-
-<div class="container">
-    <hr>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        
-        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-        <div class="navbar-menu has-content-centered" id="navMenu">
-            
-            
-            
-            
-
-            
-            
-
-            
-                
-            
-
-            
-                
-            
-
-            
-            
-            
-                
-                
-                <a class="navbar-item" href="/#projects">Projects</a>
-                
-            
-            
-            
-            
-            
-            <a class="navbar-item" href="#about">About</a>
-            
-            
-            
-            
-            
-            
-            
-                
-                
-                <a class="navbar-item" href="/#blog">Blog</a>
-                
-            
-            
-            
-            
-
-            
-            
-            <a class="navbar-item" href="#contact">Contact</a>
-            
-            
-
-            
-
-            
-            <a class="navbar-item" href="https://youshitsune.tech/index.xml"><i class="fas fa-rss"></i></a>
-            
-            
-        </div>
-    </nav>
-    <hr>
-</div>
-
-
-
-            </div>
-        </section> 
-
-        
-        
-        
-
-        
-            
-        
-
-        
-            
-        
-
-        
-        
-        
-        
-            
-            
-<div class="section" id="projects">
-    
-    <div class="container">
-        <h2 class="title is-2 has-text-centered">
-            Projects
-        </h2>
-        <div class="section">
-            <div class="columns is-multiline">
-                
-                
-                
-                
-                
-                
-                <div class="column is-one-third">
-                    <div class="card" data-target="#project-0">
-                        
-                        <div class="card-image">
-                            <figure class="image is-3by2">
-                                <a >
-                                    
-                                    
-                                    
-                                    <img class="card-thumbnail" src="https://youshitsune.tech/projects/arduino-hand-recognition/img_huace73171c358ccdfbb5be7eed61e8d72_1133381_302x0_resize_q75_box.jpg" alt ="img.jpg">
-                                    
-                                    
-                                </a>
-                            </figure>
-                        </div>
-                        
-                        <div class="card-content has-text-centered top-pad">
-                            <h1><a >
-                                Arduino Hand Recognition
-                            </a></h1>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-                
-                <div class="column is-one-third">
-                    <div class="card" data-target="#project-1">
-                        
-                        <div class="card-image">
-                            <figure class="image is-3by2">
-                                <a >
-                                    
-                                    
-                                    
-                                    <img class="card-thumbnail" src="https://youshitsune.tech/projects/emailmastodon/img_huace73171c358ccdfbb5be7eed61e8d72_1133381_302x0_resize_q75_box.jpg" alt ="img.jpg">
-                                    
-                                    
-                                </a>
-                            </figure>
-                        </div>
-                        
-                        <div class="card-content has-text-centered top-pad">
-                            <h1><a >
-                                Email Mastodon
-                            </a></h1>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-                
-                <div class="column is-one-third">
-                    <div class="card" data-target="#project-2">
-                        
-                        <div class="card-image">
-                            <figure class="image is-3by2">
-                                <a >
-                                    
-                                    
-                                    
-                                    <img class="card-thumbnail" src="https://youshitsune.tech/projects/lastname-gen/img_huace73171c358ccdfbb5be7eed61e8d72_1133381_302x0_resize_q75_box.jpg" alt ="img.jpg">
-                                    
-                                    
-                                </a>
-                            </figure>
-                        </div>
-                        
-                        <div class="card-content has-text-centered top-pad">
-                            <h1><a >
-                                Lastname Gen
-                            </a></h1>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-    </div>
-    
-    
-    
-    
-    <div class="modal" id="project-0">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-            
-            <header class="modal-card-header bottom-pad">
-                <h1 class="modal-card-title has-text-centered">Arduino Hand Recognition</h1>
-            </header>
-            
-                     
-            <section class="modal-card-body markdown">
-                
-                
-                
-                    
-                        
-                        
-                            <img src="https://youshitsune.tech/projects/arduino-hand-recognition/img_huace73171c358ccdfbb5be7eed61e8d72_1133381_640x0_resize_q75_box.jpg" class="img-responsive" alt="img.jpg">
-                        
-                    
-                
-                
-                
-<h1 id="arduino-hand-recognition" class="anchor-link"><a href="#arduino-hand-recognition">arduino-hand-recognition</a></h1>
-<p>This code runs on your computer and when you open and close your hand, LED turns on and off accordingly.</p>
-
-            </section>
-        </div>
-        <button class="modal-close is-large" aria-label="close" data-target="#project-0"></button>
-    </div>
-    
-    
-    
-    <div class="modal" id="project-1">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-            
-            <header class="modal-card-header bottom-pad">
-                <h1 class="modal-card-title has-text-centered">Email Mastodon</h1>
-            </header>
-            
-                     
-            <section class="modal-card-body markdown">
-                
-                
-                
-                    
-                        
-                        
-                            <img src="https://youshitsune.tech/projects/emailmastodon/img_huace73171c358ccdfbb5be7eed61e8d72_1133381_640x0_resize_q75_box.jpg" class="img-responsive" alt="img.jpg">
-                        
-                    
-                
-                
-                
-<h1 id="emailmastodon" class="anchor-link"><a href="#emailmastodon">emailmastodon</a></h1>
-<p>Bot that mirrors emails to Mastodon account</p>
-
-            </section>
-        </div>
-        <button class="modal-close is-large" aria-label="close" data-target="#project-1"></button>
-    </div>
-    
-    
-    
-    <div class="modal" id="project-2">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-            
-            <header class="modal-card-header bottom-pad">
-                <h1 class="modal-card-title has-text-centered">Lastname Gen</h1>
-            </header>
-            
-                     
-            <section class="modal-card-body markdown">
-                
-                
-                
-                    
-                        
-                        
-                            <img src="https://youshitsune.tech/projects/lastname-gen/img_huace73171c358ccdfbb5be7eed61e8d72_1133381_640x0_resize_q75_box.jpg" class="img-responsive" alt="img.jpg">
-                        
-                    
-                
-                
-                
-<h1 id="lastname-gen" class="anchor-link"><a href="#lastname-gen">lastname-gen</a></h1>
-<p>This is Python program that generates last names using very simple &ldquo;neural net&rdquo;.</p>
+    <h1 id="hello">Hello</h1>
+<p>I&rsquo;m just some random guy who posts his research and programming projects. Who likes building some crazy s**t in his free time (mostly, some boring stuff to others). If you would like to talk with me, feel free to contact me.</p>
+<p>If you want to check out some programming projects:</p>
 <ul>
-<li><a href="https://github.com/youshitsune/lastname-gen#usage-on-your-computer">Usage on your computer</a></li>
-<li><a href="https://github.com/youshitsune/lastname-gen#usage-on-web">Usage on web</a></li>
+<li><a href="https://github.com/youshitsune/game-of-life">Game of Life</a></li>
+<li><a href="https://github.com/youshitsune/dataviz">DataViz</a></li>
+<li><a href="https://github.com/youshitsune/kmeans">Kmeans</a></li>
+</ul>
+<h2 id="articles">Articles</h2>
+<p>Here are some pages, that aren&rsquo;t on blog:</p>
+<ul>
+<li><a href="/services">Services</a></li>
+<li><a href="/tools">Tools</a></li>
+</ul>
+<h2 id="contact">Contact</h2>
+<ul>
+<li><a href="mailto:youshitsune@envs.net">Mail</a></li>
+<li><a href="https://tilde.zone/@youshitsune">Mastodon</a></li>
+<li>Discord username: <strong>youshitsune</strong></li>
 </ul>
 
-<h3 id="usage-on-your-computer" class="anchor-link"><a href="#usage-on-your-computer">Usage (on your computer)</a></h3>
-<p>First, make sure you have PyTorch installed.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install torch
-</span></span></code></pre></div><p>Then, clone this repo.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/youshitsune/lastname-gen
-</span></span></code></pre></div><p>If you want to just run pre-trained model, just run run.py script.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 run_local.py
-</span></span></code></pre></div><p>If you want to train it, run train.py script.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 train.py
-</span></span></code></pre></div><p>Then you can use it.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 run_local.py
-</span></span></code></pre></div>
-<h3 id="usage-on-web" class="anchor-link"><a href="#usage-on-web">Usage (on web)</a></h3>
-<p>Just click <a href="https://lastname-gen.streamlit.app/">here</a>.</p>
-
-            </section>
-        </div>
-        <button class="modal-close is-large" aria-label="close" data-target="#project-2"></button>
-    </div>
     
     
-    <div class="container has-text-centered top-pad">
-    <a href="#top">
-        <i class="fa fa-arrow-up"></i>
-    </a>
-</div>
-
-</div>
-
-<div class="container"><hr></div>
-
-
-        
-        
-        
-        
-        
-        
-        
-
-        
-        <div class="section" id="about">
-            <div class="container">
-                <h2 class="title is-2 has-text-centered">About</h2>
-                
-                <div class="columns">
-                    <div class="column is-one-third has-text-centered">
-                        
-                        
-                        <img class="img-responsive avatar" src="https://youshitsune.tech/home/avatar_hua444bbc52b35a66fd70d9de6f3a6a562_832_320x0_resize_box_3.png" alt="avatar.png">
-                        
-                        
-                    </div>
-                    <div class="markdown column">
-                        
-<h3 id="skills" class="anchor-link"><a href="#skills">Skills</a></h3>
-<ul>
-<li>C</li>
-<li>Python</li>
-<li>Linux</li>
-<li>Github</li>
-<li>Git</li>
-<li>Terminal</li>
-</ul>
-
-                    </div>
-                </div>
-                
-            </div>
-            
-            <div class="container has-text-centered top-pad">
-    <a href="#top">
-        <i class="fa fa-arrow-up"></i>
-    </a>
-</div>
-
-        </div>
-        <div class="container">
-            <hr>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-            
-            
-<div class="section" id="blog">
     
-    <div class="container">
-        
-        <h2 class="title is-2 has-text-centered">Latest Post</h2>
-        
-        <div class="summary">
-            Jul 21, 2023
-            <h3 class="title is-3 latest-post-title"><a href="https://youshitsune.tech/blog/flashing-custom-rom/">Flashing Lineage OS 20 on my Samsung Galaxy A50</a></h3>
-            <div class="markdown">
-                Flashing Lineage OS 20 on my Samsung Galaxy A50 I always wanted to flash custom rom on my phone, but there isn&rsquo;t any offical software for it.
-So, I started to search for best unoffical options.
-I&rsquo;ve found Lineage OS 20 and TWRP.
-First try When, I first tried I used heimdall. And soft-bricked my phone.
-Second try Then, I found leaked version of odin for linux. I&rsquo;ve flashed everything, and then lineage os was stuck at boot.
-                
-                <a href="https://youshitsune.tech/blog/flashing-custom-rom/">Read more</a>
-                
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
 
-<div class="container has-text-centered top-pad">
-    <a href="https://youshitsune.tech/blog/">All Posts</a>
-</div>
-
-
-
-<div class="container has-text-centered top-pad">
-    <a href="#top">
-        <i class="fa fa-arrow-up"></i>
-    </a>
-</div>
-
-
-
-<div class="container">
-    <hr>
-</div>
-
-
-        
-        
-        
-        
-        
-        
-        <div class="section" id="contact">
-            <div class="container has-text-centered">
-                <h2 class="title is-2">Contact</h2>
-                <div class="markdown">
-                    
-                </div>
-                
-                
-                <h3 class="subtitle is-3 has-text-centered top-pad">
-                    <a href="mailto:youshitsune@dmz.rs">youshitsune@dmz.rs</a>
-                </h3>
-                
-                <div class="social-icons">
+    </main>
+    <footer class="footer container h-10 text-center mt-1">
+<hr class="my-4">
+  <ul class="pl-0 mt-1">
     
-      
-      
-      
-        <a href="mailto:youshitsune@dmz.rs" >
-          <i class="fas fas fa-paper-plane"></i>
-        </a>
-      
-      
-  
-      
-      
-        <a href="https://tilde.zone/@youshitsune" rel="me">
-          <i class="fab fab fa-mastodon"></i>
-        </a>
-      
-      
-      
-  
-      
-      
-        <a href="https://github.com/youshitsune" >
-          <i class="fab fab fa-github"></i>
-        </a>
-      
-      
-      
-  
-</div>
+    <li class="ml-2 first:before:content-none before:content-['•']
+               inline-block list-none">
+      <a class="ml-2 text-neutral-800
+                dark:text-neutral-400 border-none"
+          href="https://github.com/hugcis/hugo-astatine-theme">Code</a>
+    </li>
+    <li class="ml-2 first:before:content-none before:content-['•']
+                text-neutral-800 dark:text-neutral-400 inline-block list-none">
+      <span class="ml-2">© Youshitsune 2024</span>
+    </li>
+  </ul>
+</footer>
 
-            </div>
-            
-            <div class="container has-text-centered top-pad">
-    <a href="#top">
-        <i class="fa fa-arrow-up"></i>
-    </a>
-</div>
+<script>
+ 
+ function toggleModal(win) {
+     return ((event) => {
+         if (event.target.id.startsWith("#open-modal") || 
+             event.target.id.startsWith("#close-modal") || 
+             event.target.classList.contains("open-modal")) {
+             event.stopPropagation();
+             win.classList.toggle("invisible");
+             win.classList.toggle("pointer-events-auto");
+             document.body.classList.toggle("pointer-events-none");
+         }
+     });
+ }
+ var list = document.getElementsByClassName("open-modal");
+ for (let item of list) {
+     var id = item.attributes["data-target"].textContent;
+	 var modWin = document.getElementById(id);
+     var closeButton = document.getElementById(id.replace("open", "close"));
 
-        </div>
-        <div class="container">
-            <hr>
-        </div>
-        
-        
-        
-
-        <div class="section" id="footer">
-    <div class="container has-text-centered">
-    
-        <span class="footer-text">
-            <a href="https://github.com/victoriadrake/hugo-theme-introduction/"><strong>Introduction</strong></a> theme for <a href="http://gohugo.io/">Hugo</a>. Made with <a href="https://victoria.dev"><i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i></a> by open source contributors.
-        </span>
-    
-    </div>
-</div>
-
-
-        
-        
-
-
-<script src="https://youshitsune.tech/js/bundle.5c23c0437f001a469ca373a465a6f7487203d18e10cdff76d86a60af66d5ee28.js" integrity="sha256-XCPAQ38AGkaco3OkZab3SHID0Y4Qzf922Gpgr2bV7ig="></script>
-
-
-
-
-        
+	 item.addEventListener('click', toggleModal(modWin));
+     closeButton.addEventListener('click', toggleModal(modWin));
+     modWin.addEventListener('click', toggleModal(modWin));
+ }
+ var clipboardCopyButtons = document.getElementsByClassName("modal-copy-citation");
+ for (let button of clipboardCopyButtons) {
+     let citation_id = button.id.replace("#copy-", "");
+     let citation_text = document.getElementById(citation_id);
+     button.addEventListener('click', function (clicked) {
+        return function () {
+            if (!clicked) {
+                var last = this.innerHTML;
+                navigator.clipboard
+                         .writeText(citation_text.innerHTML)
+                         .then(() => {
+                             this.innerHTML = "Copied!";
+                             this.disabled = true;
+                         },
+                               () => {this.innerHTML = "Error copying!";});
+                clicked = true;
+                setTimeout(function () {
+                    this.innerHTML = last;
+                    this.disabled = false;
+                    clicked = false;
+                }.bind(this), 1000);
+            }
+        };
+     }(false), this);
+ }
+</script>
 
 
-<script src="https://youshitsune.tech/js/bundleOwlCarousel.bc6b73f0a36bf19c70c5df8fc352d322988ca2bc40743fb836ee7371d555c28a.js" integrity="sha256-vGtz8KNr8Zxwxd&#43;Pw1LTIpiMorxAdD&#43;4Nu5zcdVVwoo="></script>
-
-
-        
-    </body>
-
+  </body>
 </html>

@@ -1,0 +1,36 @@
+body{
+    font-family: "Helvetica", sans-serif;
+    background-color: #282828AA;
+    color: white;
+}
+nav{
+    padding-left: 5em;
+    padding-right: 5em;
+}
+#hero{
+    padding-left: 10em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 50%;
+    float: left;
+}
+#hero h1{
+    font-size: 100px;
+}
+#about{
+    display: flex;
+    padding-top: 5em;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+#about h1{
+    padding-top: 1em;
+}
+#about h5{
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 2em;
+}

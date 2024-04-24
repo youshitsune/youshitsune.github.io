@@ -13,7 +13,7 @@
       <link>https://youshitsune.top/blog/setup-ssh-over-tor/</link>
       <pubDate>Sun, 02 Jul 2023 08:54:00 +0200</pubDate>
       <guid>https://youshitsune.top/blog/setup-ssh-over-tor/</guid>
-      <description>Setup SSH Over TOR This is tutorial for Debian systems.&#xA;Setting up Tor - Server First install tor.&#xA;sudo apt install tor Then edit torrc file.&#xA;sudo vim /etc/tor/torrc Add this to it&#xA;HiddenServiceDir /var/lib/tor/hidden-service-example/ HiddenServicePort 22 127.0.0.1:22 HiddenServiceAuthorizeClient stealth hidden-service-example Restart tor&#xA;sudo systemctl restart tor That&amp;rsquo;s it for the server&#xA;Setting up Tor - Client First install tor.&#xA;sudo apt install tor sudo systemctl start tor Then ssh into your machine</description>
+      <description>This is tutorial for Debian systems.&#xA;Setting up Tor - Server First install tor.&#xA;sudo apt install tor Then edit torrc file.&#xA;sudo vim /etc/tor/torrc Add this to it&#xA;HiddenServiceDir /var/lib/tor/hidden-service-example/ HiddenServicePort 22 127.0.0.1:22 HiddenServiceAuthorizeClient stealth hidden-service-example Restart tor&#xA;sudo systemctl restart tor That&amp;rsquo;s it for the server&#xA;Setting up Tor - Client First install tor.&#xA;sudo apt install tor sudo systemctl start tor Then ssh into your machine&#xA;torify user@hostname_of_your_service To get hostname run this.</description>
     </item>
   </channel>
 </rss>

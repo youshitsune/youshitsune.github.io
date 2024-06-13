@@ -34,3 +34,135 @@ nav{
     padding-right: 25%;
     padding-bottom: 2em;
 }
+#projects{
+    border: white dashed 2px;
+    padding-left: 10em;
+    height: 75vh;
+}
+#intro{
+    float: left;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#intro button{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+#contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    height: 100%;
+}
+
+#item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0.5em;
+    border: white solid 1px;
+    max-width: 25%;
+    box-shadow: 10px 10px white;
+
+}
+#item:hover{
+    box-shadow: 5px 5px gray;
+}
+
+#posts{
+    height: 75vh;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+#posts_spacer{
+    color: white;
+    width: 25%;
+}
+
+footer{
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+}
+
+@media only screen and (max-width: 900px){
+    #hero{
+        padding-left: 1em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #about{
+        width: 100%;
+        display: flex;
+        padding-top: 5em;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #about h1{
+        padding-top: 1em;
+    }
+
+    #about h5{
+        padding-bottom: 2em;
+    }
+    #stats{
+        width: 300px;
+        height: 200px;
+    }
+    #stats img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #projects{
+        padding-left: 1em;
+        display: flex;
+        flex-direction: column;
+        height:100vh;
+    }
+    #intro{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #intro button{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    #contain{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2em;
+        padding-bottom: 1em;
+    }
+
+    #item{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-top: 0.5em;
+        border: white solid 1px;
+        max-height: 25vh;
+        max-width: 80%;
+    }
+

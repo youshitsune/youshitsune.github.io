@@ -1,6 +1,6 @@
 body{
     font-family: "Helvetica", sans-serif;
-    background-color: #282828AA;
+    background-color: #191c1c;
     color: white;
 }
 nav{
@@ -38,6 +38,7 @@ nav{
     border: white dashed 2px;
     padding-left: 10em;
     height: 75vh;
+    background-color: #491720;
 }
 #intro{
     float: left;
@@ -47,9 +48,9 @@ nav{
     justify-content: center;
     flex-direction: column;
 }
-#intro button{
-    margin-left: 30%;
-    margin-right: 30%;
+#intro a{
+    margin-left: 25%;
+    margin-right: 25%;
 }
 #contain{
     display: flex;
@@ -69,7 +70,7 @@ nav{
     padding: 0.5em;
     border: white solid 1px;
     max-width: 25%;
-    box-shadow: 10px 10px white;
+    box-shadow: 10px 10px #202020AA;
 
 }
 #item:hover{
@@ -87,13 +88,44 @@ nav{
 
 #posts_spacer{
     color: white;
-    width: 25%;
+    min-width: 25%;
 }
 
-footer{
+#cta_other{
+    color: lightgrey;
+    font-size: 1.5em;
+}
+
+#cta_other:hover{
+    color: gray;
+}
+
+#ctx{
+    padding-top: 10em;
+    padding-bottom: 10em;
+    margin-left: 25%;
+    margin-right: 25%
+}
+#ctx h1{
+    text-align: center;
+    padding-bottom: 1em;
+}
+#ctx p{
+    font-size: 1.25em;
+}
+
+#blog{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+#blog div{
+    max-width: 100%;
     height: 20vh;
-    width: 100%;
-    background-color: black;
+}
+#blog div p{
+    color: grey;
 }
 
 @media only screen and (max-width: 900px){
@@ -165,4 +197,7 @@ footer{
         max-height: 25vh;
         max-width: 80%;
     }
-
+    #blog{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

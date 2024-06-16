@@ -178,6 +178,9 @@ nav{
         margin-left: 30%;
         margin-right: 30%;
     }
+    #posts{
+        height: 100vh;
+    }
     #contain{
         display: flex;
         justify-content: center;

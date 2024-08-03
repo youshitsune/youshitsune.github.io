@@ -1,24 +1,42 @@
 body{
     font-family: "Helvetica", sans-serif;
-    background-color: #191c1c;
-    color: white;
+    padding: 0;
+    margin: 0;
 }
+
 nav{
-    padding-left: 5em;
-    padding-right: 5em;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 8px 5% 8px 25%;
+    gap: 5em;
 }
-#hero{
-    padding-left: 10em;
+
+nav button {
+   font-size: 36px;
+   margin-left: 25%;
+}
+
+.brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.brand img{
+    width: 50px;
+    height: 50px;
+}
+
+.links {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 50%;
-    float: left;
+    gap: 1em;
+    font-size: 24px;
 }
-#hero h1{
-    font-size: 100px;
-}
+
 #about{
     display: flex;
     padding-top: 5em;
@@ -177,9 +195,6 @@ nav{
     #intro button{
         margin-left: 30%;
         margin-right: 30%;
-    }
-    #posts{
-        height: 100vh;
     }
     #contain{
         display: flex;

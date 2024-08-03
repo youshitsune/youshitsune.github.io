@@ -1,0 +1,49 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1"><title>Youshitsune</title>
+        <meta property="og:title" content="Youshitsune">
+        <meta property="og:type" content="website">
+
+
+        <meta property="og:image" content="/static/img/avatar.png">
+
+        <meta property="og:url" content="https://youshitsune.top/">
+        <meta property="og:description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
+        <meta name="Description" property="description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
+        <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="me" href="https://tilde.town/@youshitsune">
+    </head>
+    <body>
+        {{ if .Dark}}
+            <link rel="stylesheet" href="/static/css/dark.css">
+        {{else}}
+            <link rel="stylesheet" href="/static/css/light.css">
+        {{end}}
+
+        <nav>
+            <div class="brand">
+                <img src="/static/img/avatar.png" />
+                <h3>YOUSHITSUNE</h3>
+            </div>
+            <div class="links">
+                <a hx-get="/works" hx-swap="innerHTML" hx-target="#hero">Works</a>
+                <a hx-get="/posts" hx-swap="innerHTML" hx-target="#hero">Posts</a>
+            </div>
+            {{ if .Dark}}
+            <button hx-get="/light" hx-swap="innerHTML" hx-target="body">🔅</button>
+            {{ else }}
+            <button hx-get="/dark" hx-swap="innerHTML" hx-target="body">🌑</button>
+            {{ end}}
+        </nav>
+
+
+        <div id="hero">
+
+        </div>
+
+    </body>
+    <script src="https://unpkg.com/htmx.org@2.0.1" integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/" crossorigin="anonymous"></script>
+</html>
+{{end}}

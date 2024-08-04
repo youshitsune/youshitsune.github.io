@@ -1,21 +1,20 @@
 body{
+    background-color: #191c1c;
+    color: white;
     font-family: "Helvetica", sans-serif;
     padding: 0;
     margin: 0;
 }
 
 nav{
+    background-color: #0F1010;
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
-    padding: 8px 5% 8px 25%;
+    justify-content: center;
+    padding: 8px 5%;
     gap: 5em;
-}
-
-nav button {
-   font-size: 36px;
-   margin-left: 25%;
 }
 
 .brand{
@@ -37,185 +36,45 @@ nav button {
     font-size: 24px;
 }
 
-#about{
+.links a:hover{
+    text-decoration: underline white 2px;
+}
+
+#hero{
     display: flex;
+    flex-direction: column;
     padding-top: 5em;
     align-items: center;
-    flex-direction: column;
-    height: 100vh;
-}
-#about h1{
-    padding-top: 1em;
-}
-#about h5{
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-bottom: 2em;
-}
-#projects{
-    border: white dashed 2px;
-    padding-left: 10em;
-    height: 75vh;
-    background-color: #491720;
-}
-#intro{
-    float: left;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-#intro a{
-    margin-left: 25%;
-    margin-right: 25%;
-}
-#contain{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     gap: 2em;
-    height: 100%;
 }
 
-#item{
+#hero div{
+    max-width: 50%;
     display: flex;
     flex-direction: column;
+    gap: 0.5em;
     align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 0.5em;
-    border: white solid 1px;
-    max-width: 25%;
-    box-shadow: 10px 10px #202020AA;
-
 }
-#item:hover{
-    box-shadow: 5px 5px gray;
+#hero div h3{
+    margin: 0;
+}
+#hero div p {
+    margin: 0;
+    max-width: 75%;
+    text-align: center;
+}
+
+#hero div a{
+    margin: 0;
 }
 
 #posts{
-    height: 75vh;
-    align-items: center;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 2em;
-}
-
-#posts_spacer{
-    color: white;
-    min-width: 25%;
-}
-
-#cta_other{
-    color: lightgrey;
-    font-size: 1.5em;
-}
-
-#cta_other:hover{
-    color: gray;
-}
-
-#ctx{
-    padding-top: 10em;
-    padding-bottom: 10em;
+    padding-top: 5em;
+    align-items: center;
+    gap: 2em;
     margin-left: 25%;
-    margin-right: 25%
-}
-#ctx h1{
+    margin-right: 25%;
     text-align: center;
-    padding-bottom: 1em;
-}
-#ctx p{
-    font-size: 1.25em;
-}
-
-#blog{
-    padding: 1em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-}
-#blog div{
-    max-width: 100%;
-    height: 20vh;
-}
-#blog div p{
-    color: grey;
-}
-
-@media only screen and (max-width: 900px){
-    #hero{
-        padding-left: 1em;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 100vh;
-        width: 100%;
-    }
-
-    #about{
-        width: 100%;
-        display: flex;
-        padding-top: 5em;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-    }
-
-    #about h1{
-        padding-top: 1em;
-    }
-
-    #about h5{
-        padding-bottom: 2em;
-    }
-    #stats{
-        width: 300px;
-        height: 200px;
-    }
-    #stats img{
-        max-width: 100%;
-        max-height: 100%;
-    }
-    #projects{
-        padding-left: 1em;
-        display: flex;
-        flex-direction: column;
-        height:100vh;
-    }
-    #intro{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    #intro button{
-        margin-left: 30%;
-        margin-right: 30%;
-    }
-    #contain{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 2em;
-        padding-bottom: 1em;
-    }
-
-    #item{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        padding-top: 0.5em;
-        border: white solid 1px;
-        max-height: 25vh;
-        max-width: 80%;
-    }
-    #blog{
-        grid-template-columns: repeat(1,1fr);
-    }
 }

@@ -1,12 +1,39 @@
 package main
 
 import (
+	"bytes"
 	"io"
 	"net/http"
+	"os"
+	"strings"
 	"text/template"
 
 	"github.com/labstack/echo/v4"
+	"github.com/yuin/goldmark"
 )
+
+const HTMLHEAD = `
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1"><title>Youshitsune</title>
+        <meta property="og:title" content="Youshitsune">
+        <meta property="og:type" content="website">
+
+
+        <meta property="og:image" content="/static/img/avatar.png">
+
+        <meta property="og:url" content="https://youshitsune.top/">
+        <meta property="og:description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
+        <meta name="Description" property="description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
+        <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="me" href="https://tilde.town/@youshitsune">
+    </head>
+`
+
+type Post struct {
+	Title       string
+	Description string
+	URL         string
+}
 
 type Template struct {
 	Templates *template.Template
@@ -35,32 +62,53 @@ func main() {
 	e.Static("/static", "static")
 	newTemplateRenderer(e, "templates/*.html")
 	e.GET("/", func(c echo.Context) error {
-		res := map[string]interface{}{
-			"Dark": true,
-		}
-		return c.Render(http.StatusOK, "index", res)
-	})
-
-	e.GET("/light", func(c echo.Context) error {
-		res := map[string]interface{}{
-			"Dark": false,
-		}
-		return c.Render(http.StatusOK, "index", res)
-	})
-
-	e.GET("/dark", func(c echo.Context) error {
-		res := map[string]interface{}{
-			"Dark": true,
-		}
-		return c.Render(http.StatusOK, "index", res)
+		return c.Render(http.StatusOK, "index", nil)
 	})
 
 	e.GET("/works", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "works", nil)
 	})
 
+	e.GET("/posts/:post", func(c echo.Context) error {
+		post := c.Param("post")
+		data, err := os.ReadFile("posts/" + post + ".md")
+		if err != nil {
+			var buf bytes.Buffer
+			data, _ = os.ReadFile("posts/404.md")
+			goldmark.Convert(data, &buf)
+			return c.HTML(http.StatusOK, HTMLHEAD+"<body id='posts'>"+buf.String()+"</body>")
+		}
+
+		var buf bytes.Buffer
+		goldmark.Convert(data, &buf)
+
+		return c.HTML(http.StatusOK, HTMLHEAD+"<body id='posts'>"+buf.String()+"</body>")
+	})
+
 	e.GET("/posts", func(c echo.Context) error {
-		return c.Render(http.StatusOK, "posts", nil)
+		var posts []Post
+
+		files, _ := os.ReadDir("posts/")
+
+		for i := range files {
+			name := files[i].Name()
+			data, _ := os.ReadFile("posts/" + name)
+			ctx := strings.Split(string(data), "\n")
+			title := ctx[0]
+			var desc bytes.Buffer
+			goldmark.Convert([]byte(ctx[1]), &desc)
+
+			posts = append(posts, Post{
+				Title:       title[2:],
+				Description: desc.String(),
+				URL:         "/posts/" + strings.Split(name, ".")[0],
+			})
+		}
+
+		res := map[string]interface{}{
+			"posts": posts,
+		}
+		return c.Render(http.StatusOK, "posts", res)
 	})
 
 	e.Logger.Fatal(e.Start(":8080"))

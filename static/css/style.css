@@ -16,6 +16,11 @@ nav{
     gap: 1.5em;
 }
 
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
 #brand{
     display: flex;
     flex-direction: row;
@@ -62,7 +67,7 @@ nav{
     cursor: pointer;
 }
 
-#hero div{
+#post{
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -72,46 +77,28 @@ nav{
     box-shadow: 10px 10px #0F1010;
 }
 
-#hero div:hover{
+#post:hover{
     box-shadow:0px 0px black;
     cursor: pointer;
 }
 
-#hero div h3{
+#post h3{
     margin: 0;
 }
 
-#hero div p {
+#post p {
     margin: 0;
 }
 
-#hero div a{
+#post a{
     margin: 0;
-}
-
-#hero div button{
-    align-self: center;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 8px;
-    padding: 10px;
-    color: white;
-    font-size: 18px;
-}
-
-#hero div button:hover{
-    background-color: #191e1e;
-}
-
-#hero div button:action{
-    background-color: #101010;
 }
 
 #posts{
     display: flex;
     flex-direction: column;
     padding-top: 5em;
-    gap: 2em;
+    gap: 0.5em;
     margin-left: 25%;
     margin-right: 25%;
 }
@@ -128,6 +115,7 @@ nav{
 
 #posts p{
     text-align: left;
+    margin: 0;
 }
 
 #posts pre{
@@ -135,6 +123,159 @@ nav{
     padding: 8px;
 }
 
+#posts h1{
+    align-self: start;
+}
+
+#posts h2{
+    align-self: start;
+}
+
+#posts h3{
+    align-self: start;
+}
+
+#posts h1:after{
+    content: ' ';
+    display: block;
+    border: 2px solid burlywood;
+}
+
+#posts h2:after{
+    content: ' ';
+    display: block;
+    border: 2px solid burlywood;
+}
+
+#posts h3:after{
+    content: ' ';
+    display: block;
+    border: 2px solid burlywood;
+}
+
+#posts img{
+    width: 500px;
+    height: 315px;
+}
+
 #back{
     font-size: 18px;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+#header img{
+    width: 100px;
+    height: 100px;
+}
+
+#header h2:after{
+    content:' ';
+    display:block;
+    border: 2px solid burlywood;
+}
+
+#projects{
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(2, minmax(40%,1fr));
+}
+
+#projects div{
+    min-width: 45%;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px #0F1010;
+}
+
+#projects div:hover{
+    box-shadow:0px 0px black;
+    cursor: pointer;
+}
+
+#projects div h2:after{
+    content: ' ';
+    display: block;
+    border: 2px solid burlywood;
+}
+
+#projects div img{
+    width: 300px;
+    height: 180px;
+}
+
+.left{
+    align-self: start;
+}
+
+.hr:after{
+    content: ' ';
+    display: block;
+    border: 2px solid burlywood;
+}
+
+#web{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: start;
+}
+
+#web button{
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#web button:hover{
+    cursor: pointer;
+    background-color: #111111;
+}
+
+#web button:active{
+    background-color: #101000;
+}
+
+#anim canvas{
+    max-height: 200px;
+}
+
+@media only screen and (max-width: 900px){
+    nav a{
+        color: white;
+    }
+    #hero{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5em;
+        gap: 1em;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #projects div{
+        max-width: 100%;
+    }
+
+    #posts{
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 0;
+    }
+    #projects{
+        gap: 1em;
+        grid-template-columns: minmax(40%,1fr);
+    }
 }

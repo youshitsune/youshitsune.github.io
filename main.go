@@ -81,21 +81,11 @@ func main() {
 	e.Static("/static", "static")
 	newTemplateRenderer(e, "templates/*.html")
 	e.GET("/", func(c echo.Context) error {
-		var buf bytes.Buffer
-		data, _ := os.ReadFile("home.md")
-		markdown.Convert(data, &buf)
-
-		res := map[string]interface{}{
-			"html": buf.String(),
-		}
-		return c.Render(http.StatusOK, "index", res)
+		return c.Render(http.StatusOK, "index", nil)
 	})
 
 	e.GET("/works", func(c echo.Context) error {
-		data, _ := os.ReadFile("works.md")
-		var buf bytes.Buffer
-		markdown.Convert(data, &buf)
-		return c.HTML(http.StatusOK, buf.String())
+		return c.Render(http.StatusOK, "works", nil)
 	})
 
 	e.GET("/posts/:post", func(c echo.Context) error {

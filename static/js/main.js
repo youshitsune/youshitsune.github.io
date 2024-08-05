@@ -7,3 +7,5 @@ function redirect(url){
 }
 
 htmx.on("#brand", "click", trig);
+
+particlesJS.load('anim', '/static/particles.json', function() {});

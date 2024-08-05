@@ -13,6 +13,7 @@
         <meta property="og:description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
         <meta name="Description" property="description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
         <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"/>
         <link rel="me" href="https://tilde.town/@youshitsune">
     </head>
     <body>
@@ -26,23 +27,55 @@
                 <a hx-get="/posts" hx-swap="innerHTML" hx-target="#hero">Posts</a>
             </div>
         </nav>
-
-
+        <div id="anim">
+        </div>
+        <div id="header">
+            <div>
+                <h2>Luka Jovanovic</h2>
+                <h4>Programmer/Mechatronics engineer</h4>
+            </div>
+            <img src="/static/img/avatar.png" />
+        </div>
         <div id="hero">
-            {{.html}}
+            <div id="web">
+                <h2 class="hr">On the web</h2>
+                <button onclick="redirect('https://tilde.zone/@youshitsune')"><i class="iconoir-mastodon"></i>   @youshitsune</button>
+                <button onclick="redirect('https://github.com/youshitsune')"><i class="iconoir-github"></i>   @youshitsune</button>
+            </div>
         </div>
 
     </body>
     <script src="https://unpkg.com/htmx.org@2.0.1" integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="/static/js/main.js"></script>
 </html>
 {{end}}
 
 {{ define "posts" }}
+<h2 class="hr left">Posts</h2>
 {{range .posts}}
-    <div onclick="redirect('{{.URL}}')">
+    <div id="post" onclick="redirect('{{.URL}}')">
         <h3>{{.Title}}</h3>
         <p>{{.Description}}</p>
     </div>
 {{end}}
 {{end}}
+
+
+{{ define "works"}}
+<h2 id="works" class="hr left">Works</h2>
+<div id="projects">
+    <div onclick="redirect('https://github.com/youshitsune/blockchain')">
+        <img src="/static/img/blockchain.jpg" width="300px" height="180px"/>
+        <h2>Blockchain</h2>
+    </div>
+    <div onclick="redirect('https://github.com/youshitsune/bioinformatics')">
+        <img src="/static/img/bioinformatics.jpg" width="300px" height="180px"/>
+        <h2>Bioinforamtics</h2>
+    </div>
+    <div onclick="redirect('https://github.com/youshitsune/bioinformatics')">
+        <img src="/static/img/bioinformatics.jpg" width="300px" height="180px"/>
+        <h2>Bioinforamtics</h2>
+    </div>
+</div>
+{{ end }}

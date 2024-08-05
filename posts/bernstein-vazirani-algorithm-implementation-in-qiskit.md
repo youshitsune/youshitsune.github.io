@@ -66,7 +66,7 @@ circuit.draw(output='mpl')
 
 
     
-![png](/images/output_5_0.png)
+![png](/static/img/output_5_0.png)
     
 
 

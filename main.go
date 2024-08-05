@@ -10,6 +10,7 @@ import (
 
 	"github.com/labstack/echo/v4"
 	"github.com/yuin/goldmark"
+	"github.com/yuin/goldmark/renderer/html"
 
 	highlighting "github.com/yuin/goldmark-highlighting/v2"
 )
@@ -29,6 +30,10 @@ const HTMLHEAD = `
         <link rel="stylesheet" href="/static/css/style.css" />
         <link rel="me" href="https://tilde.town/@youshitsune">
     </head>
+`
+
+const BACK = `
+	<b><a href="/" id="back">⇐ HOME</a></b>
 `
 
 type Post struct {
@@ -66,6 +71,9 @@ func main() {
 				highlighting.WithStyle("monokai"),
 			),
 		),
+		goldmark.WithRendererOptions(
+			html.WithUnsafe(),
+		),
 	)
 
 	e := echo.New()
@@ -73,11 +81,21 @@ func main() {
 	e.Static("/static", "static")
 	newTemplateRenderer(e, "templates/*.html")
 	e.GET("/", func(c echo.Context) error {
-		return c.Render(http.StatusOK, "index", nil)
+		var buf bytes.Buffer
+		data, _ := os.ReadFile("home.md")
+		markdown.Convert(data, &buf)
+
+		res := map[string]interface{}{
+			"html": buf.String(),
+		}
+		return c.Render(http.StatusOK, "index", res)
 	})
 
 	e.GET("/works", func(c echo.Context) error {
-		return c.Render(http.StatusOK, "works", nil)
+		data, _ := os.ReadFile("works.md")
+		var buf bytes.Buffer
+		markdown.Convert(data, &buf)
+		return c.HTML(http.StatusOK, buf.String())
 	})
 
 	e.GET("/posts/:post", func(c echo.Context) error {
@@ -87,13 +105,13 @@ func main() {
 			var buf bytes.Buffer
 			data, _ = os.ReadFile("posts/404.md")
 			markdown.Convert(data, &buf)
-			return c.HTML(http.StatusOK, HTMLHEAD+"<body id='posts'>"+buf.String()+"</body>")
+			return c.HTML(http.StatusOK, HTMLHEAD+"<body id='posts'>"+BACK+buf.String()+"</body>")
 		}
 
 		var buf bytes.Buffer
 		markdown.Convert(data, &buf)
 
-		return c.HTML(http.StatusOK, HTMLHEAD+"<body id='posts'>"+buf.String()+"</body>")
+		return c.HTML(http.StatusOK, HTMLHEAD+"<body id='posts'>"+BACK+buf.String()+"</body>")
 	})
 
 	e.GET("/posts", func(c echo.Context) error {

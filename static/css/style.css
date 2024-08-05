@@ -14,30 +14,35 @@ nav{
     align-items: center;
     justify-content: center;
     padding: 8px 5%;
-    gap: 5em;
+    gap: 1.5em;
 }
 
-.brand{
+#brand{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 0.5em;
 }
 
-.brand img{
+#brand img{
     width: 50px;
     height: 50px;
 }
 
-.links {
+#brand:hover{
+    cursor: pointer;
+}
+
+#links {
     display: flex;
     justify-content: center;
     gap: 1em;
-    font-size: 24px;
+    font-size: 18px;
 }
 
-.links a:hover{
+#links a:hover{
     text-decoration: underline white 2px;
+    cursor:pointer;
 }
 
 #hero{
@@ -45,27 +50,62 @@ nav{
     flex-direction: column;
     padding-top: 5em;
     gap: 2em;
-    margin-left: 35%;
+    margin-left: 25%;
     margin-right: 25%;
+}
+#hero a{
+    color: white;
+    text-decoration: none;
+}
+
+#hero a:hover{
+    text-decoration: underline white 2px;
+    cursor: pointer;
 }
 
 #hero div{
-    max-width: 50%;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0.5em;
+    box-shadow: 10px 10px #0F1010;
 }
+
+#hero div:hover{
+    box-shadow:0px 0px black;
+    cursor: pointer;
+}
+
 #hero div h3{
     margin: 0;
 }
+
 #hero div p {
     margin: 0;
-    max-width: 75%;
-    text-align: unset;
 }
 
 #hero div a{
     margin: 0;
+}
+
+#hero div button{
+    align-self: center;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+#hero div button:hover{
+    background-color: #191e1e;
+}
+
+#hero div button:action{
+    background-color: #101010;
 }
 
 #posts{
@@ -77,6 +117,16 @@ nav{
     margin-right: 25%;
 }
 
+#posts a{
+    color: white;
+    text-decoration: none;
+}
+
+#posts a:hover{
+    text-decoration: underline white 2px;
+    cursor: pointer;
+}
+
 #posts p{
     text-align: left;
 }
@@ -84,4 +134,8 @@ nav{
 #posts pre{
     text-align: left;
     padding: 8px;
+}
+
+#back{
+    font-size: 18px;
 }

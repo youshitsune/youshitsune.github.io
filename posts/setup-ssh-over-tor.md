@@ -20,7 +20,7 @@ Then edit torrc file.
 sudo vim /etc/tor/torrc
 ```
 Add this to it
-```
+```text
 HiddenServiceDir /var/lib/tor/hidden-service-example/
 HiddenServicePort 22 127.0.0.1:22
 HiddenServiceAuthorizeClient stealth hidden-service-example

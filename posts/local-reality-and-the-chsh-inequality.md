@@ -2,7 +2,7 @@
 The CHSH game is a thought experiment involving two parties separated at a great distance (far enough to preclude classical communication at the speed of light), each of whom has access to one half of an entangled two-qubit pair. Analysis of this game shows that no classical local hidden-variable theory can explain the correlations that can result from entanglement. Since this game is indeed physically realizable, this gives strong evidence that classical physics is fundamentally incapable of explaining certain quantum phenomena, at least in a "local" fashion. 
 
 Here is implementation for CHSH Inequality
-```
+```python
     import qiskit
     from qiskit import QuantumCircuit, ClassicalRegister, QuantumRegister,transpile, Aer
     from qiskit.tools.visualization import circuit_drawer
@@ -16,7 +16,7 @@ Here is implementation for CHSH Inequality
 ```
 
 
-```
+```python
     sim = Aer.get_backend('aer_simulator')
 
     provider = IBMProvider('imbq-key')
@@ -24,7 +24,7 @@ Here is implementation for CHSH Inequality
 ```
 
 
-```
+```python
     def make_chsh_circuit(theta_vec):
         chsh_circuits = []
 
@@ -44,7 +44,7 @@ Here is implementation for CHSH Inequality
 ```
 
 
-```
+```python
     def compute_chsh_witness(counts):
         CHSH1 = []
         CHSH2 = []
@@ -86,19 +86,19 @@ Here is implementation for CHSH Inequality
 ```
 
 
-```
+```python
     number_of_thetas = 15
     theta_vec = np.linspace(0,2*np.pi,number_of_thetas)
     my_chsh_circuits = make_chsh_circuit(theta_vec)
 ```
 
 
-```
+```python
     my_chsh_circuits[4].draw(output="mpl")
 ```
 
 
-```
+```python
     result_ideal = sim.run(my_chsh_circuits).result()
 
     tic = time.time()
@@ -111,13 +111,13 @@ Here is implementation for CHSH Inequality
 ```
 
 
-```
+```python
     CHSH1_ideal, CHSH2_ideal = compute_chsh_witness(result_ideal.get_counts())
     CHSH1_real, CHSH2_real = compute_chsh_witness(result_real.get_counts())
 ```
 
 
-```
+```python
     plt.figure(figsize=(12,8))
     plt.plot(theta_vec, CHSH1_ideal,'o-',label = 'CHSH1 Noiseless')
     plt.plot(theta_vec, CHSH2_ideal, 'o-', label='CHSH2 Noiseless')

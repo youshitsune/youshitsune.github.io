@@ -44,8 +44,9 @@ nav{
     display: flex;
     flex-direction: column;
     padding-top: 5em;
-    align-items: center;
     gap: 2em;
+    margin-left: 35%;
+    margin-right: 25%;
 }
 
 #hero div{
@@ -53,7 +54,6 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-    align-items: center;
 }
 #hero div h3{
     margin: 0;
@@ -61,7 +61,7 @@ nav{
 #hero div p {
     margin: 0;
     max-width: 75%;
-    text-align: center;
+    text-align: unset;
 }
 
 #hero div a{
@@ -72,9 +72,16 @@ nav{
     display: flex;
     flex-direction: column;
     padding-top: 5em;
-    align-items: center;
     gap: 2em;
     margin-left: 25%;
     margin-right: 25%;
-    text-align: center;
+}
+
+#posts p{
+    text-align: left;
+}
+
+#posts pre{
+    text-align: left;
+    padding: 8px;
 }

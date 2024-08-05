@@ -10,6 +10,8 @@ import (
 
 	"github.com/labstack/echo/v4"
 	"github.com/yuin/goldmark"
+
+	highlighting "github.com/yuin/goldmark-highlighting/v2"
 )
 
 const HTMLHEAD = `
@@ -57,6 +59,15 @@ func newTemplateRenderer(e *echo.Echo, paths ...string) {
 }
 
 func main() {
+
+	markdown := goldmark.New(
+		goldmark.WithExtensions(
+			highlighting.NewHighlighting(
+				highlighting.WithStyle("monokai"),
+			),
+		),
+	)
+
 	e := echo.New()
 
 	e.Static("/static", "static")
@@ -75,12 +86,12 @@ func main() {
 		if err != nil {
 			var buf bytes.Buffer
 			data, _ = os.ReadFile("posts/404.md")
-			goldmark.Convert(data, &buf)
+			markdown.Convert(data, &buf)
 			return c.HTML(http.StatusOK, HTMLHEAD+"<body id='posts'>"+buf.String()+"</body>")
 		}
 
 		var buf bytes.Buffer
-		goldmark.Convert(data, &buf)
+		markdown.Convert(data, &buf)
 
 		return c.HTML(http.StatusOK, HTMLHEAD+"<body id='posts'>"+buf.String()+"</body>")
 	})
@@ -96,7 +107,7 @@ func main() {
 			ctx := strings.Split(string(data), "\n")
 			title := ctx[0]
 			var desc bytes.Buffer
-			goldmark.Convert([]byte(ctx[1]), &desc)
+			markdown.Convert([]byte(ctx[1]), &desc)
 
 			posts = append(posts, Post{
 				Title:       title[2:],

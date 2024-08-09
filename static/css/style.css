@@ -53,6 +53,7 @@ nav a{
     display: flex;
     flex-direction: column;
     padding-top: 5em;
+    padding-bottom: 5em;
     gap: 2em;
     margin-left: 25%;
     margin-right: 25%;

@@ -9,6 +9,7 @@ function redirect(url){
 }
 
 htmx.on("#brand", "click", trig);
+htmx.on("#hero","htmx:afterSwap", swap);
 
 
 function unfade(element) {

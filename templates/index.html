@@ -18,13 +18,13 @@
     </head>
     <body>
         <nav>
-            <div id="brand" hx-trigger="run" hx-get="/home" hx-target="#hero" hx-swap="innerHTML" onClick="swap()">
+            <div id="brand" hx-trigger="run" hx-get="/home" hx-target="#hero" hx-swap="innerHTML">
                 <img src="/static/img/avatar.png" />
                 <h3>YOUSHITSUNE</h3>
             </div>
             <div id="links">
-                <a hx-get="/works" hx-swap="innerHTML" hx-target="#hero" onClick="swap()">Works</a>
-                <a hx-get="/posts" hx-swap="innerHTML" hx-target="#hero" onClick="swap()">Posts</a>
+                <a hx-get="/works" hx-swap="innerHTML" hx-target="#hero">Works</a>
+                <a hx-get="/posts" hx-swap="innerHTML" hx-target="#hero">Posts</a>
             </div>
         </nav>
         <div id="anim">

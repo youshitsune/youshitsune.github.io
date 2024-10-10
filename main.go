@@ -84,6 +84,10 @@ func main() {
 		return c.Render(http.StatusOK, "index", nil)
 	})
 
+	e.GET("/home", func(c echo.Context) error {
+		return c.Render(http.StatusOK, "home", nil)
+	})
+
 	e.GET("/works", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "works", nil)
 	})

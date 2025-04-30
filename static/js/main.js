@@ -15,7 +15,6 @@ htmx.on("#hero","htmx:afterSwap", swap);
 
 function unfade(element) {
     var op = 0.1;
-    element.style.display = 'block';
     var timer = setInterval(function () {
         if (op >= 1){
             clearInterval(timer);
@@ -28,7 +27,6 @@ function unfade(element) {
 
 function fade(element){
     var op = 1;
-    element.style.display = 'block';
     var timer = setInterval(function() {
         if (op <= 0) {
             clearInterval(timer);

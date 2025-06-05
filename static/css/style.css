@@ -54,10 +54,11 @@ nav a{
     flex-direction: column;
     padding-top: 5em;
     padding-bottom: 5em;
-    gap: 2em;
     margin-left: 25%;
     margin-right: 25%;
+    gap: 2em;
 }
+
 #hero a{
     color: white;
     text-decoration: none;

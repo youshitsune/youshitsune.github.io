@@ -47,8 +47,6 @@ function swap() {
     unfade(elem);
 }
 
-window.onload = async function(){
-    var elem = document.body;
-    elem.style.opacity = 0;
-    unfade(elem);
+function post(url){
+    htmx.ajax('GET', url, {target:'#hero', swap:'outerHTML'});
 }

@@ -34,7 +34,7 @@ const HTMLHEAD = `
 `
 
 const BACK = `
-	<b><a href="/posts" id="back">⇐ HOME</a></b>
+	<b><a hx-get="/fullposts" hx-target="body" id="back">⇐ HOME</a></b>
 `
 
 type Post struct {
@@ -101,14 +101,20 @@ func main() {
 			var buf bytes.Buffer
 			data, _ = os.ReadFile("posts/404.md")
 			markdown.Convert(data, &buf)
-			return c.HTML(http.StatusOK, HTMLHEAD+"<body id='posts'>"+BACK+buf.String()+"</body>")
+			res := map[string]interface{}{
+				"data": buf.String(),
+			}
+			return c.Render(http.StatusOK, "post", res)
 		}
 
 		var buf bytes.Buffer
 		tmp := strings.Split(string(data), "\n")
 		markdown.Convert([]byte(strings.Join(tmp[1:], "\n")), &buf)
+		res := map[string]interface{}{
+			"Data": buf.String(),
+		}
 
-		return c.HTML(http.StatusOK, HTMLHEAD+"<body id='posts'>"+BACK+buf.String()+"</body>")
+		return c.Render(http.StatusOK, "post", res)
 	})
 
 	e.GET("/posts", func(c echo.Context) error {

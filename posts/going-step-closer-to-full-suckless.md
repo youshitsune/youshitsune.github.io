@@ -1,3 +1,4 @@
+2023/06/15
 # Going step closer to Full Suckless
 Today, I was scrolling through suckless rocks page, as every other suckless user. And I saw section for shells, installed yash shell.
 

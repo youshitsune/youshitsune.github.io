@@ -1,3 +1,4 @@
+2023/07/22
 # Configuring weechat proxy to use tor
 If you are lover of privacy like I am, you'll love this configuration.
 

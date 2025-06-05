@@ -1,3 +1,4 @@
+2023/06/26
 # Local Reality and the CHSH inequality
 The CHSH game is a thought experiment involving two parties separated at a great distance (far enough to preclude classical communication at the speed of light), each of whom has access to one half of an entangled two-qubit pair. Analysis of this game shows that no classical local hidden-variable theory can explain the correlations that can result from entanglement. Since this game is indeed physically realizable, this gives strong evidence that classical physics is fundamentally incapable of explaining certain quantum phenomena, at least in a "local" fashion. 
 

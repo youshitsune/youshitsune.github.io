@@ -1,3 +1,4 @@
+2023/05/17
 # My new look on how to be productive
 I've researched on some ways to be productive(i.e. wasting my damn time). And I completely overlooked the calendar.
 

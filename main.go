@@ -5,6 +5,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"sort"
 	"strings"
 	"text/template"
 
@@ -33,10 +34,11 @@ const HTMLHEAD = `
 `
 
 const BACK = `
-	<b><a href="/" id="back">⇐ HOME</a></b>
+	<b><a href="/posts" id="back">⇐ HOME</a></b>
 `
 
 type Post struct {
+	Date        string
 	Title       string
 	Description string
 	URL         string
@@ -103,7 +105,8 @@ func main() {
 		}
 
 		var buf bytes.Buffer
-		markdown.Convert(data, &buf)
+		tmp := strings.Split(string(data), "\n")
+		markdown.Convert([]byte(strings.Join(tmp[1:], "\n")), &buf)
 
 		return c.HTML(http.StatusOK, HTMLHEAD+"<body id='posts'>"+BACK+buf.String()+"</body>")
 	})
@@ -117,16 +120,22 @@ func main() {
 			name := files[i].Name()
 			data, _ := os.ReadFile("posts/" + name)
 			ctx := strings.Split(string(data), "\n")
-			title := ctx[0]
+			date := ctx[0]
+			title := ctx[1]
 			var desc bytes.Buffer
-			markdown.Convert([]byte(ctx[1]), &desc)
+			markdown.Convert([]byte(ctx[2]), &desc)
 
 			posts = append(posts, Post{
+				Date:        date,
 				Title:       title[2:],
 				Description: desc.String(),
 				URL:         "/posts/" + strings.Split(name, ".")[0],
 			})
 		}
+
+		sort.Slice(posts, func(i, j int) bool {
+			return posts[i].Date > posts[j].Date
+		})
 
 		res := map[string]interface{}{
 			"posts": posts,

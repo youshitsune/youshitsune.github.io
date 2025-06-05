@@ -1,3 +1,4 @@
+2023/07/21
 # Flashing custom ROM
 I always wanted to flash custom rom on my phone, but there isn't any offical software for it.
 

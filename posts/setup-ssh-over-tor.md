@@ -1,11 +1,5 @@
+2023/07/02
 # Setup SSH over TOR
----
-title: "Setup SSH Over TOR"
-date: 2023-07-02T08:54:00+02:00
-toc: true
-tags: ["tor", "tech"]
----
-
 This is tutorial for Debian systems.
 
 ## Setting up Tor - Server

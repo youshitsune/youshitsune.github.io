@@ -71,11 +71,11 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
-        "mode": "repulse"
+        "enable": true,
+        "mode": "grab"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
@@ -84,7 +84,7 @@
       "grab": {
         "distance": 800,
         "line_linked": {
-          "opacity": 1
+          "opacity": 0.3
         }
       },
       "bubble": {

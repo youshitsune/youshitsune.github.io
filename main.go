@@ -16,27 +16,6 @@ import (
 	highlighting "github.com/yuin/goldmark-highlighting/v2"
 )
 
-const HTMLHEAD = `
-    <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1"><title>Youshitsune</title>
-        <meta property="og:title" content="Youshitsune">
-        <meta property="og:type" content="website">
-
-
-        <meta property="og:image" content="/static/img/avatar.png">
-
-        <meta property="og:url" content="https://youshitsune.top/">
-        <meta property="og:description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
-        <meta name="Description" property="description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
-        <link rel="stylesheet" href="/static/css/style.css" />
-        <link rel="me" href="https://tilde.town/@youshitsune">
-    </head>
-`
-
-const BACK = `
-	<b><a hx-get="/fullposts" hx-target="body" id="back">⇐ HOME</a></b>
-`
-
 type Post struct {
 	Date        string
 	Title       string
@@ -84,14 +63,6 @@ func main() {
 	newTemplateRenderer(e, "templates/*.html")
 	e.GET("/", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "index", nil)
-	})
-
-	e.GET("/home", func(c echo.Context) error {
-		return c.Render(http.StatusOK, "home", nil)
-	})
-
-	e.GET("/works", func(c echo.Context) error {
-		return c.Render(http.StatusOK, "works", nil)
 	})
 
 	e.GET("/posts/:post", func(c echo.Context) error {

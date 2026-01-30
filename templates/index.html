@@ -1,12 +1,3 @@
-{{define "header"}}
-<div id="header">
-    <div>
-        <h2>Luka Jovanovic</h2>
-        <h4>Programmer/Mechatronics engineer</h4>
-    </div>
-    <img src="/static/img/avatar.png" />
-</div>
-{{end}}
 {{define "head"}}
 <!DOCTYPE html>
 <html lang="en-us">
@@ -19,33 +10,41 @@
         <meta property="og:image" content="/static/img/avatar.png">
 
         <meta property="og:url" content="https://youshitsune.top/">
-        <meta property="og:description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
-        <meta name="Description" property="description" content="The homepage of Astatine. This website is a demo the of the Hugo theme Astatine.">
         <link rel="stylesheet" href="/static/css/style.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"/>
         <link rel="me" href="https://tilde.town/@youshitsune">
     </head>
     <body>
         <nav>
-            <div id="brand" hx-trigger="run" hx-get="/home" hx-target="#hero" hx-swap="innerHTML">
-                <img src="/static/img/avatar.png" />
-                <h3>YOUSHITSUNE</h3>
+            <div id="content">
+                <a id="brand" href="/">
+                    <img src="/static/img/avatar.png" />
+                    <h3>YOUSHITSUNE</h3>
+                </a>
+                <div id="links">
+                    <a href="/">Home</a>
+                    <a href="/posts">Posts</a>
+                </div>
             </div>
-            <div id="links">
-                <a hx-get="/works" hx-target="#hero" hx-swap="innerHTML">Works</a>
-                <a hx-get="/posts" hx-target="#hero" hx-swap="innerHTML">Posts</a>
+            <div id="anim">
             </div>
         </nav>
-        <div id="anim">
-        </div>
         <div id="hero">
+{{end}}
+
+{{define "header"}}
+<div id="header">
+    <div>
+        <h2>Luka Jovanovic</h2>
+        <h4>Programmer/Mechatronics engineer</h4>
+    </div>
+    <img src="/static/img/avatar.png" />
+</div>
 {{end}}
 
 {{define "tail"}}
         </div>
 
     </body>
-    <script src="/static/js/htmx.js"></script>
     <script src="/static/js/particles.min.js"></script>
     <script src="/static/js/main.js"></script>
 </html>
@@ -58,40 +57,29 @@
     <h2 class="hr">About</h2>
     <p>Programmer and self-taught mechatronics engineer, who likes open-source idea! I like building robots and connecting them to some of my projects. Also building other stuff, like coil guns, Tesla coils.</p>
 </div>
-<div id="skills">
-    <h2 class="hr">Skills</h2>
-    <b>Languages:</b><br>
-    <img src="https://img.shields.io/badge/Go-lightblue?style=for-the-badge&logo=go">
-    <img src="https://img.shields.io/badge/C%20-%232370ED.svg?style=for-the-badge&logo=c&logoColor=white">
-    <img src="https://img.shields.io/badge/Python%20-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white">
-    <img src="https://img.shields.io/badge/Rust-%23F05033.svg?style=for-the-badge&logo=rust&logoColor=white">
-    <img src="https://img.shields.io/badge/C%2B%2B-blue?style=for-the-badge&logo=c%2B%2B">
-
-    <br>   
-    <b>Extras:</b><br>
-    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
-    <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
-    <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
-    <img src="https://img.shields.io/badge/Terminal-%23054020?style=for-the-badge&logo=gnu-bash&logoColor=white">
-
-</div>
+{{template "works"}}
 <div id="web">
     <h2 class="hr">On the web</h2>
-    <button onclick="redirect('https://tilde.zone/@youshitsune')"><i class="iconoir-mastodon"></i>   @youshitsune</button>
-    <button onclick="redirect('https://github.com/youshitsune')"><i class="iconoir-github"></i>   @youshitsune</button>
-    <button onclick="redirect('https://simplex.chat/contact#/?v=2-7&smp=smp%3A%2F%2FPQUV2eL0t7OStZOoAsPEV2QYWt4-xilbakvGUGOItUo%3D%40smp6.simplex.im%2FVNZ9O-hkq-McQS2UROsxZq1W63JKSFHY%23%2F%3Fv%3D1-3%26dh%3DMCowBQYDK2VuAyEA_js2QoNGqDNEiPqSj2Kq5zAnn1d9xrB76oz8zkuR7R4%253D%26srv%3Dbylepyau3ty4czmn77q4fglvperknl4bi2eb2fdy2bh4jxtf32kf73yd.onion')"><i class="iconoir-message-text"></i>SimpleX</button>
+    <button onclick="redirect('https://tilde.zone/@youshitsune')">{{template "icon" "mastodon"}}@youshitsune</button>
+    <button onclick="redirect('https://github.com/youshitsune')">{{template "icon" "github"}}@youshitsune</button>
+    <button onclick="redirect('mailto:youshitsune@envs.net')">{{template "icon" "mail"}} Email</button>
 </div>
 {{template "tail"}}
 {{end}}
 
 {{ define "posts" }}
+{{template "head"}}
 <h2 class="hr left">Posts</h2>
+<ul>
 {{range .posts}}
-<div id="post" onclick="post('{{.URL}}')">
-    <h3>{{.Title}}</h3>
-    <p>{{.Description}}</p>
-</div>
+<li class="post">
+    <a class="post-link" href="{{.URL}}">
+        <span class="post-date">{{.Date}}</span> :: <span class="post-title">{{.Title}}</span>
+    </a>
+</li>
 {{end}}
+</ul>
+{{template "tail"}}
 {{end}}
 
 
@@ -118,38 +106,10 @@
 {{ end }}
 
 {{define "home"}}
-{{template "header"}}
-<div id="about">
-    <h2 class="hr">About</h2>
-    <p>Programmer and self-taught mechatronics engineer, who likes open-source idea! I like building robots and connecting them to some of my projects. Also building other stuff, like coil guns, Tesla coils.</p>
-</div>
-<div id="skills">
-    <h2 class="hr">Skills</h2>
-    <b>Languages:</b><br>
-    <img src="https://img.shields.io/badge/Go-lightblue?style=for-the-badge&logo=go">
-    <img src="https://img.shields.io/badge/C%20-%232370ED.svg?style=for-the-badge&logo=c&logoColor=white">
-    <img src="https://img.shields.io/badge/Python%20-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white">
-    <img src="https://img.shields.io/badge/Rust-%23F05033.svg?style=for-the-badge&logo=rust&logoColor=white">
-    <img src="https://img.shields.io/badge/C%2B%2B-blue?style=for-the-badge&logo=c%2B%2B">
-
-    <br>   
-    <b>Extras:</b><br>
-    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
-    <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
-    <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
-    <img src="https://img.shields.io/badge/Terminal-%23054020?style=for-the-badge&logo=gnu-bash&logoColor=white">
-
-</div>
-<div id="web">
-    <h2 class="hr">On the web</h2>
-    <button onclick="redirect('https://tilde.zone/@youshitsune')"><i class="iconoir-mastodon"></i>   @youshitsune</button>
-    <button onclick="redirect('https://github.com/youshitsune')"><i class="iconoir-github"></i>   @youshitsune</button>
-    <button onclick="redirect('https://simplex.chat/contact#/?v=2-7&smp=smp%3A%2F%2FPQUV2eL0t7OStZOoAsPEV2QYWt4-xilbakvGUGOItUo%3D%40smp6.simplex.im%2FVNZ9O-hkq-McQS2UROsxZq1W63JKSFHY%23%2F%3Fv%3D1-3%26dh%3DMCowBQYDK2VuAyEA_js2QoNGqDNEiPqSj2Kq5zAnn1d9xrB76oz8zkuR7R4%253D%26srv%3Dbylepyau3ty4czmn77q4fglvperknl4bi2eb2fdy2bh4jxtf32kf73yd.onion')"><i class="iconoir-message-text"></i>&nbsp;SimpleX</button>
-</div>
 {{end}}
 
 {{define "post"}}
-<div id="hero">
+{{template "head"}}
 <style>
     #hero {
         gap: 25px;
@@ -160,5 +120,8 @@
     }
 </style>
 {{.Data}}
-</div>
+{{template "tail"}}
+{{end}}
+
+{{define "icon"}}
 {{end}}

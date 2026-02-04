@@ -17,17 +17,17 @@ import (
 )
 
 type Post struct {
-	Date        string
-	Title       string
-	Description string
-	URL         string
+	Date  string
+	Title string
+	URL   string
+	Text  string
 }
 
 type Template struct {
 	Templates *template.Template
 }
 
-func (t *Template) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
+func (t *Template) Render(w io.Writer, name string, data any, c echo.Context) error {
 	return t.Templates.ExecuteTemplate(w, name, data)
 }
 
@@ -44,6 +44,43 @@ func newTemplateRenderer(e *echo.Echo, paths ...string) {
 	e.Renderer = t
 }
 
+func check_posts(path string, markdown goldmark.Markdown, posts *map[string]Post) {
+	files, _ := os.ReadDir(path)
+	if len(files) != len(*posts) {
+		*posts = load_posts(path, markdown)
+	}
+}
+
+func sort_posts(posts *[]Post) {
+	sort.Slice(*posts, func(i, j int) bool {
+		return (*posts)[i].Date > (*posts)[j].Date
+	})
+}
+
+func load_posts(path string, markdown goldmark.Markdown) map[string]Post {
+	posts := make(map[string]Post)
+	files, _ := os.ReadDir(path)
+
+	for i := range files {
+		name := files[i].Name()
+		data, _ := os.ReadFile(path + name)
+		ctx := strings.Split(string(data), "\n")
+		date := ctx[0]
+		title := ctx[1]
+		var text bytes.Buffer
+		markdown.Convert([]byte(strings.Join(ctx[1:], "\n")), &text)
+
+		posts[strings.Split(name, ".")[0]] = Post{
+			Date:  date,
+			Title: title[2:],
+			URL:   "/" + path + strings.Split(name, ".")[0],
+			Text:  text.String(),
+		}
+	}
+
+	return posts
+}
+
 func main() {
 
 	markdown := goldmark.New(
@@ -57,6 +94,8 @@ func main() {
 		),
 	)
 
+	posts := load_posts("posts/", markdown)
+
 	e := echo.New()
 
 	e.Static("/static", "static")
@@ -67,55 +106,29 @@ func main() {
 
 	e.GET("/posts/:post", func(c echo.Context) error {
 		post := c.Param("post")
-		data, err := os.ReadFile("posts/" + post + ".md")
-		if err != nil {
-			var buf bytes.Buffer
-			data, _ = os.ReadFile("posts/404.md")
-			markdown.Convert(data, &buf)
-			res := map[string]interface{}{
-				"data": buf.String(),
+
+		post_data, ok := posts[post]
+		if ok {
+			res := map[string]any{
+				"Data": post_data.Text,
 			}
 			return c.Render(http.StatusOK, "post", res)
 		}
 
-		var buf bytes.Buffer
-		tmp := strings.Split(string(data), "\n")
-		markdown.Convert([]byte(strings.Join(tmp[1:], "\n")), &buf)
-		res := map[string]interface{}{
-			"Data": buf.String(),
-		}
-
-		return c.Render(http.StatusOK, "post", res)
+		return c.Render(http.StatusOK, "404", nil)
 	})
 
 	e.GET("/posts", func(c echo.Context) error {
-		var posts []Post
-
-		files, _ := os.ReadDir("posts/")
-
-		for i := range files {
-			name := files[i].Name()
-			data, _ := os.ReadFile("posts/" + name)
-			ctx := strings.Split(string(data), "\n")
-			date := ctx[0]
-			title := ctx[1]
-			var desc bytes.Buffer
-			markdown.Convert([]byte(ctx[2]), &desc)
-
-			posts = append(posts, Post{
-				Date:        date,
-				Title:       title[2:],
-				Description: desc.String(),
-				URL:         "/posts/" + strings.Split(name, ".")[0],
-			})
+		check_posts("posts/", markdown, &posts)
+		list_posts := make([]Post, 0, len(posts))
+		for _, v := range posts {
+			list_posts = append(list_posts, v)
 		}
 
-		sort.Slice(posts, func(i, j int) bool {
-			return posts[i].Date > posts[j].Date
-		})
+		sort_posts(&list_posts)
 
-		res := map[string]interface{}{
-			"posts": posts,
+		res := map[string]any{
+			"posts": list_posts,
 		}
 		return c.Render(http.StatusOK, "posts", res)
 	})

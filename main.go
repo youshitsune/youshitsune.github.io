@@ -52,7 +52,7 @@ func check_posts(path string, markdown goldmark.Markdown, posts *map[string]Post
 }
 
 func sort_posts(posts *[]Post) {
-	sort.Slice(*posts, func(i, j int) bool {
+	sort.SliceStable(*posts, func(i, j int) bool {
 		return (*posts)[i].Date > (*posts)[j].Date
 	})
 }

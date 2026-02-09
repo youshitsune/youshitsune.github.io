@@ -8,6 +8,7 @@ import (
 	"sort"
 	"strings"
 	"text/template"
+	"time"
 
 	"github.com/labstack/echo/v4"
 	"github.com/yuin/goldmark"
@@ -45,9 +46,12 @@ func newTemplateRenderer(e *echo.Echo, paths ...string) {
 }
 
 func check_posts(path string, markdown goldmark.Markdown, posts *map[string]Post, list_posts *[]Post) {
-	files, _ := os.ReadDir(path)
-	if len(files) != len(*posts) {
-		*posts, *list_posts = load_posts(path, markdown)
+	for {
+		files, _ := os.ReadDir(path)
+		if len(files) != len(*posts) {
+			*posts, *list_posts = load_posts(path, markdown)
+		}
+		time.Sleep(10 * time.Minute)
 	}
 }
 
@@ -97,6 +101,7 @@ func main() {
 	)
 
 	posts, list_posts := load_posts("posts/", markdown)
+	go check_posts("posts/", markdown, &posts, &list_posts)
 
 	e := echo.New()
 
@@ -121,8 +126,6 @@ func main() {
 	})
 
 	e.GET("/posts", func(c echo.Context) error {
-		check_posts("posts/", markdown, &posts, &list_posts)
-
 		res := map[string]any{
 			"posts": list_posts,
 		}

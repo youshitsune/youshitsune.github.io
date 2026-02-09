@@ -44,23 +44,19 @@ func newTemplateRenderer(e *echo.Echo, paths ...string) {
 	e.Renderer = t
 }
 
-func check_posts(path string, markdown goldmark.Markdown, posts *map[string]Post) {
+func check_posts(path string, markdown goldmark.Markdown, posts *map[string]Post, list_posts *[]Post) {
 	files, _ := os.ReadDir(path)
 	if len(files) != len(*posts) {
-		*posts = load_posts(path, markdown)
+		*posts, *list_posts = load_posts(path, markdown)
 	}
 }
 
-func sort_posts(posts *[]Post) {
-	sort.SliceStable(*posts, func(i, j int) bool {
-		return (*posts)[i].Date > (*posts)[j].Date
-	})
-}
-
-func load_posts(path string, markdown goldmark.Markdown) map[string]Post {
+func load_posts(path string, markdown goldmark.Markdown) (map[string]Post, []Post) {
+	list_posts := make([]Post, 0)
 	posts := make(map[string]Post)
 	files, _ := os.ReadDir(path)
 
+	var post Post
 	for i := range files {
 		name := files[i].Name()
 		data, _ := os.ReadFile(path + name)
@@ -69,20 +65,26 @@ func load_posts(path string, markdown goldmark.Markdown) map[string]Post {
 		title := ctx[1]
 		var text bytes.Buffer
 		markdown.Convert([]byte(strings.Join(ctx[1:], "\n")), &text)
-
-		posts[strings.Split(name, ".")[0]] = Post{
+		post = Post{
 			Date:  date,
 			Title: title[2:],
 			URL:   "/" + path + strings.Split(name, ".")[0],
 			Text:  text.String(),
 		}
+
+		posts[strings.Split(name, ".")[0]] = post
+		list_posts = append(list_posts, post)
+
 	}
 
-	return posts
+	sort.SliceStable(list_posts, func(i, j int) bool {
+		return list_posts[i].Date > list_posts[j].Date
+	})
+
+	return posts, list_posts
 }
 
 func main() {
-
 	markdown := goldmark.New(
 		goldmark.WithExtensions(
 			highlighting.NewHighlighting(
@@ -94,7 +96,7 @@ func main() {
 		),
 	)
 
-	posts := load_posts("posts/", markdown)
+	posts, list_posts := load_posts("posts/", markdown)
 
 	e := echo.New()
 
@@ -119,13 +121,7 @@ func main() {
 	})
 
 	e.GET("/posts", func(c echo.Context) error {
-		check_posts("posts/", markdown, &posts)
-		list_posts := make([]Post, 0, len(posts))
-		for _, v := range posts {
-			list_posts = append(list_posts, v)
-		}
-
-		sort_posts(&list_posts)
+		check_posts("posts/", markdown, &posts, &list_posts)
 
 		res := map[string]any{
 			"posts": list_posts,
@@ -134,4 +130,5 @@ func main() {
 	})
 
 	e.Logger.Fatal(e.Start(":8080"))
+
 }

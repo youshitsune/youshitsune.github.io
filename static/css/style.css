@@ -201,6 +201,12 @@ nav a{
 
 #grid button {
     padding: 20px;
+    background-color: #303436;
+    border: 1px solid #1b4958;
+}
+
+#grid button:hover {
+    background-color: #1c1d1e;
 }
 
 #projects{

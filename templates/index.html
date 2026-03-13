@@ -139,7 +139,7 @@
 <h1>Unity radionica</h1>
 <div id="grid">
     {{range .files}}
-    <button onclick="redirect('https://youshitsune.top/unity-radionica/{{.Path}}')">{{.Ime}}</button>
+    <button onclick="redirect('https://youshitsune.top/unity-radionica/{{.Path}}')">{{template "icon" "file"}}{{.Ime}}</button>
     {{end}}
 </div>
 {{template "tail"}}

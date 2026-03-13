@@ -136,8 +136,11 @@
 
 {{define "unity"}}
 {{template "head"}}
+<h1>Unity radionica</h1>
+<div id="grid">
     {{range .files}}
-    <button onclick="redirect('https://youshitsune.top/unity-radionica/materijali/{{.Path}}')">{{.Ime}}</button>
+    <button onclick="redirect('https://youshitsune.top/unity-radionica/{{.Path}}')">{{.Ime}}</button>
     {{end}}
+</div>
 {{template "tail"}}
 {{end}}

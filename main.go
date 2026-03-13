@@ -17,6 +17,11 @@ import (
 	highlighting "github.com/yuin/goldmark-highlighting/v2"
 )
 
+type Materijal struct {
+	Path string
+	Ime  string
+}
+
 type Post struct {
 	Date  string
 	Title string
@@ -103,12 +108,28 @@ func main() {
 	posts, list_posts := load_posts("posts/", markdown)
 	go check_posts("posts/", markdown, &posts, &list_posts)
 
+	materijali := make([]Materijal, 0)
+	fajlovi, _ := os.ReadDir("materijali")
+	for _, file := range fajlovi {
+		ime := file.Name()
+		materijali = append(materijali, Materijal{Ime: ime, Path: "materijali/" + ime})
+	}
+
 	e := echo.New()
 
 	e.Static("/static", "static")
+	e.Static("/unity-radionica/materijali", "materijali")
 	newTemplateRenderer(e, "templates/*.html")
+
 	e.GET("/", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "index", nil)
+	})
+
+	e.GET("/unity-radionica", func(c echo.Context) error {
+		res := map[string]any{
+			"files": materijali,
+		}
+		return c.Render(http.StatusOK, "unity", res)
 	})
 
 	e.GET("/posts/:post", func(c echo.Context) error {

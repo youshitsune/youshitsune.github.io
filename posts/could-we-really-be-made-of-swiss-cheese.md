@@ -1,4 +1,8 @@
-2023/03/13
+---
+date: 2023-03-13
+tags:
+  - xenobiology
+---
 # Could we really be made of Swiss cheese
 "Could we really be made of Swiss cheese?" is paper that explains xenobiology. It's really great introduction to xenobiology. I  recommend to read it. [PDF](/pdf/Could_we_really_be_made_of_swiss_cheese.pdf)
 

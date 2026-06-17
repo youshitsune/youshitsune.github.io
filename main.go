@@ -5,14 +5,15 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"regexp"
 	"sort"
 	"strings"
 	"text/template"
-	"time"
 
 	"github.com/labstack/echo/v4"
 	"github.com/yuin/goldmark"
 	"github.com/yuin/goldmark/renderer/html"
+	"gopkg.in/yaml.v3"
 
 	highlighting "github.com/yuin/goldmark-highlighting/v2"
 )
@@ -23,10 +24,12 @@ type Materijal struct {
 }
 
 type Post struct {
-	Date  string
-	Title string
 	URL   string
+	Date  string
+	Desc  string
+	Tags  []string
 	Text  string
+	Title string
 }
 
 type Template struct {
@@ -50,16 +53,6 @@ func newTemplateRenderer(e *echo.Echo, paths ...string) {
 	e.Renderer = t
 }
 
-func check_posts(path string, markdown goldmark.Markdown, posts *map[string]Post, list_posts *[]Post) {
-	for {
-		files, _ := os.ReadDir(path)
-		if len(files) != len(*posts) {
-			*posts, *list_posts = load_posts(path, markdown)
-		}
-		time.Sleep(10 * time.Minute)
-	}
-}
-
 func load_posts(path string, markdown goldmark.Markdown) (map[string]Post, []Post) {
 	list_posts := make([]Post, 0)
 	posts := make(map[string]Post)
@@ -69,21 +62,25 @@ func load_posts(path string, markdown goldmark.Markdown) (map[string]Post, []Pos
 	for i := range files {
 		name := files[i].Name()
 		data, _ := os.ReadFile(path + name)
-		ctx := strings.Split(string(data), "\n")
-		date := ctx[0]
-		title := ctx[1]
-		var text bytes.Buffer
-		markdown.Convert([]byte(strings.Join(ctx[1:], "\n")), &text)
-		post = Post{
-			Date:  date,
-			Title: title[2:],
-			URL:   "/" + path + strings.Split(name, ".")[0],
-			Text:  text.String(),
+
+		if !bytes.Equal(data[:4], []byte("---\n")) {
+			continue
 		}
+
+		ix := bytes.Index(data[4:], []byte("---\n")) + 4
+		post = Post{}
+		yaml.Unmarshal(data[4:ix], &post)
+
+		r, _ := regexp.Compile("#.*")
+
+		var text bytes.Buffer
+		markdown.Convert(data[ix+4:], &text)
+		post.URL = "/" + path + strings.Split(name, ".")[0]
+		post.Text = text.String()
+		post.Title = r.FindString(string(data))[2:]
 
 		posts[strings.Split(name, ".")[0]] = post
 		list_posts = append(list_posts, post)
-
 	}
 
 	sort.SliceStable(list_posts, func(i, j int) bool {
@@ -106,7 +103,6 @@ func main() {
 	)
 
 	posts, list_posts := load_posts("posts/", markdown)
-	go check_posts("posts/", markdown, &posts, &list_posts)
 
 	materijali := make([]Materijal, 0)
 	fajlovi, _ := os.ReadDir("materijali")
@@ -120,6 +116,9 @@ func main() {
 	e.Static("/static", "static")
 	e.Static("/unity-radionica/materijali", "materijali")
 	newTemplateRenderer(e, "templates/*.html")
+
+	var bufPosts bytes.Buffer
+	e.Renderer.Render(&bufPosts, "posts", map[string]any{"posts": list_posts}, nil)
 
 	e.GET("/", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "index", nil)
@@ -147,10 +146,13 @@ func main() {
 	})
 
 	e.GET("/posts", func(c echo.Context) error {
-		res := map[string]any{
-			"posts": list_posts,
-		}
-		return c.Render(http.StatusOK, "posts", res)
+		/*
+			res := map[string]any{
+				"posts": list_posts,
+			}
+			return c.Render(http.StatusOK, "posts", res)
+		*/
+		return c.HTML(http.StatusOK, bufPosts.String())
 	})
 
 	e.Logger.Fatal(e.Start(":8080"))

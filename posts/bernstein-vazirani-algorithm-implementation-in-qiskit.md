@@ -1,4 +1,8 @@
-2023/06/20
+---
+date: 2023-06-20
+tags:
+  - quantum-computing
+---
 # Bernstein-Vazirani algorithm implementation in Qiskit
 It is a restricted version of the Deutsch-Jozsa algorithm where instead of distinguishing between two different classes of functions, it tries to learn a string encoded in a function.
 

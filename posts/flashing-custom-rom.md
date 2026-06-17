@@ -1,4 +1,8 @@
-2023/07/21
+---
+date: 2023-07-21
+tags:
+  - computers
+---
 # Flashing custom ROM
 I always wanted to flash custom rom on my phone, but there isn't any offical software for it.
 

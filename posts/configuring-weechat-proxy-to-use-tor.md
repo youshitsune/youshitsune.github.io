@@ -1,4 +1,10 @@
-2023/07/22
+---
+date: 2023-07-22
+tags:
+  - tor
+  - irc
+  - guide
+---
 # Configuring weechat proxy to use tor
 If you are lover of privacy like I am, you'll love this configuration.
 

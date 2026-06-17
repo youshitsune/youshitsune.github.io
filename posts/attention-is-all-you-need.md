@@ -1,4 +1,8 @@
-2023/02/19
+---
+date: 2023-02-19
+tags:
+  - ai
+---
 # Attention is all you need
 "Attention is all you need" is a research paper that proposes a new way of making an AI.
 

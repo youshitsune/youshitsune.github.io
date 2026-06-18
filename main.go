@@ -18,11 +18,6 @@ import (
 	highlighting "github.com/yuin/goldmark-highlighting/v2"
 )
 
-type Materijal struct {
-	Path string
-	Ime  string
-}
-
 type Post struct {
 	URL   string
 	Date  string
@@ -53,9 +48,10 @@ func newTemplateRenderer(e *echo.Echo, paths ...string) {
 	e.Renderer = t
 }
 
-func load_posts(path string, markdown goldmark.Markdown) (map[string]Post, []Post) {
+func load_posts(path string, markdown goldmark.Markdown) (map[string][]Post, map[string]Post, []Post) {
 	list_posts := make([]Post, 0)
 	posts := make(map[string]Post)
+	tags := make(map[string][]Post)
 	files, _ := os.ReadDir(path)
 
 	var post Post
@@ -80,6 +76,11 @@ func load_posts(path string, markdown goldmark.Markdown) (map[string]Post, []Pos
 		post.Title = r.FindString(string(data))[2:]
 
 		posts[strings.Split(name, ".")[0]] = post
+
+		for _, v := range post.Tags {
+			tags[v] = append(tags[v], post)
+		}
+
 		list_posts = append(list_posts, post)
 	}
 
@@ -87,7 +88,7 @@ func load_posts(path string, markdown goldmark.Markdown) (map[string]Post, []Pos
 		return list_posts[i].Date > list_posts[j].Date
 	})
 
-	return posts, list_posts
+	return tags, posts, list_posts
 }
 
 func main() {
@@ -102,33 +103,22 @@ func main() {
 		),
 	)
 
-	posts, list_posts := load_posts("posts/", markdown)
-
-	materijali := make([]Materijal, 0)
-	fajlovi, _ := os.ReadDir("materijali")
-	for _, file := range fajlovi {
-		ime := file.Name()
-		materijali = append(materijali, Materijal{Ime: ime, Path: "materijali/" + ime})
-	}
+	tags, posts, list_posts := load_posts("posts/", markdown)
 
 	e := echo.New()
 
 	e.Static("/static", "static")
-	e.Static("/unity-radionica/materijali", "materijali")
 	newTemplateRenderer(e, "templates/*.html")
 
 	var bufPosts bytes.Buffer
 	e.Renderer.Render(&bufPosts, "posts", map[string]any{"posts": list_posts}, nil)
 
 	e.GET("/", func(c echo.Context) error {
-		return c.Render(http.StatusOK, "index", nil)
+		return c.Render(http.StatusOK, "index", map[string]any{"posts": list_posts[:4]})
 	})
 
 	e.GET("/unity-radionica", func(c echo.Context) error {
-		res := map[string]any{
-			"files": materijali,
-		}
-		return c.Render(http.StatusOK, "unity", res)
+		return c.Redirect(http.StatusPermanentRedirect, "https://drive.google.com/drive/folders/1WzqJanDBeF2VAcEANw29mT-wFIzJFPlY?usp=sharing") // I know Google Drive shit
 	})
 
 	e.GET("/posts/:post", func(c echo.Context) error {
@@ -136,10 +126,7 @@ func main() {
 
 		post_data, ok := posts[post]
 		if ok {
-			res := map[string]any{
-				"Data": post_data.Text,
-			}
-			return c.Render(http.StatusOK, "post", res)
+			return c.Render(http.StatusOK, "post", post_data)
 		}
 
 		return c.Render(http.StatusOK, "404", nil)
@@ -153,6 +140,17 @@ func main() {
 			return c.Render(http.StatusOK, "posts", res)
 		*/
 		return c.HTML(http.StatusOK, bufPosts.String())
+	})
+
+	e.GET("/tags/:tag", func(c echo.Context) error {
+		tag := c.Param("tag")
+
+		tag_posts, ok := tags[tag]
+		if ok {
+			return c.Render(http.StatusOK, "tags", map[string]any{"tag": tag, "posts": tag_posts})
+		}
+
+		return c.Render(http.StatusOK, "404", nil)
 	})
 
 	e.Logger.Fatal(e.Start(":8080"))

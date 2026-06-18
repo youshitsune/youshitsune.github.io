@@ -58,6 +58,25 @@
     <h2 class="hr">About</h2>
     <p>Programmer and self-taught mechatronics engineer, who likes open-source idea! I like building robots and connecting them to some of my projects. Also building other stuff, like coil guns, Tesla coils.</p>
 </div>
+<div>
+    <h2 class="hr">Recent posts</h2>
+    <ul id="listposts">
+    {{range .posts}}
+    <li class="post">
+        <a class="post-link" href="{{.URL}}">
+            <span>{{.Title}}</span>
+        </a>
+        <hr>
+        <p class="post-date">{{.Date}}</p>
+        <div id="tags">
+        {{range .Tags}}
+        <a href="/tags/{{.}}">#{{.}}</a>
+        {{end}}
+        </div>
+    </li>
+    {{end}}
+    </ul>
+</div>
 {{template "works"}}
 <div id="web">
     <h2 class="hr">On the web</h2>
@@ -70,13 +89,20 @@
 
 {{ define "posts" }}
 {{template "head"}}
-<h2 class="hr left">Posts</h2>
-<ul>
+<h2 style="text-align: center; text-decoration: underline 3px burlywood;">Posts</h2>
+<ul id="listposts">
 {{range .posts}}
 <li class="post">
     <a class="post-link" href="{{.URL}}">
         <span>{{.Title}}</span>
     </a>
+    <hr>
+    <p class="post-date">{{.Date}}</p>
+    <div id="tags">
+    {{range .Tags}}
+    <a href="/tags/{{.}}">#{{.}}</a>
+    {{end}}
+    </div>
 </li>
 {{end}}
 </ul>
@@ -106,9 +132,6 @@
 </div>
 {{ end }}
 
-{{define "home"}}
-{{end}}
-
 {{define "post"}}
 {{template "head"}}
 <style>
@@ -120,7 +143,34 @@
         margin: 0px;
     }
 </style>
-{{.Data}}
+<div id="tags">
+{{range .Tags}}
+    <a href="/tags/{{.}}">#{{.}}</a>
+{{end}}
+</div>
+{{.Text}}
+{{template "tail"}}
+{{end}}
+
+{{define "tags"}}
+{{template "head"}}
+<h2 style="text-align: center; text-decoration: underline 3px burlywood;">#{{.tag}}</h2>
+<ul id="listposts">
+{{range .posts}}
+<li class="post">
+    <a class="post-link" href="{{.URL}}">
+        <span>{{.Title}}</span>
+    </a>
+    <hr>
+    <p class="post-date">{{.Date}}</p>
+    <div id="tags">
+    {{range .Tags}}
+    <a href="/tags/{{.}}">#{{.}}</a>
+    {{end}}
+    </div>
+</li>
+{{end}}
+</ul>
 {{template "tail"}}
 {{end}}
 

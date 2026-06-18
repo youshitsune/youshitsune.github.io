@@ -68,8 +68,18 @@ nav a{
     cursor:pointer;
 }
 
+#listposts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
 
 .post {
+    border: 1px grey solid;
+    padding: 20px;
+}
+
+.post a span{
     font-size: 15pt;
 }
 
@@ -79,7 +89,12 @@ nav a{
 }
 
 .post-date {
-    color: #83ffff;
+    float: left;
+    margin: 0;
+}
+
+.post div {
+    float: right;
 }
 
 #hero{
@@ -169,6 +184,25 @@ nav a{
 #posts img{
     width: 500px;
     height: 315px;
+}
+
+#tags {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+#tags a {
+    border: 1px burlywood solid;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: #383025;
+}
+
+#tags a:hover {
+    border: 1px #d08a31 solid;
+    background-color: #0f0d0b;
+    text-decoration: none;
 }
 
 #back{

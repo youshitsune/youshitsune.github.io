@@ -1,4 +1,5 @@
 body{
+    background-image: url("/static/img/topo.svg");
     background-color: #191c1c;
     color: white;
     font-family: "Helvetica", sans-serif;
